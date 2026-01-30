@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-01-30T04:32:34.592664+08:00",
+  "generated_at": "2026-01-30T10:06:56.350703+08:00",
   "results": [
     {
       "symbol": "BTC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:23.931192+08:00",
+      "timestamp": "2026-01-30T10:06:45.694048+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -12,9 +12,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 84004.9,
-        "tenkan_sen": 87296.5,
-        "kijun_sen": 90648.2,
+        "price": 82307.0,
+        "tenkan_sen": 86116.0,
+        "kijun_sen": 89467.7,
         "cloud_top": 91086.1,
         "cloud_bottom": 89420.1,
         "senkou_span_a": 89420.1,
@@ -24,13 +24,13 @@
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 83993.8,
-        "tenkan_sen": 86988.55,
-        "kijun_sen": 86988.55,
-        "cloud_top": 91448.35,
-        "cloud_bottom": 89115.875,
-        "senkou_span_a": 89115.875,
-        "senkou_span_b": 91448.35
+        "price": 82307.0,
+        "tenkan_sen": 85808.05,
+        "kijun_sen": 85808.05,
+        "cloud_top": 90909.8,
+        "cloud_bottom": 88318.05,
+        "senkou_span_a": 88318.05,
+        "senkou_span_b": 90909.8
       },
       "combined_recommendation": "偏空操作",
       "combined_explanation": "日線空頭，等待4H確認進場點"
@@ -38,7 +38,7 @@
     {
       "symbol": "ETH-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:24.351307+08:00",
+      "timestamp": "2026-01-30T10:06:46.096938+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -46,33 +46,36 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 2797.73,
-        "tenkan_sen": 2911.91,
-        "kijun_sen": 3078.84,
+        "price": 2737.98,
+        "tenkan_sen": 2875.91,
+        "kijun_sen": 3042.84,
         "cloud_top": 3075.185,
         "cloud_bottom": 3035.435,
         "senkou_span_a": 3075.185,
         "senkou_span_b": 3035.435
       },
       "h4": {
-        "signals": [],
-        "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 2797.0,
-        "tenkan_sen": 2900.16,
-        "kijun_sen": 2900.16,
-        "cloud_top": 3117.6800000000003,
-        "cloud_bottom": 2956.275,
-        "senkou_span_a": 2956.275,
-        "senkou_span_b": 3117.6800000000003
+        "signals": [
+          "死亡交叉",
+          "三役逆轉"
+        ],
+        "trend": "強勢下降趨勢",
+        "recommendation": "做空",
+        "price": 2738.38,
+        "tenkan_sen": 2860.385,
+        "kijun_sen": 2864.16,
+        "cloud_top": 3083.0,
+        "cloud_bottom": 2908.01,
+        "senkou_span_a": 2908.01,
+        "senkou_span_b": 3083.0
       },
-      "combined_recommendation": "偏空操作",
-      "combined_explanation": "日線空頭，等待4H確認進場點"
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會"
     },
     {
       "symbol": "BNB-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:24.766847+08:00",
+      "timestamp": "2026-01-30T10:06:46.511466+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -80,9 +83,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 860.9,
-        "tenkan_sen": 881.3,
-        "kijun_sen": 906.1,
+        "price": 846.1,
+        "tenkan_sen": 873.5,
+        "kijun_sen": 898.3,
         "cloud_top": 875.35,
         "cloud_bottom": 866.375,
         "senkou_span_a": 866.375,
@@ -90,18 +93,17 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "死亡交叉"
+          "三役逆轉"
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 860.9,
-        "tenkan_sen": 880.45,
-        "kijun_sen": 881.3,
-        "cloud_top": 911.95,
-        "cloud_bottom": 885.0999999999999,
-        "senkou_span_a": 885.0999999999999,
-        "senkou_span_b": 911.95
+        "price": 846.1,
+        "tenkan_sen": 872.25,
+        "kijun_sen": 873.5,
+        "cloud_top": 907.65,
+        "cloud_bottom": 877.75,
+        "senkou_span_a": 877.75,
+        "senkou_span_b": 907.65
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -109,7 +111,7 @@
     {
       "symbol": "SOL-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:25.184985+08:00",
+      "timestamp": "2026-01-30T10:06:46.915171+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -117,9 +119,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 116.97,
-        "tenkan_sen": 123.765,
-        "kijun_sen": 132.04500000000002,
+        "price": 114.89,
+        "tenkan_sen": 122.025,
+        "kijun_sen": 130.305,
         "cloud_top": 135.10500000000002,
         "cloud_bottom": 129.57999999999998,
         "senkou_span_a": 129.57999999999998,
@@ -127,18 +129,17 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "死亡交叉"
+          "三役逆轉"
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 116.96,
-        "tenkan_sen": 121.80499999999999,
-        "kijun_sen": 121.855,
-        "cloud_top": 134.835,
-        "cloud_bottom": 127.7475,
-        "senkou_span_a": 127.7475,
-        "senkou_span_b": 134.835
+        "price": 114.87,
+        "tenkan_sen": 119.465,
+        "kijun_sen": 120.11500000000001,
+        "cloud_top": 130.89999999999998,
+        "cloud_bottom": 123.5575,
+        "senkou_span_a": 123.5575,
+        "senkou_span_b": 130.89999999999998
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -146,7 +147,7 @@
     {
       "symbol": "XRP-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:25.588318+08:00",
+      "timestamp": "2026-01-30T10:06:47.321260+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -154,9 +155,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 1.7917,
-        "tenkan_sen": 1.8839000000000001,
-        "kijun_sen": 2.0974500000000003,
+        "price": 1.7536,
+        "tenkan_sen": 1.8505500000000001,
+        "kijun_sen": 2.0641,
         "cloud_top": 2.1077500000000002,
         "cloud_bottom": 1.9705,
         "senkou_span_a": 1.9705,
@@ -168,13 +169,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.7917,
-        "tenkan_sen": 1.86015,
-        "kijun_sen": 1.8620999999999999,
-        "cloud_top": 1.9645,
-        "cloud_bottom": 1.9181,
-        "senkou_span_a": 1.9181,
-        "senkou_span_b": 1.9645
+        "price": 1.7539,
+        "tenkan_sen": 1.8219,
+        "kijun_sen": 1.8287499999999999,
+        "cloud_top": 1.94705,
+        "cloud_bottom": 1.883925,
+        "senkou_span_a": 1.883925,
+        "senkou_span_b": 1.94705
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -182,7 +183,7 @@
     {
       "symbol": "ADA-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:25.999851+08:00",
+      "timestamp": "2026-01-30T10:06:48.043290+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -190,43 +191,46 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.3318,
-        "tenkan_sen": 0.35065,
-        "kijun_sen": 0.38234999999999997,
+        "price": 0.3254,
+        "tenkan_sen": 0.34604999999999997,
+        "kijun_sen": 0.37775000000000003,
         "cloud_top": 0.44184999999999997,
         "cloud_bottom": 0.3869,
         "senkou_span_a": 0.3869,
         "senkou_span_b": 0.44184999999999997
       },
       "h4": {
-        "signals": [],
-        "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 0.3321,
-        "tenkan_sen": 0.3462,
-        "kijun_sen": 0.3462,
-        "cloud_top": 0.37285,
-        "cloud_bottom": 0.3584,
-        "senkou_span_a": 0.3584,
-        "senkou_span_b": 0.37285
+        "signals": [
+          "死亡交叉",
+          "三役逆轉"
+        ],
+        "trend": "強勢下降趨勢",
+        "recommendation": "做空",
+        "price": 0.3253,
+        "tenkan_sen": 0.33985,
+        "kijun_sen": 0.3416,
+        "cloud_top": 0.36855,
+        "cloud_bottom": 0.35002500000000003,
+        "senkou_span_a": 0.35002500000000003,
+        "senkou_span_b": 0.36855
       },
-      "combined_recommendation": "偏空操作",
-      "combined_explanation": "日線空頭，等待4H確認進場點"
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會"
     },
     {
       "symbol": "DOGE-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:26.407984+08:00",
+      "timestamp": "2026-01-30T10:06:48.447245+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
           "三役逆轉"
         ],
-        "trend": "趨勢不明確",
+        "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.11585,
-        "tenkan_sen": 0.12161,
-        "kijun_sen": 0.135515,
+        "price": 0.11494,
+        "tenkan_sen": 0.120445,
+        "kijun_sen": 0.13435,
         "cloud_top": 0.14453,
         "cloud_bottom": 0.135015,
         "senkou_span_a": 0.135015,
@@ -234,18 +238,17 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "死亡交叉"
+          "三役逆轉"
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.11585,
-        "tenkan_sen": 0.12079499999999999,
-        "kijun_sen": 0.121055,
-        "cloud_top": 0.12977,
-        "cloud_bottom": 0.12394,
-        "senkou_span_a": 0.12394,
-        "senkou_span_b": 0.12977
+        "price": 0.11493,
+        "tenkan_sen": 0.11918999999999999,
+        "kijun_sen": 0.11989,
+        "cloud_top": 0.128835,
+        "cloud_bottom": 0.12223250000000001,
+        "senkou_span_a": 0.12223250000000001,
+        "senkou_span_b": 0.128835
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -253,7 +256,7 @@
     {
       "symbol": "AVAX-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:26.814760+08:00",
+      "timestamp": "2026-01-30T10:06:48.851175+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -261,33 +264,36 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 11.005,
-        "tenkan_sen": 11.771,
-        "kijun_sen": 12.881,
+        "price": 10.951,
+        "tenkan_sen": 11.715499999999999,
+        "kijun_sen": 12.8255,
         "cloud_top": 14.153,
         "cloud_bottom": 13.16425,
         "senkou_span_a": 13.16425,
         "senkou_span_b": 14.153
       },
       "h4": {
-        "signals": [],
-        "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 11.008,
-        "tenkan_sen": 11.5525,
-        "kijun_sen": 11.5525,
-        "cloud_top": 12.895,
-        "cloud_bottom": 12.1365,
-        "senkou_span_a": 12.1365,
-        "senkou_span_b": 12.895
+        "signals": [
+          "死亡交叉",
+          "三役逆轉"
+        ],
+        "trend": "強勢下降趨勢",
+        "recommendation": "做空",
+        "price": 10.952,
+        "tenkan_sen": 11.4435,
+        "kijun_sen": 11.497,
+        "cloud_top": 12.602,
+        "cloud_bottom": 11.8335,
+        "senkou_span_a": 11.8335,
+        "senkou_span_b": 12.602
       },
-      "combined_recommendation": "偏空操作",
-      "combined_explanation": "日線空頭，等待4H確認進場點"
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會"
     },
     {
       "symbol": "DOT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:27.223643+08:00",
+      "timestamp": "2026-01-30T10:06:49.405735+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -295,9 +301,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 1.731,
-        "tenkan_sen": 1.849,
-        "kijun_sen": 2.0205,
+        "price": 1.71,
+        "tenkan_sen": 1.8359999999999999,
+        "kijun_sen": 2.0075,
         "cloud_top": 2.318,
         "cloud_bottom": 1.9889999999999999,
         "senkou_span_a": 1.9889999999999999,
@@ -309,13 +315,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.731,
-        "tenkan_sen": 1.7965,
-        "kijun_sen": 1.7985,
-        "cloud_top": 2.04,
-        "cloud_bottom": 1.924,
-        "senkou_span_a": 1.924,
-        "senkou_span_b": 2.04
+        "price": 1.71,
+        "tenkan_sen": 1.781,
+        "kijun_sen": 1.7854999999999999,
+        "cloud_top": 2.0084999999999997,
+        "cloud_bottom": 1.87725,
+        "senkou_span_a": 1.87725,
+        "senkou_span_b": 2.0084999999999997
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -323,18 +329,18 @@
     {
       "symbol": "POL-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:27.649873+08:00",
+      "timestamp": "2026-01-30T10:06:49.819357+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
-          "三役逆轉",
-          "跌破雲層"
+          "跌破雲層",
+          "三役逆轉"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.1114,
-        "tenkan_sen": 0.12519999999999998,
-        "kijun_sen": 0.1481,
+        "price": 0.1111,
+        "tenkan_sen": 0.12505,
+        "kijun_sen": 0.14795,
         "cloud_top": 0.13595000000000002,
         "cloud_bottom": 0.11222499999999999,
         "senkou_span_a": 0.11222499999999999,
@@ -346,13 +352,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.1114,
-        "tenkan_sen": 0.11545,
-        "kijun_sen": 0.11655,
-        "cloud_top": 0.13525,
-        "cloud_bottom": 0.1278,
-        "senkou_span_a": 0.1278,
-        "senkou_span_b": 0.13525
+        "price": 0.1111,
+        "tenkan_sen": 0.1143,
+        "kijun_sen": 0.1164,
+        "cloud_top": 0.13275,
+        "cloud_bottom": 0.12525,
+        "senkou_span_a": 0.12525,
+        "senkou_span_b": 0.13275
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -360,7 +366,7 @@
     {
       "symbol": "LINK-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:28.073081+08:00",
+      "timestamp": "2026-01-30T10:06:50.225170+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -368,9 +374,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 10.999,
-        "tenkan_sen": 11.75,
-        "kijun_sen": 12.6145,
+        "price": 10.878,
+        "tenkan_sen": 11.642,
+        "kijun_sen": 12.506499999999999,
         "cloud_top": 13.492,
         "cloud_bottom": 13.10725,
         "senkou_span_a": 13.10725,
@@ -382,13 +388,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 11.001,
-        "tenkan_sen": 11.4335,
-        "kijun_sen": 11.508,
-        "cloud_top": 12.897,
-        "cloud_bottom": 12.2,
-        "senkou_span_a": 12.2,
-        "senkou_span_b": 12.897
+        "price": 10.878,
+        "tenkan_sen": 11.2775,
+        "kijun_sen": 11.399999999999999,
+        "cloud_top": 12.641,
+        "cloud_bottom": 11.925999999999998,
+        "senkou_span_a": 11.925999999999998,
+        "senkou_span_b": 12.641
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -396,7 +402,7 @@
     {
       "symbol": "UNI-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:28.476663+08:00",
+      "timestamp": "2026-01-30T10:06:50.651213+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -404,44 +410,47 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 4.345,
-        "tenkan_sen": 4.676,
-        "kijun_sen": 5.3645,
+        "price": 4.298,
+        "tenkan_sen": 4.632,
+        "kijun_sen": 5.3205,
         "cloud_top": 6.507000000000001,
         "cloud_bottom": 5.90075,
         "senkou_span_a": 5.90075,
         "senkou_span_b": 6.507000000000001
       },
       "h4": {
-        "signals": [],
-        "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 4.345,
-        "tenkan_sen": 4.5809999999999995,
-        "kijun_sen": 4.5809999999999995,
-        "cloud_top": 5.022,
-        "cloud_bottom": 4.885999999999999,
-        "senkou_span_a": 4.885999999999999,
-        "senkou_span_b": 5.022
+        "signals": [
+          "死亡交叉",
+          "三役逆轉"
+        ],
+        "trend": "強勢下降趨勢",
+        "recommendation": "做空",
+        "price": 4.299,
+        "tenkan_sen": 4.535,
+        "kijun_sen": 4.537000000000001,
+        "cloud_top": 5.003,
+        "cloud_bottom": 4.7765,
+        "senkou_span_a": 4.7765,
+        "senkou_span_b": 5.003
       },
-      "combined_recommendation": "偏空操作",
-      "combined_explanation": "日線空頭，等待4H確認進場點"
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會"
     },
     {
       "symbol": "ATOM-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:28.893253+08:00",
+      "timestamp": "2026-01-30T10:06:51.061186+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
-          "三役逆轉",
-          "跌破雲層"
+          "跌破雲層",
+          "三役逆轉"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 2.116,
-        "tenkan_sen": 2.2655000000000003,
-        "kijun_sen": 2.3895,
+        "price": 2.099,
+        "tenkan_sen": 2.2555,
+        "kijun_sen": 2.3795,
         "cloud_top": 2.4855,
         "cloud_bottom": 2.12675,
         "senkou_span_a": 2.12675,
@@ -453,13 +462,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 2.116,
-        "tenkan_sen": 2.191,
-        "kijun_sen": 2.197,
-        "cloud_top": 2.416,
-        "cloud_bottom": 2.33475,
-        "senkou_span_a": 2.33475,
-        "senkou_span_b": 2.416
+        "price": 2.101,
+        "tenkan_sen": 2.166,
+        "kijun_sen": 2.1870000000000003,
+        "cloud_top": 2.4015,
+        "cloud_bottom": 2.30975,
+        "senkou_span_a": 2.30975,
+        "senkou_span_b": 2.4015
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -467,7 +476,7 @@
     {
       "symbol": "LTC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:29.293346+08:00",
+      "timestamp": "2026-01-30T10:06:51.470391+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -475,9 +484,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 65.43,
-        "tenkan_sen": 67.465,
-        "kijun_sen": 74.66499999999999,
+        "price": 64.59,
+        "tenkan_sen": 66.57,
+        "kijun_sen": 73.77,
         "cloud_top": 91.105,
         "cloud_bottom": 79.8375,
         "senkou_span_a": 79.8375,
@@ -489,13 +498,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 65.43,
-        "tenkan_sen": 67.255,
-        "kijun_sen": 67.465,
-        "cloud_top": 70.66,
-        "cloud_bottom": 68.6025,
-        "senkou_span_a": 68.6025,
-        "senkou_span_b": 70.66
+        "price": 64.64,
+        "tenkan_sen": 66.27,
+        "kijun_sen": 66.57,
+        "cloud_top": 70.6,
+        "cloud_bottom": 67.97999999999999,
+        "senkou_span_a": 67.97999999999999,
+        "senkou_span_b": 70.6
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -503,7 +512,7 @@
     {
       "symbol": "ETC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:29.696273+08:00",
+      "timestamp": "2026-01-30T10:06:51.890732+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -511,9 +520,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 10.73,
-        "tenkan_sen": 11.25,
-        "kijun_sen": 12.065,
+        "price": 10.64,
+        "tenkan_sen": 11.165,
+        "kijun_sen": 11.98,
         "cloud_top": 13.56,
         "cloud_bottom": 12.4525,
         "senkou_span_a": 12.4525,
@@ -523,13 +532,13 @@
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 10.73,
-        "tenkan_sen": 11.11,
-        "kijun_sen": 11.11,
-        "cloud_top": 12.129999999999999,
-        "cloud_bottom": 11.5875,
-        "senkou_span_a": 11.5875,
-        "senkou_span_b": 12.129999999999999
+        "price": 10.65,
+        "tenkan_sen": 11.025,
+        "kijun_sen": 11.025,
+        "cloud_top": 12.1,
+        "cloud_bottom": 11.407499999999999,
+        "senkou_span_a": 11.407499999999999,
+        "senkou_span_b": 12.1
       },
       "combined_recommendation": "偏空操作",
       "combined_explanation": "日線空頭，等待4H確認進場點"
@@ -537,7 +546,7 @@
     {
       "symbol": "XLM-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:30.112824+08:00",
+      "timestamp": "2026-01-30T10:06:52.303006+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -545,9 +554,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.1979,
-        "tenkan_sen": 0.206905,
-        "kijun_sen": 0.225315,
+        "price": 0.195,
+        "tenkan_sen": 0.20545,
+        "kijun_sen": 0.22386,
         "cloud_top": 0.24027500000000002,
         "cloud_bottom": 0.22290500000000002,
         "senkou_span_a": 0.22290500000000002,
@@ -555,18 +564,17 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "死亡交叉"
+          "三役逆轉"
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.19777,
-        "tenkan_sen": 0.20343,
-        "kijun_sen": 0.20356,
-        "cloud_top": 0.22083999999999998,
-        "cloud_bottom": 0.21122999999999997,
-        "senkou_span_a": 0.21122999999999997,
-        "senkou_span_b": 0.22083999999999998
+        "price": 0.19495,
+        "tenkan_sen": 0.20184000000000002,
+        "kijun_sen": 0.20210499999999998,
+        "cloud_top": 0.219895,
+        "cloud_bottom": 0.2084275,
+        "senkou_span_a": 0.2084275,
+        "senkou_span_b": 0.219895
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -574,7 +582,7 @@
     {
       "symbol": "NEAR-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:30.525405+08:00",
+      "timestamp": "2026-01-30T10:06:52.710189+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -582,9 +590,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.368,
-        "tenkan_sen": 1.4580000000000002,
-        "kijun_sen": 1.6179999999999999,
+        "price": 1.346,
+        "tenkan_sen": 1.4435,
+        "kijun_sen": 1.6035,
         "cloud_top": 2.015,
         "cloud_bottom": 1.6252499999999999,
         "senkou_span_a": 1.6252499999999999,
@@ -596,13 +604,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.368,
-        "tenkan_sen": 1.4220000000000002,
-        "kijun_sen": 1.424,
-        "cloud_top": 1.6275,
-        "cloud_bottom": 1.51125,
-        "senkou_span_a": 1.51125,
-        "senkou_span_b": 1.6275
+        "price": 1.346,
+        "tenkan_sen": 1.4075,
+        "kijun_sen": 1.4095,
+        "cloud_top": 1.6105,
+        "cloud_bottom": 1.47925,
+        "senkou_span_a": 1.47925,
+        "senkou_span_b": 1.6105
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -610,7 +618,7 @@
     {
       "symbol": "APT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:30.950670+08:00",
+      "timestamp": "2026-01-30T10:06:53.123102+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -618,9 +626,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.477,
-        "tenkan_sen": 1.536,
-        "kijun_sen": 1.7269999999999999,
+        "price": 1.472,
+        "tenkan_sen": 1.532,
+        "kijun_sen": 1.7229999999999999,
         "cloud_top": 2.2755,
         "cloud_bottom": 1.73225,
         "senkou_span_a": 1.73225,
@@ -630,13 +638,13 @@
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 1.477,
-        "tenkan_sen": 1.536,
-        "kijun_sen": 1.536,
-        "cloud_top": 1.7075,
-        "cloud_bottom": 1.5575,
-        "senkou_span_a": 1.5575,
-        "senkou_span_b": 1.7075
+        "price": 1.471,
+        "tenkan_sen": 1.532,
+        "kijun_sen": 1.532,
+        "cloud_top": 1.679,
+        "cloud_bottom": 1.52525,
+        "senkou_span_a": 1.52525,
+        "senkou_span_b": 1.679
       },
       "combined_recommendation": "偏空操作",
       "combined_explanation": "日線空頭，等待4H確認進場點"
@@ -644,7 +652,7 @@
     {
       "symbol": "OP-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:31.369643+08:00",
+      "timestamp": "2026-01-30T10:06:53.524825+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -652,9 +660,9 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.2671,
-        "tenkan_sen": 0.2935,
-        "kijun_sen": 0.3185,
+        "price": 0.2658,
+        "tenkan_sen": 0.29305000000000003,
+        "kijun_sen": 0.31805,
         "cloud_top": 0.3358,
         "cloud_bottom": 0.2953,
         "senkou_span_a": 0.2953,
@@ -664,13 +672,13 @@
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 0.2671,
-        "tenkan_sen": 0.2827,
-        "kijun_sen": 0.2827,
-        "cloud_top": 0.32405,
-        "cloud_bottom": 0.30619999999999997,
-        "senkou_span_a": 0.30619999999999997,
-        "senkou_span_b": 0.32405
+        "price": 0.2656,
+        "tenkan_sen": 0.28225,
+        "kijun_sen": 0.28225,
+        "cloud_top": 0.31720000000000004,
+        "cloud_bottom": 0.29764999999999997,
+        "senkou_span_a": 0.29764999999999997,
+        "senkou_span_b": 0.31720000000000004
       },
       "combined_recommendation": "偏空操作",
       "combined_explanation": "日線空頭，等待4H確認進場點"
@@ -678,7 +686,7 @@
     {
       "symbol": "ARB-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:31.780970+08:00",
+      "timestamp": "2026-01-30T10:06:53.932199+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -686,9 +694,9 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.1571,
-        "tenkan_sen": 0.1723,
-        "kijun_sen": 0.19090000000000001,
+        "price": 0.1554,
+        "tenkan_sen": 0.17135,
+        "kijun_sen": 0.18995,
         "cloud_top": 0.2178,
         "cloud_bottom": 0.2007,
         "senkou_span_a": 0.2007,
@@ -700,13 +708,13 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.1571,
-        "tenkan_sen": 0.1636,
-        "kijun_sen": 0.16375,
-        "cloud_top": 0.1982,
-        "cloud_bottom": 0.17915,
-        "senkou_span_a": 0.17915,
-        "senkou_span_b": 0.1982
+        "price": 0.1554,
+        "tenkan_sen": 0.16265000000000002,
+        "kijun_sen": 0.1628,
+        "cloud_top": 0.19355,
+        "cloud_bottom": 0.173825,
+        "senkou_span_a": 0.173825,
+        "senkou_span_b": 0.19355
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -714,7 +722,7 @@
     {
       "symbol": "XAUT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-01-30T04:32:32.210306+08:00",
+      "timestamp": "2026-01-30T10:06:54.365530+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -722,7 +730,7 @@
         ],
         "trend": "強勢上升趨勢",
         "recommendation": "做多",
-        "price": 5329.4,
+        "price": 5314.1,
         "tenkan_sen": 5186.15,
         "kijun_sen": 4974.7,
         "cloud_top": 4397.85,
@@ -736,13 +744,13 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 5330.4,
+        "price": 5312.1,
         "tenkan_sen": 5378.0,
         "kijun_sen": 5295.1,
-        "cloud_top": 4976.325,
-        "cloud_bottom": 4832.85,
-        "senkou_span_a": 4976.325,
-        "senkou_span_b": 4832.85
+        "cloud_top": 4990.1,
+        "cloud_bottom": 4846.0,
+        "senkou_span_a": 4990.1,
+        "senkou_span_b": 4846.0
       },
       "combined_recommendation": "強力做多",
       "combined_explanation": "日線與4H共振多頭，高勝率機會"
@@ -750,7 +758,7 @@
     {
       "symbol": "EUR/USD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:32.640606+08:00",
+      "timestamp": "2026-01-30T10:06:54.624775+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -758,7 +766,7 @@
         ],
         "trend": "強勢上升趨勢",
         "recommendation": "做多",
-        "price": 1.19594,
+        "price": 1.19115,
         "tenkan_sen": 1.186785,
         "kijun_sen": 1.18155,
         "cloud_top": 1.1733775,
@@ -768,25 +776,25 @@
       },
       "h4": {
         "signals": [
-          "三役好轉"
+          "死亡交叉"
         ],
-        "trend": "強勢上升趨勢",
-        "recommendation": "做多",
-        "price": 1.19594,
+        "trend": "趨勢不明確",
+        "recommendation": "做空",
+        "price": 1.19115,
         "tenkan_sen": 1.1945350000000001,
-        "kijun_sen": 1.1937250000000001,
-        "cloud_top": 1.1784175000000001,
-        "cloud_bottom": 1.17001,
-        "senkou_span_a": 1.1784175000000001,
-        "senkou_span_b": 1.17001
+        "kijun_sen": 1.19506,
+        "cloud_top": 1.1801425,
+        "cloud_bottom": 1.1715200000000001,
+        "senkou_span_a": 1.1801425,
+        "senkou_span_b": 1.1715200000000001
       },
-      "combined_recommendation": "強力做多",
-      "combined_explanation": "日線與4H共振多頭，高勝率機會"
+      "combined_recommendation": "觀望等待",
+      "combined_explanation": "短期回調中，等4H轉多再進場"
     },
     {
       "symbol": "GBP/USD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:32.960552+08:00",
+      "timestamp": "2026-01-30T10:06:54.882544+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -794,7 +802,7 @@
         ],
         "trend": "強勢上升趨勢",
         "recommendation": "做多",
-        "price": 1.37989,
+        "price": 1.37537,
         "tenkan_sen": 1.363565,
         "kijun_sen": 1.3594,
         "cloud_top": 1.3445775,
@@ -806,15 +814,15 @@
         "signals": [
           "三役好轉"
         ],
-        "trend": "強勢上升趨勢",
+        "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 1.37989,
+        "price": 1.37537,
         "tenkan_sen": 1.37958,
-        "kijun_sen": 1.373665,
-        "cloud_top": 1.3573650000000002,
-        "cloud_bottom": 1.348745,
-        "senkou_span_a": 1.3573650000000002,
-        "senkou_span_b": 1.348745
+        "kijun_sen": 1.3748749999999998,
+        "cloud_top": 1.3577075,
+        "cloud_bottom": 1.3490799999999998,
+        "senkou_span_a": 1.3577075,
+        "senkou_span_b": 1.3490799999999998
       },
       "combined_recommendation": "強力做多",
       "combined_explanation": "日線與4H共振多頭，高勝率機會"
@@ -822,7 +830,7 @@
     {
       "symbol": "USD/JPY",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:33.393536+08:00",
+      "timestamp": "2026-01-30T10:06:55.197519+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -830,7 +838,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 153.0913,
+        "price": 153.85832,
         "tenkan_sen": 155.636615,
         "kijun_sen": 155.7509,
         "cloud_top": 156.1875225,
@@ -842,15 +850,15 @@
         "signals": [
           "三役逆轉"
         ],
-        "trend": "強勢下降趨勢",
+        "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 153.0913,
-        "tenkan_sen": 153.27813500000002,
-        "kijun_sen": 154.21314,
-        "cloud_top": 157.40632,
-        "cloud_bottom": 156.8299,
-        "senkou_span_a": 156.8299,
-        "senkou_span_b": 157.40632
+        "price": 153.85832,
+        "tenkan_sen": 153.41511500000001,
+        "kijun_sen": 153.68752,
+        "cloud_top": 157.01018,
+        "cloud_bottom": 156.43376,
+        "senkou_span_a": 156.43376,
+        "senkou_span_b": 157.01018
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會"
@@ -858,7 +866,7 @@
     {
       "symbol": "AUD/USD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:33.654267+08:00",
+      "timestamp": "2026-01-30T10:06:55.438289+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -866,7 +874,7 @@
         ],
         "trend": "強勢上升趨勢",
         "recommendation": "做多",
-        "price": 0.70331,
+        "price": 0.69973,
         "tenkan_sen": 0.692385,
         "kijun_sen": 0.68792,
         "cloud_top": 0.667585,
@@ -878,15 +886,15 @@
         "signals": [
           "三役好轉"
         ],
-        "trend": "強勢上升趨勢",
+        "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.70331,
+        "price": 0.69973,
         "tenkan_sen": 0.70328,
-        "kijun_sen": 0.699065,
-        "cloud_top": 0.685555,
-        "cloud_bottom": 0.678255,
-        "senkou_span_a": 0.685555,
-        "senkou_span_b": 0.678255
+        "kijun_sen": 0.699785,
+        "cloud_top": 0.6872775,
+        "cloud_bottom": 0.679755,
+        "senkou_span_a": 0.6872775,
+        "senkou_span_b": 0.679755
       },
       "combined_recommendation": "強力做多",
       "combined_explanation": "日線與4H共振多頭，高勝率機會"
@@ -894,7 +902,7 @@
     {
       "symbol": "USD/CHF",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:33.898366+08:00",
+      "timestamp": "2026-01-30T10:06:55.668823+08:00",
       "has_signal": false,
       "daily": null,
       "h4": null,
@@ -904,7 +912,7 @@
     {
       "symbol": "USD/CAD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:34.118889+08:00",
+      "timestamp": "2026-01-30T10:06:55.904301+08:00",
       "has_signal": false,
       "daily": null,
       "h4": null,
@@ -914,7 +922,7 @@
     {
       "symbol": "NZD/USD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:34.354109+08:00",
+      "timestamp": "2026-01-30T10:06:56.121302+08:00",
       "has_signal": false,
       "daily": null,
       "h4": null,
@@ -924,7 +932,7 @@
     {
       "symbol": "XAU/USD",
       "source": "Forex",
-      "timestamp": "2026-01-30T04:32:34.592298+08:00",
+      "timestamp": "2026-01-30T10:06:56.350406+08:00",
       "has_signal": false,
       "daily": null,
       "h4": null,
