@@ -95,6 +95,19 @@ def render_symbol_card(result):
         st.markdown(f"**🎯 綜合建議：{rec}**")
         st.markdown(f"💡 {exp}")
         
+        # ===== AI 建議區塊（新增）=====
+        if result.get('ai_advice'):
+            st.markdown("---")
+            ai_provider = result.get('ai_provider', 'AI')
+            ai_model = result.get('ai_model', '')
+            
+            # 顯示 AI 建議
+            st.markdown(f"##### 🤖 AI 分析建議")
+            st.markdown(f"<small style='color: #888;'>由 {ai_provider} ({ai_model}) 生成</small>", unsafe_allow_html=True)
+            
+            # 使用 info box 顯示 AI 建議
+            st.info(result['ai_advice'])
+        
         st.markdown("---")
         
         # Two columns for Daily and 4H
@@ -140,8 +153,7 @@ def main():
     data = load_data()
     
     if data is None:
-        st.warning("⚠️ 尚無分析資料，請等待下次排程執行。")
-        st.info("資料每 4 小時自動更新一次。")
+        st.warning("⚠️ 尚無分析資料，請等待下次排程執行或手動執行分析程式。")
         st.stop()
     
     # Show last update time
@@ -153,9 +165,6 @@ def main():
         time_str = generated_at
     
     st.markdown(f"🕐 最後更新：**{time_str}** (UTC+8)")
-    
-    # Auto refresh hint
-    st.caption("💡 資料每 4 小時自動更新，重新整理頁面即可看到最新資料")
     
     results = data.get('results', [])
     
@@ -177,6 +186,9 @@ def main():
     # Has signal filter
     signal_filter = st.sidebar.checkbox("只顯示有訊號的標的", value=True)
     
+    # AI advice filter (新增)
+    ai_filter = st.sidebar.checkbox("只顯示有 AI 建議的標的", value=False)
+    
     # Apply filters
     filtered = results.copy()
     
@@ -197,19 +209,24 @@ def main():
     if signal_filter:
         filtered = [r for r in filtered if r['has_signal']]
     
+    if ai_filter:
+        filtered = [r for r in filtered if r.get('ai_advice')]
+    
     # Summary stats
     st.markdown("---")
     
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
     
     total_signals = len([r for r in results if r['has_signal']])
     strong_bull = len([r for r in results if r['combined_recommendation'] == '強力做多'])
     strong_bear = len([r for r in results if r['combined_recommendation'] == '強力做空'])
+    ai_generated = len([r for r in results if r.get('ai_advice')])
     
     col1.metric("📊 分析標的數", len(results))
     col2.metric("🔔 有訊號標的", total_signals)
     col3.metric("🟢 強力做多", strong_bull)
     col4.metric("🔴 強力做空", strong_bear)
+    col5.metric("🤖 AI 建議數", ai_generated)
     
     st.markdown("---")
     
@@ -227,6 +244,7 @@ def main():
             daily_trend = r['daily']['trend'] if r['daily'] else '-'
             h4_trend = r['h4']['trend'] if r['h4'] else '-'
             price = r['daily']['price'] if r['daily'] else (r['h4']['price'] if r['h4'] else '-')
+            has_ai = '✅' if r.get('ai_advice') else '❌'
             
             table_data.append({
                 '標的': r['symbol'],
@@ -237,6 +255,7 @@ def main():
                 '日線趨勢': daily_trend,
                 '4H趨勢': h4_trend,
                 '價格': f"{price:.4f}" if isinstance(price, float) else price,
+                'AI': has_ai,
             })
         
         df = pd.DataFrame(table_data)
@@ -268,7 +287,7 @@ def main():
     st.markdown("---")
     st.markdown("""
     <div style="text-align: center; color: #666;">
-        ⚠️ <b>免責聲明</b>：本系統僅提供技術分析參考，不構成投資建議。交易有風險，請謹慎評估自身風險承受能力。
+        ⚠️ <b>免責聲明</b>：本系統僅提供技術分析參考，不構成投資建議。AI 建議由第三方模型生成，僅供參考。交易有風險，請謹慎評估自身風險承受能力。
     </div>
     """, unsafe_allow_html=True)
 
