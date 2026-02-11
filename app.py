@@ -17,11 +17,30 @@ DATA_FILE = 'data/analysis_results.json'
 taipei_tz = pytz.timezone('Asia/Taipei')
 
 
+def get_chart_url(symbol, source):
+    """Generate TradingView chart URL."""
+    if source == 'Forex':
+        # Remove / from EUR/USD -> EURUSD
+        tv_symbol = symbol.replace('/', '')
+        return f"https://www.tradingview.com/chart/?symbol=FX:{tv_symbol}"
+    else:
+        # BTC-USDT -> BTCUSDT
+        tv_symbol = symbol.replace('-', '')
+        return f"https://www.tradingview.com/chart/?symbol=OKX:{tv_symbol}"
+
+
 def load_data():
     """Load analysis results from JSON file."""
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
+
+        # Ensure chart_url exists for all results
+        if data and 'results' in data:
+            for r in data['results']:
+                if not r.get('chart_url'):
+                    r['chart_url'] = get_chart_url(r['symbol'], r['source'])
+
         return data
     except FileNotFoundError:
         return None
@@ -84,9 +103,13 @@ def render_symbol_card(result):
     source_badge = "💱 外匯" if source == 'Forex' else "🪙 加密貨幣"
     
     with st.container():
+        chart_url = result.get('chart_url', '#')
         st.markdown(f"""
         <div style="background-color: {header_color}; padding: 10px; border-radius: 10px 10px 0 0;">
-            <h3 style="margin: 0; color: white;">{get_recommendation_emoji(rec)} {symbol}</h3>
+            <h3 style="margin: 0; color: white;">
+                {get_recommendation_emoji(rec)} {symbol}
+                <a href="{chart_url}" target="_blank" style="color: white; text-decoration: none; font-size: 0.7em;" title="查看 K 線圖">🔗</a>
+            </h3>
             <small style="color: #ccc;">{source_badge}</small>
         </div>
         """, unsafe_allow_html=True)
@@ -108,6 +131,29 @@ def render_symbol_card(result):
             # 使用 info box 顯示 AI 建議
             st.info(result['ai_advice'])
         
+        # ===== Donchian 訊號註解（新增）=====
+        all_signals = []
+        if result.get('daily') and result['daily'].get('signals'):
+            all_signals.extend(result['daily']['signals'])
+        if result.get('h4') and result['h4'].get('signals'):
+            all_signals.extend(result['h4']['signals'])
+
+        if any("唐奇安" in s for s in all_signals):
+            st.markdown("---")
+            st.markdown("##### 📏 Donchian 訊號分析")
+
+            # 根據建議判斷突破方向
+            direction = "突破 (向上)" if "多" in rec else ("突破 (向下)" if "空" in rec else "突破")
+
+            if "多" in rec:
+                msg = f"💡 **Donchian 註解 ({direction})**：價格已突破過去 20 日最高點，顯示多頭強勢動能爆發。建議觀察日線雲層支撐，若價格維持在雲上，可考慮順勢看多。"
+            elif "空" in rec:
+                msg = f"💡 **Donchian 註解 ({direction})**：價格已跌破過去 20 日最低點，顯示空頭強勢動能爆發。建議觀察日線雲層阻力，若價格維持在雲下，可考慮順勢看空。"
+            else:
+                msg = f"💡 **Donchian 註解 ({direction})**：檢測到唐奇安通道突破。這代表價格已創下近期新高/新低，是強勢趨勢的開端。建議配合一目均衡表雲層位置，確認目前價格是否處於有利的趨勢方向。"
+
+            st.info(msg)
+
         st.markdown("---")
         
         # Two columns for Daily and 4H
@@ -172,6 +218,21 @@ def main():
         st.warning("沒有分析結果")
         st.stop()
     
+    # Donchian Rules (Sidebar)
+    st.sidebar.header("💡 Donchian 交易註解")
+    st.sidebar.markdown("""
+    **唐奇安通道 (Donchian Channel) 核心規則：**
+    1. **突破訊號**：
+       - 價格突破過去 20 日最高價 → **看多**
+       - 價格跌破過去 20 日最低價 → **看空**
+    2. **趨勢確認**：
+       - 通道向上移動且寬度增加，代表強勢上升趨勢。
+       - 通道向下移動且寬度增加，代表強勢下降趨勢。
+    3. **波動性參考**：
+       - 通道寬度越窄，代表波動度越低，通常是即將發生大爆發的前兆。
+    """)
+    st.sidebar.markdown("---")
+
     # Sidebar filters
     st.sidebar.header("🔍 篩選條件")
     
@@ -256,10 +317,18 @@ def main():
                 '4H趨勢': h4_trend,
                 '價格': f"{price:.4f}" if isinstance(price, float) else price,
                 'AI': has_ai,
+                'K線圖': r.get('chart_url', ''),
             })
         
         df = pd.DataFrame(table_data)
-        st.dataframe(df, use_container_width=True, hide_index=True)
+        st.dataframe(
+            df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "K線圖": st.column_config.LinkColumn("K線圖", display_text="🔗 查看")
+            }
+        )
         
         st.markdown("---")
         
