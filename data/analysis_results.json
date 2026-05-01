@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-02T01:08:47.834813+08:00",
+  "generated_at": "2026-05-02T05:05:27.646615+08:00",
   "results": [
     {
       "symbol": "BTC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:12.289116+08:00",
+      "timestamp": "2026-05-02T05:02:55.981763+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -12,7 +12,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 78192.5,
+        "price": 77962.7,
         "tenkan_sen": 77215.85,
         "kijun_sen": 73609.05,
         "cloud_top": 69256.0,
@@ -24,24 +24,24 @@
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 78192.4,
-        "tenkan_sen": 77392.54999999999,
+        "price": 77962.7,
+        "tenkan_sen": 77479.9,
         "kijun_sen": 76931.7,
-        "cloud_top": 78313.0,
+        "cloud_top": 78025.15,
         "cloud_bottom": 76602.95,
-        "senkou_span_a": 78313.0,
+        "senkou_span_a": 78025.15,
         "senkou_span_b": 76602.95
       },
       "combined_recommendation": "偏多操作",
       "combined_explanation": "日線多頭，等待4H確認進場點",
-      "ai_advice": "## 操作建議：\n\n根據一目均衡表數據，日線趨勢呈現偏多信號，建議做多。\n\n## 進場價位：\n進場價位參考：78000 - 78200\n\n## 停損位置：\n停損位置：77000\n\n## 目標價位：\n目標價位：80000 - 82000\n\n## 風險提醒：\n請注意市場波動風險，若價格跌破 77000，立即出場。\n\n綜合日線和 4 小時線數據，趨勢偏多，短線可逢低做多，但需嚴格設置停損。",
+      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，日線趨勢偏多且出現三役好轉訊號，建議偏多操作。\n\n## 進場價位\n進場價位參考：77900-78200\n\n## 停損位置\n停損位置：76900\n\n## 目標價位\n目標價位：80000\n\n## 風險提醒\n風險提醒：若價格跌破76900，則趨勢轉弱，應及時停損出場。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "ETH-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:12.816206+08:00",
+      "timestamp": "2026-05-02T05:02:56.566216+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -49,7 +49,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 2301.04,
+        "price": 2286.99,
         "tenkan_sen": 2312.375,
         "kijun_sen": 2263.0550000000003,
         "cloud_top": 2109.5825,
@@ -58,35 +58,33 @@
         "senkou_span_b": 2092.695
       },
       "h4": {
-        "signals": [
-          "黃金交叉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做多",
-        "price": 2301.04,
+        "recommendation": "觀望",
+        "price": 2286.98,
         "tenkan_sen": 2286.04,
         "kijun_sen": 2283.705,
-        "cloud_top": 2350.155,
-        "cloud_bottom": 2338.07,
-        "senkou_span_a": 2350.155,
+        "cloud_top": 2338.07,
+        "cloud_bottom": 2335.05,
+        "senkou_span_a": 2335.05,
         "senkou_span_b": 2338.07
       },
-      "combined_recommendation": "強力做多",
-      "combined_explanation": "日線與4H共振多頭，高勝率機會",
-      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，ETH-USDT 呈現強力做多信號，日線和 4 小時線皆顯示做多趨勢。\n\n## 進場價位\n建議在 2290-2305 區間進場做多。\n\n## 停損位置\n停損位置設在 2260 下方，若跌破此價位，則趨勢可能轉弱。\n\n## 目標價位\n初步目標價位為 2350-2380 區間，取決於市場走勢。\n\n## 風險提醒\n需留意市場波動風險，若價格跌破停損位置，應及時止損出場。同時，關注市場基本面和宏觀經濟數據對加密貨幣市場的影響。",
+      "combined_recommendation": "偏多操作",
+      "combined_explanation": "日線多頭，等待4H確認進場點",
+      "ai_advice": "根據一目均衡表數據，綜合判斷，建議偏多操作。\n\n1. **操作建議**：做多\n2. **進場價位**：2285-2290\n3. **停損位置**：2260\n4. **目標價位**：2350\n5. **風險提醒**：需關注市場趨勢變化，若價格跌破2260，則需重新評估。\n\n日線顯示三役好轉，且單週期建議做多，4小時線雖趨勢不明顯，但價格位於基準線之上，顯示短期有支撐。進場後需密切關注市場動態，隨時調整策略。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "BNB-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:13.344195+08:00",
+      "timestamp": "2026-05-02T05:02:57.125524+08:00",
       "has_signal": true,
       "daily": {
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 619.3,
+        "price": 617.4,
         "tenkan_sen": 625.5,
         "kijun_sen": 621.6,
         "cloud_top": 629.25,
@@ -98,26 +96,26 @@
         "signals": [
           "三役逆轉"
         ],
-        "trend": "趨勢不明確",
+        "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 619.3,
+        "price": 617.4,
         "tenkan_sen": 618.2,
         "kijun_sen": 619.8,
         "cloud_top": 634.55,
-        "cloud_bottom": 632.675,
-        "senkou_span_a": 632.675,
+        "cloud_bottom": 629.375,
+        "senkou_span_a": 629.375,
         "senkou_span_b": 634.55
       },
       "combined_recommendation": "短空試單",
       "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "根據提供的技術指標數據，建議如下：\n\n1. **操作建議**：短空試單\n2. **進場價位**：619.3000 - 621.6000\n3. **停損位置**：624.0000（突破基準線之上）\n4. **目標價位**：612.9000（雲層下緣）\n5. **風險提醒**：若價格突破雲層上緣（629.2500），應立即停損，以限制虧損。請密切關注市場動態，隨時調整策略。",
+      "ai_advice": "## 操作建議：\n\n根據一目均衡表分析，短線趨勢偏空，建議短空試單。\n\n## 進場價位：\n進場參考價位：$615.0000 ~ $616.0000\n\n## 停損位置：\n停損位置：$620.0000（突破基準線，止損出場）\n\n## 目標價位：\n目標價位：$610.0000 ~ $608.0000\n\n## 風險提醒：\n請注意市場波動風險，嚴格設置停損，控制倉位。加密貨幣市場波動性大，請謹慎操作。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "SOL-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:13.878813+08:00",
+      "timestamp": "2026-05-02T05:02:57.689005+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -125,7 +123,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 83.99,
+        "price": 83.56,
         "tenkan_sen": 84.755,
         "kijun_sen": 84.56,
         "cloud_top": 86.655,
@@ -134,29 +132,27 @@
         "senkou_span_b": 86.655
       },
       "h4": {
-        "signals": [
-          "黃金交叉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做多",
-        "price": 83.99,
+        "recommendation": "觀望",
+        "price": 83.56,
         "tenkan_sen": 83.78,
-        "kijun_sen": 83.62,
-        "cloud_top": 86.43249999999999,
-        "cloud_bottom": 86.12,
-        "senkou_span_a": 86.43249999999999,
+        "kijun_sen": 83.495,
+        "cloud_top": 86.12,
+        "cloud_bottom": 85.865,
+        "senkou_span_a": 85.865,
         "senkou_span_b": 86.12
       },
-      "combined_recommendation": "觀望等待",
-      "combined_explanation": "逆勢反彈風險高，不建議追多",
-      "ai_advice": "### 技術分析與交易建議\n\n根據提供的日線（1D）和4小時線（4H）一目均衡表數據，綜合分析如下：\n\n1. **操作建議**：觀望等待，偏向短線做多。\n2. **進場價位**：若價格穩定在 84.0000 之上，可考慮在 84.2000 附近進場做多。\n3. **停損位置**：82.5000（跌破日線雲層下緣）。\n4. **目標價位**：短期目標 86.0000，中期目標 86.6550。\n5. **風險提醒**：若跌破 82.5000，應及時止損，轉為看空。\n\n目前趨勢不明朗，短線可等待價格回穩後做多，但需嚴格控制風險。",
+      "combined_recommendation": "偏空操作",
+      "combined_explanation": "日線空頭，等待4H確認進場點",
+      "ai_advice": "根據一目均衡表數據，SOL-USDT 目前呈現偏空趨勢。\n\n1. **操作建議**：做空\n2. **進場價位**：83.5000 - 84.0000\n3. **停損位置**：85.0000（雲層上緣）\n4. **目標價位**：80.0000 - 81.0000\n5. **風險提醒**：若價格突破 85.0000，可能扭轉趨勢，需及時停損。\n\n日線跌破雲層，趨勢不明確但偏空，4小時線仍觀望。建議在進場價位區間做空，停損位設在雲層上緣，目標價位為 80.0000 - 81.0000。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "XRP-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:14.428789+08:00",
+      "timestamp": "2026-05-02T05:02:58.259209+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -164,7 +160,7 @@
         ],
         "trend": "盤整區間",
         "recommendation": "做空",
-        "price": 1.3901,
+        "price": 1.386,
         "tenkan_sen": 1.3984,
         "kijun_sen": 1.40235,
         "cloud_top": 1.4706000000000001,
@@ -173,29 +169,27 @@
         "senkou_span_b": 1.4706000000000001
       },
       "h4": {
-        "signals": [
-          "黃金交叉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做多",
-        "price": 1.3901,
+        "recommendation": "觀望",
+        "price": 1.386,
         "tenkan_sen": 1.3814,
-        "kijun_sen": 1.3804,
-        "cloud_top": 1.429725,
-        "cloud_bottom": 1.4263499999999998,
-        "senkou_span_a": 1.429725,
-        "senkou_span_b": 1.4263499999999998
+        "kijun_sen": 1.37605,
+        "cloud_top": 1.42325,
+        "cloud_bottom": 1.416325,
+        "senkou_span_a": 1.416325,
+        "senkou_span_b": 1.42325
       },
-      "combined_recommendation": "觀望等待",
-      "combined_explanation": "逆勢反彈風險高，不建議追多",
-      "ai_advice": "## 操作建議\n根據日線和4小時線數據，短期趨勢不明確，建議 **觀望等待**。\n\n## 進場價位\n若價格突破日線雲層上緣 1.4706，則可考慮做多，進場價位參考 1.4706。\n\n## 停損位置\n若價格跌破日線雲層下緣 1.3833，則停損。\n\n## 目標價位\n潛在獲利目標為 1.5000。\n\n## 風險提醒\n加密貨幣市場波動大，請嚴格控制倉位，設置停損單。",
+      "combined_recommendation": "偏空操作",
+      "combined_explanation": "日線空頭，等待4H確認進場點",
+      "ai_advice": "根據一目均衡表數據，XRP-USDT 目前呈現偏空趨勢。\n\n1. **操作建議**：做空\n2. **進場價位**：1.3860 - 1.3900\n3. **停損位置**：1.4023（基準線）\n4. **目標價位**：1.3833（雲層下緣）\n5. **風險提醒**：若價格突破 1.4023，停損出場。\n\n日線呈現死亡交叉，且價格低於雲層，短線趨勢偏空。4小時線趨勢不明確，但價格低於轉換線和基準線，建議謹慎做空。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "ADA-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:15.008187+08:00",
+      "timestamp": "2026-05-02T05:02:58.816741+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -204,7 +198,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.2491,
+        "price": 0.2487,
         "tenkan_sen": 0.24714999999999998,
         "kijun_sen": 0.25165000000000004,
         "cloud_top": 0.2734,
@@ -214,29 +208,28 @@
       },
       "h4": {
         "signals": [
-          "跌破雲層",
-          "雲層阻力回落"
+          "跌破雲層"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.2491,
+        "price": 0.2487,
         "tenkan_sen": 0.2481,
         "kijun_sen": 0.24609999999999999,
-        "cloud_top": 0.25077499999999997,
+        "cloud_top": 0.2495,
         "cloud_bottom": 0.2493,
-        "senkou_span_a": 0.25077499999999997,
+        "senkou_span_a": 0.2495,
         "senkou_span_b": 0.2493
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會",
-      "ai_advice": "### 操作建議\n\n根據一目均衡表數據，ADA-USDT 目前呈現強力做空信號，日線和 4 小時線皆顯示做空趨勢。\n\n1. **操作建議**：做空\n2. **進場價位**：0.2480 - 0.2490\n3. **停損位置**：0.2530（突破雲層上緣）\n4. **目標價位**：0.2350 - 0.2400\n5. **風險提醒**：若價格意外突破 0.2554，則做空趨勢可能失效，應及時止損。\n\n請嚴格按照紀律執行交易，控制倉位，嚴格設置停損。",
+      "ai_advice": "根據一目均衡表數據，ADA-USDT 呈現強力做空信號。\n\n### 操作建議\n- **操作方向**：做空\n- **進場價位**：0.2480 - 0.2490\n- **停損位置**：0.2520（突破雲層上緣）\n- **目標價位**：0.2400 - 0.2420\n\n### 風險提醒\n- 市場可能出現短期反彈，需嚴格設置停損。\n- 加密貨幣市場波動性高，請謹慎投資。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "DOGE-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:15.558820+08:00",
+      "timestamp": "2026-05-02T05:02:59.386643+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -244,7 +237,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.10884,
+        "price": 0.10867,
         "tenkan_sen": 0.10367499999999999,
         "kijun_sen": 0.10106,
         "cloud_top": 0.102065,
@@ -258,24 +251,24 @@
         ],
         "trend": "強勢上升趨勢",
         "recommendation": "做多",
-        "price": 0.10884,
+        "price": 0.10867,
         "tenkan_sen": 0.10797999999999999,
-        "kijun_sen": 0.1045,
-        "cloud_top": 0.0985725,
+        "kijun_sen": 0.104635,
+        "cloud_top": 0.0984025,
         "cloud_bottom": 0.09669,
-        "senkou_span_a": 0.0985725,
+        "senkou_span_a": 0.0984025,
         "senkou_span_b": 0.09669
       },
       "combined_recommendation": "強力做多",
       "combined_explanation": "日線與4H共振多頭，高勝率機會",
-      "ai_advice": "## 交易建議\n\n根據一目均衡表分析，DOGE-USDT 在日線和 4 小時線均顯示強烈的做多訊號。\n\n### 操作建議\n- **操作方向**：做多\n- **進場價位**：0.1080 - 0.1090\n- **停損位置**：0.1030（跌破 4 小時基準線）\n- **目標價位**：0.1200 - 0.1250（雲層上緣及歷史阻力區）\n\n### 風險提醒\n- 若價格跌破 0.1030，停損出場。\n- 加密貨幣市場波動性高，請嚴格控管倉位和風險。\n\n請謹慎交易，並根據個人風險承受能力調整倉位。",
+      "ai_advice": "### 操作建議\n\n根據一目均衡表數據，DOGE-USDT 在日線和 4 小時線均顯示強烈的做多信號。當前價格位於雲層上方，且轉換線和基準線均呈上升趨勢，趨勢強度顯示強勢上升趨勢。\n\n1. **操作建議**：做多\n2. **進場價位**：0.1080 - 0.1090\n3. **停損位置**：0.1040（基準線下方）\n4. **目標價位**：0.1200（前高阻力區）\n5. **風險提醒**：若價格跌破 0.1040，趨勢可能逆轉，應及時止損。\n\n請謹慎操作，嚴格設置停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "AVAX-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:16.111389+08:00",
+      "timestamp": "2026-05-02T05:03:00.005440+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -284,7 +277,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 9.146,
+        "price": 9.094,
         "tenkan_sen": 9.2395,
         "kijun_sen": 9.2375,
         "cloud_top": 9.362,
@@ -294,29 +287,28 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "轉換線阻力回落"
+          "三役逆轉"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 9.146,
+        "price": 9.092,
         "tenkan_sen": 9.1685,
         "kijun_sen": 9.18,
-        "cloud_top": 9.37425,
+        "cloud_top": 9.322,
         "cloud_bottom": 9.322,
-        "senkou_span_a": 9.37425,
+        "senkou_span_a": 9.322,
         "senkou_span_b": 9.322
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會",
-      "ai_advice": "## 交易建議\n\n根據一目均衡表分析，AVAX-USDT 目前呈現強力做空信號。\n\n### 操作建議\n- **操作方向**：做空\n- **進場價位**：9.1000 - 9.1500\n- **停損位置**：9.2500（突破雲層上緣）\n- **目標價位**：8.5000 - 8.8000\n\n### 風險提醒\n- 請注意市場波動性，加密貨幣價格波動較大，務必嚴格設置停損。\n- 市場可能出現意外反彈，進場前審慎評估自身風險承受能力。",
+      "ai_advice": "## 交易建議\n\n### 操作建議：做空\n\n### 進場價位：9.0500 - 9.1000\n\n### 停損位置：9.2500（雲層上緣）\n\n### 目標價位：8.5000 - 8.8000（前續支撐區）\n\n### 風險提醒：若價格突破 9.2500，趨勢可能反轉，應立即停損出場。\n\n根據日線和4小時線數據，AVAX-USDT顯示出強烈的做空訊號。價格跌破雲層，且轉換線和基準線位於價格下方，趨勢不明朗但偏空。短線三役逆轉訊號進一步確認做空趨勢。建議在9.0500 - 9.1000區間進場做空，停損位設在9.2500，目標價位看向8.5000 - 8.8000。需嚴格控制風險，若價格突破9.2500，應立即出場。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "DOT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:16.644983+08:00",
+      "timestamp": "2026-05-02T05:03:00.565225+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -324,7 +316,7 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.207,
+        "price": 1.204,
         "tenkan_sen": 1.2275,
         "kijun_sen": 1.2530000000000001,
         "cloud_top": 1.478,
@@ -334,35 +326,34 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "轉換線阻力回落"
+          "三役逆轉"
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.207,
+        "price": 1.204,
         "tenkan_sen": 1.2109999999999999,
         "kijun_sen": 1.2189999999999999,
-        "cloud_top": 1.2694999999999999,
-        "cloud_bottom": 1.24775,
-        "senkou_span_a": 1.24775,
-        "senkou_span_b": 1.2694999999999999
+        "cloud_top": 1.2685,
+        "cloud_bottom": 1.2429999999999999,
+        "senkou_span_a": 1.2429999999999999,
+        "senkou_span_b": 1.2685
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會",
-      "ai_advice": "## 交易建議\n\n### 操作建議\n- **做空**\n\n### 進場價位\n- 建議在 **1.2000 - 1.2100** 進場做空\n\n### 停損位置\n- 設定停損於 **1.2300** 之上，突破此水準則考慮止損\n\n### 目標價位\n- 初步目標可看向 **1.1500**，若趨勢延續，則進一步看向 **1.1000**\n\n### 風險提醒\n- 請注意市場波動性，加密貨幣價格波動較大，務必嚴格控制倉位與止損。",
+      "ai_advice": "## 交易建議\n\n根據一目均衡表數據，DOT-USDT 呈現強勢下降趨勢，且日線和 4 小時線皆出現三役逆轉訊號，綜合建議強力做空。\n\n### 操作建議\n- **操作方向**：做空\n- **進場價位**：1.2000 - 1.2050\n- **停損位置**：1.2275（轉換線）\n- **目標價位**：1.1700 - 1.1800（潛在支撐區）\n\n### 風險提醒\n- 請嚴格設置停損，控制風險。\n- 市場可能出現意外波動，務必關注行情變化。\n\n建議在進場前審慎評估市場狀況，並嚴格執行交易紀律。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "POL-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:17.207374+08:00",
+      "timestamp": "2026-05-02T05:03:01.133907+08:00",
       "has_signal": true,
       "daily": {
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 0.09379,
+        "price": 0.09461,
         "tenkan_sen": 0.093305,
         "kijun_sen": 0.089,
         "cloud_top": 0.10330500000000001,
@@ -376,24 +367,24 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.09379,
+        "price": 0.09461,
         "tenkan_sen": 0.095105,
         "kijun_sen": 0.093305,
-        "cloud_top": 0.0927525,
+        "cloud_top": 0.09264,
         "cloud_bottom": 0.09209,
-        "senkou_span_a": 0.0927525,
+        "senkou_span_a": 0.09264,
         "senkou_span_b": 0.09209
       },
       "combined_recommendation": "短多試單",
       "combined_explanation": "無大趨勢，僅短線多頭機會",
-      "ai_advice": "根據提供的技術指標數據，建議如下：\n\n1. **操作建議**：短多試單\n2. **進場價位**：0.0935 - 0.0940\n3. **停損位置**：0.0925（跌破4小時基準線）\n4. **目標價位**：0.0955 - 0.0965（接近4小時雲層上限）\n5. **風險提醒**：若跌破0.0925，應及時停損出場；需留意市場整體情緒變化。\n\n請謹慎操作，嚴格設置停損。",
+      "ai_advice": "### 操作建議：\n\n根據一目均衡表數據，短線趨勢顯示多頭訊號，建議短多試單。\n\n1. **操作方向**：做多\n2. **進場價位**：0.0940 - 0.0946\n3. **停損位置**：0.0925（4小時基準線下方）\n4. **目標價位**：0.0980 - 0.1000（雲層上緣）\n5. **風險提醒**：若價格跌破0.0925，應及時止損，市場趨勢可能轉弱。\n\n請謹慎操作，嚴格設置停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "LINK-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:17.779761+08:00",
+      "timestamp": "2026-05-02T05:03:01.704558+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -402,7 +393,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 9.192,
+        "price": 9.104,
         "tenkan_sen": 9.250499999999999,
         "kijun_sen": 9.220500000000001,
         "cloud_top": 9.068,
@@ -411,35 +402,33 @@
         "senkou_span_b": 9.068
       },
       "h4": {
-        "signals": [
-          "黃金交叉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做多",
-        "price": 9.192,
-        "tenkan_sen": 9.182500000000001,
+        "recommendation": "觀望",
+        "price": 9.104,
+        "tenkan_sen": 9.178,
         "kijun_sen": 9.1625,
-        "cloud_top": 9.40875,
+        "cloud_top": 9.372499999999999,
         "cloud_bottom": 9.296,
-        "senkou_span_a": 9.40875,
+        "senkou_span_a": 9.372499999999999,
         "senkou_span_b": 9.296
       },
-      "combined_recommendation": "短多試單",
-      "combined_explanation": "無大趨勢，僅短線多頭機會",
-      "ai_advice": "## LINK-USDT 短多試單策略\n\n### 操作建議\n- **操作方向**：短多\n\n### 進場與停損\n- **進場價位**：9.1800 - 9.2000\n- **停損位置**：9.1500（4小時基準線下方）\n\n### 目標價位\n- **短期目標**：9.3000（4小時雲層上緣）\n\n### 風險提醒\n- 若價格跌破 9.1500，趨勢轉弱，應考慮止損出場。\n- 加密貨幣市場波動性高，請嚴格控管倉位與風險。",
+      "combined_recommendation": "觀望",
+      "combined_explanation": "無明確方向，建議等待",
+      "ai_advice": "## LINK-USDT 交易建議\n\n### 操作建議：觀望\n\n#### 進場價位：\n- 無明確進場信號，建議等待趨勢明朗。\n\n#### 停損位置：\n- 日線基準線 9.2205 下方，考慮做多停損。\n- 日線雲層下緣 8.9180 下方，進一步確認支撐。\n\n#### 目標價位：\n- 短期目標：9.2505（轉換線）至 9.0680（雲層下緣）。\n\n#### 風險提醒：\n- 加密貨幣市場波動大，請嚴格控管倉位與風險。\n\n### 總結：\n目前趨勢不明朗，建議等待明確的買入或賣出信號後進場。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "UNI-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:18.315834+08:00",
-      "has_signal": true,
+      "timestamp": "2026-05-02T05:03:02.369074+08:00",
+      "has_signal": false,
       "daily": {
         "signals": [],
-        "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 3.231,
+        "trend": "強勢下降趨勢",
+        "recommendation": "偏空",
+        "price": 3.202,
         "tenkan_sen": 3.231,
         "kijun_sen": 3.2935,
         "cloud_top": 3.675,
@@ -448,35 +437,33 @@
         "senkou_span_b": 3.675
       },
       "h4": {
-        "signals": [
-          "黃金交叉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做多",
-        "price": 3.231,
+        "recommendation": "觀望",
+        "price": 3.202,
         "tenkan_sen": 3.224,
         "kijun_sen": 3.2155,
-        "cloud_top": 3.3129999999999997,
-        "cloud_bottom": 3.2867499999999996,
-        "senkou_span_a": 3.2867499999999996,
-        "senkou_span_b": 3.3129999999999997
+        "cloud_top": 3.3075,
+        "cloud_bottom": 3.268,
+        "senkou_span_a": 3.268,
+        "senkou_span_b": 3.3075
       },
-      "combined_recommendation": "短多試單",
-      "combined_explanation": "無大趨勢，僅短線多頭機會",
-      "ai_advice": "### 操作建議\n\n根據一目均衡表數據，UNI-USDT 短期趨勢呈現多頭訊號，建議短多試單。\n\n1. **操作方向**：做多\n2. **進場價位**：3.2200 - 3.2300\n3. **停損位置**：3.2150（4小時基準線下方）\n4. **目標價位**：3.2800 - 3.3000（雲層範圍上沿）\n5. **風險提醒**：若價格跌破 3.2150，停損出場；趨勢仍不明確，需嚴格控管風險。\n\n請謹慎操作，嚴格設置停損。",
-      "ai_provider": "groq",
-      "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
+      "combined_recommendation": "偏空操作",
+      "combined_explanation": "趨勢偏空",
+      "ai_advice": null,
+      "ai_provider": null,
+      "ai_model": null
     },
     {
       "symbol": "ATOM-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:18.864156+08:00",
+      "timestamp": "2026-05-02T05:03:02.923714+08:00",
       "has_signal": true,
       "daily": {
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 1.902,
+        "price": 1.893,
         "tenkan_sen": 1.956,
         "kijun_sen": 1.8645,
         "cloud_top": 2.058,
@@ -486,29 +473,28 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "跌破雲層"
+          "三役逆轉"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 1.902,
+        "price": 1.893,
         "tenkan_sen": 1.8995000000000002,
-        "kijun_sen": 1.9355000000000002,
-        "cloud_top": 1.9685,
+        "kijun_sen": 1.9315000000000002,
+        "cloud_top": 1.97025,
         "cloud_bottom": 1.905,
-        "senkou_span_a": 1.9685,
+        "senkou_span_a": 1.97025,
         "senkou_span_b": 1.905
       },
       "combined_recommendation": "短空試單",
       "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "根據一目均衡表數據，ATOM-USDT 短期趨勢呈現空頭訊號。\n\n1. **操作建議**：短空\n2. **進場價位**：1.9000 - 1.9050\n3. **停損位置**：1.9200 (基準線之上)\n4. **目標價位**：1.8500 - 1.8600 (雲層下緣)\n5. **風險提醒**：若價格突破 1.9200，短空趨勢可能逆轉，應及時停損。\n\n請謹慎交易，嚴格設置停損。",
+      "ai_advice": "### 操作建議\n\n根據一目均衡表數據，4小時線（4H）顯示趨勢不明確，但出現三役逆轉訊號，建議短空試單。\n\n1. **操作方向**：做空\n2. **進場價位**：1.8920 - 1.8980\n3. **停損位置**：1.9200（突破基準線，趨勢轉強）\n4. **目標價位**：1.8500（接近雲層下緣）\n5. **風險提醒**：若價格突破2.0580（日線雲層上緣），則趨勢轉強，應立即停損。\n\n請謹慎操作，嚴格設置停損，控制風險。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "LTC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:19.385989+08:00",
+      "timestamp": "2026-05-02T05:03:03.454607+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -516,7 +502,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 55.63,
+        "price": 55.64,
         "tenkan_sen": 56.019999999999996,
         "kijun_sen": 55.19,
         "cloud_top": 54.730000000000004,
@@ -529,29 +515,32 @@
         "trend": "盤整區間",
         "recommendation": "觀望",
         "price": 55.64,
-        "tenkan_sen": 55.435,
+        "tenkan_sen": 55.45,
         "kijun_sen": 56.019999999999996,
-        "cloud_top": 55.94,
+        "cloud_top": 55.870000000000005,
         "cloud_bottom": 55.355000000000004,
-        "senkou_span_a": 55.94,
+        "senkou_span_a": 55.870000000000005,
         "senkou_span_b": 55.355000000000004
       },
       "combined_recommendation": "偏多操作",
       "combined_explanation": "日線多頭，等待4H確認進場點",
-      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，日線（1D）呈現偏多趨勢，顯示出「三役好轉」的積極訊號，而4小時線（4H）則建議觀望。綜合判斷，建議偏多操作。\n\n## 進場價位\n進場價位參考：$55.500 - $55.600\n\n## 停損位置\n停損位置：$54.500\n\n## 目標價位\n目標價位：$57.000 - $58.000\n\n## 風險提醒\n請注意市場波動風險，若價格跌破$54.500，應立即停損出場。",
+      "ai_advice": "根據一目均衡表數據，綜合判斷為偏多操作。以下是具體的交易建議：\n\n1. **操作建議**：做多\n2. **進場價位**：55.5000 - 55.6000\n3. **停損位置**：54.5000（雲層下緣）\n4. **目標價位**：56.5000 - 57.0000\n5. **風險提醒**：若價格跌破 54.5000，應及時止損。\n\n日線顯示三役好轉，趨勢有轉強跡象，4小時線雖在盤整，但整體偏多。請謹慎進場，嚴格設置停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "ETC-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:19.995790+08:00",
+      "timestamp": "2026-05-02T05:03:04.000133+08:00",
       "has_signal": true,
       "daily": {
-        "signals": [],
-        "trend": "盤整區間",
-        "recommendation": "觀望",
-        "price": 8.459,
+        "signals": [
+          "跌破雲層",
+          "三役逆轉"
+        ],
+        "trend": "趨勢不明確",
+        "recommendation": "做空",
+        "price": 8.42,
         "tenkan_sen": 8.381499999999999,
         "kijun_sen": 8.527999999999999,
         "cloud_top": 8.770999999999999,
@@ -560,35 +549,35 @@
         "senkou_span_b": 8.770999999999999
       },
       "h4": {
-        "signals": [
-          "跌破雲層"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做空",
-        "price": 8.459,
+        "recommendation": "觀望",
+        "price": 8.42,
         "tenkan_sen": 8.4175,
         "kijun_sen": 8.3705,
-        "cloud_top": 8.481,
-        "cloud_bottom": 8.470500000000001,
-        "senkou_span_a": 8.481,
+        "cloud_top": 8.470500000000001,
+        "cloud_bottom": 8.4405,
+        "senkou_span_a": 8.4405,
         "senkou_span_b": 8.470500000000001
       },
-      "combined_recommendation": "短空試單",
-      "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "## 操作建議：\n\n根據一目均衡表數據， ETC-USDT 短期走勢偏空。4 小時線跌破雲層，顯示短期有下跌趨勢。\n\n1. **操作建議**：短空\n2. **進場價位**：8.4500 - 8.4600\n3. **停損位置**：8.5000（基準線之上）\n4. **目標價位**：8.3000（前低或雲層下緣）\n5. **風險提醒**：若價格反彈至 8.5000 之上，應立即停損出場。\n\n請謹慎交易，嚴格控管風險。",
+      "combined_recommendation": "偏空操作",
+      "combined_explanation": "日線空頭，等待4H確認進場點",
+      "ai_advice": "根據一目均衡表數據，ETC-USDT 目前呈現偏空趨勢。日線級別跌破雲層，且出現三役逆轉訊號，建議做空。\n\n1. **操作建議**：做空\n2. **進場價位**：8.4200 - 8.4400\n3. **停損位置**：8.5280（基準線）\n4. **目標價位**：8.2000（前低或雲層下緣）\n5. **風險提醒**：若價格突破 8.5280，則趨勢轉為多頭，需及時止損。\n\n請注意市場波動，嚴格執行停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "XLM-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:20.637995+08:00",
+      "timestamp": "2026-05-02T05:03:04.559187+08:00",
       "has_signal": true,
       "daily": {
-        "signals": [],
+        "signals": [
+          "遲行線逆轉"
+        ],
         "trend": "趨勢不明確",
-        "recommendation": "觀望",
-        "price": 0.16114,
+        "recommendation": "做空",
+        "price": 0.16044,
         "tenkan_sen": 0.16856500000000002,
         "kijun_sen": 0.16730499999999998,
         "cloud_top": 0.1673675,
@@ -600,26 +589,26 @@
         "signals": [
           "三役逆轉"
         ],
-        "trend": "趨勢不明確",
+        "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 0.16114,
+        "price": 0.16044,
         "tenkan_sen": 0.16045,
-        "kijun_sen": 0.163375,
-        "cloud_top": 0.175415,
-        "cloud_bottom": 0.1715775,
-        "senkou_span_a": 0.1715775,
-        "senkou_span_b": 0.175415
+        "kijun_sen": 0.16242499999999999,
+        "cloud_top": 0.17474,
+        "cloud_bottom": 0.1706475,
+        "senkou_span_a": 0.1706475,
+        "senkou_span_b": 0.17474
       },
-      "combined_recommendation": "短空試單",
-      "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "根據一目均衡表數據，短周期（4H）顯示趨勢不明確，但出現三役逆轉訊號，建議短空試單。\n\n1. **操作建議**：短空\n2. **進場價位**：0.1605 - 0.1611\n3. **停損位置**：0.1634（基準線）\n4. **目標價位**：0.1550 - 0.1570（前續支撐區）\n5. **風險提醒**：若價格突破 0.1634，停損出場。\n\n請謹慎交易，注意風險控制。",
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會",
+      "ai_advice": "## 交易建議\n\n### 操作建議\n- **做空**\n\n### 進場價位\n- 建議在 **0.1600 - 0.1610** 區間進場做空\n\n### 停損位置\n- 設定停損於 **0.1630** 之上，突破此水平可能表明趨勢反轉\n\n### 目標價位\n- 初步目標 **0.1550**，若趨勢延續，可進一步關注 **0.1500** 區域\n\n### 風險提醒\n- 請注意市場波動性，嚴格設置停損，理性交易",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "NEAR-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:21.198999+08:00",
+      "timestamp": "2026-05-02T05:03:05.177962+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -627,8 +616,8 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 1.288,
-        "tenkan_sen": 1.3599999999999999,
+        "price": 1.289,
+        "tenkan_sen": 1.3595,
         "kijun_sen": 1.332,
         "cloud_top": 1.268,
         "cloud_bottom": 1.232,
@@ -641,24 +630,24 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 1.288,
-        "tenkan_sen": 1.3085,
-        "kijun_sen": 1.333,
-        "cloud_top": 1.39575,
+        "price": 1.289,
+        "tenkan_sen": 1.3075,
+        "kijun_sen": 1.329,
+        "cloud_top": 1.3852499999999999,
         "cloud_bottom": 1.3780000000000001,
-        "senkou_span_a": 1.39575,
+        "senkou_span_a": 1.3852499999999999,
         "senkou_span_b": 1.3780000000000001
       },
       "combined_recommendation": "觀望等待",
       "combined_explanation": "短期回調中，等4H轉多再進場",
-      "ai_advice": "## 操作建議：觀望等待\n\n綜合日線（1D）和4小時線（4H）的數據，趨勢不明確且訊號相互矛盾。日線顯示做多信號（三役好轉），而4小時線則顯示做空信號（三役逆轉）。當前價格位於雲層下方，短線趨勢仍需觀察。\n\n## 進場價位：建議等待明確趨勢\n- 若價格突破1.3320（日線基準線），可考慮做多，進場價位參考1.3300。\n- 若價格跌破1.2320（日線雲層下限），可考慮做空，進場價位參考1.2300。\n\n## 停損位置：\n- 做多：1.2680（日線雲層下限）\n- 做空：1.3320（日線基準線）\n\n## 目標價位：\n- 做多：1.40\n- 做空：1.20\n\n## 風險提醒：\n加密貨幣市場波動性高，請嚴格設置停損，控制倉位。趨勢不明時，謹慎入場。",
+      "ai_advice": "## 交易建議\n\n根據一目均衡表數據，日線（1D）呈現做多訊號，而4小時線（4H）則顯示做空訊號，趨勢強度不明顯。綜合來看，市場處於觀望等待階段。\n\n### 操作建議\n- **方向**：觀望等待\n- **進場價位**：不建議立即進場，可等待趨勢明朗後再行操作\n\n### 風險管理\n- **停損位置**：若做多，停損於1.2320下方；若做空，停損於1.3780上方\n- **風險提醒**：加密貨幣市場波動性高，請嚴格控制倉位，設置停損單以限制風險。\n\n等待明確的趨勢信號後，再採取進一步的行動。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "APT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:21.742439+08:00",
+      "timestamp": "2026-05-02T05:03:05.748639+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -666,7 +655,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.9993,
+        "price": 0.9926,
         "tenkan_sen": 0.98765,
         "kijun_sen": 0.9283,
         "cloud_top": 0.9575499999999999,
@@ -680,30 +669,30 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.9993,
+        "price": 0.9926,
         "tenkan_sen": 1.01565,
-        "kijun_sen": 0.995,
-        "cloud_top": 0.969725,
+        "kijun_sen": 0.997,
+        "cloud_top": 0.967475,
         "cloud_bottom": 0.9574,
-        "senkou_span_a": 0.969725,
+        "senkou_span_a": 0.967475,
         "senkou_span_b": 0.9574
       },
       "combined_recommendation": "強力做多",
       "combined_explanation": "日線與4H共振多頭，高勝率機會",
-      "ai_advice": "### 操作建議\n\n根據一目均衡表數據，APT-USDT 在日線和 4 小時線上皆顯示強烈的做多訊號。當前價格位於雲層上方，且轉換線和基準線皆呈現上揚趨勢，三役好轉的買入訊號確認。\n\n#### 1. **操作方向**：做多\n\n#### 2. **進場價位**：0.9900 - 1.0000\n\n#### 3. **停損位置**：0.9280（基準線下方）\n\n#### 4. **目標價位**：1.0500（短期目標）\n\n#### 5. **風險提醒**：若價格跌破 0.9280，則趨勢可能轉弱，應及時止損。\n\n建議在 0.9900 - 1.0000 區間買入，嚴格設置停損在 0.9280，下方，目標價位可看向 1.0500。密切關注市場動態，隨時調整策略。",
+      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，APT-USDT 在日線和 4 小時線皆呈現強力做多信號。當前價格位於雲層上方，且轉換線和基準線皆呈現上揚趨勢。\n\n- **操作方向**：做多\n- **進場價位**：0.9900 - 1.0000\n- **停損位置**：0.9283（基準線）\n- **目標價位**：1.0500 - 1.1000\n- **風險提醒**：若價格跌破 0.9283，趨勢可能轉弱，應及時停損。\n\n請注意市場波動，嚴格執行停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "OP-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:22.349873+08:00",
+      "timestamp": "2026-05-02T05:03:06.371996+08:00",
       "has_signal": false,
       "daily": {
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 0.122,
+        "price": 0.1216,
         "tenkan_sen": 0.12440000000000001,
         "kijun_sen": 0.12145,
         "cloud_top": 0.14955,
@@ -715,12 +704,12 @@
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 0.1219,
-        "tenkan_sen": 0.12115000000000001,
+        "price": 0.1216,
+        "tenkan_sen": 0.12135000000000001,
         "kijun_sen": 0.12075,
         "cloud_top": 0.12545,
-        "cloud_bottom": 0.12532500000000002,
-        "senkou_span_a": 0.12532500000000002,
+        "cloud_bottom": 0.124725,
+        "senkou_span_a": 0.124725,
         "senkou_span_b": 0.12545
       },
       "combined_recommendation": "觀望",
@@ -732,7 +721,7 @@
     {
       "symbol": "ARB-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:22.900753+08:00",
+      "timestamp": "2026-05-02T05:03:06.937770+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -740,7 +729,7 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.12493,
+        "price": 0.12423,
         "tenkan_sen": 0.12681,
         "kijun_sen": 0.11478,
         "cloud_top": 0.104045,
@@ -749,38 +738,36 @@
         "senkou_span_b": 0.104045
       },
       "h4": {
-        "signals": [
-          "三役逆轉"
-        ],
+        "signals": [],
         "trend": "趨勢不明確",
-        "recommendation": "做空",
-        "price": 0.12493,
+        "recommendation": "觀望",
+        "price": 0.12423,
         "tenkan_sen": 0.126035,
         "kijun_sen": 0.12673,
-        "cloud_top": 0.1287575,
+        "cloud_top": 0.1281725,
         "cloud_bottom": 0.127575,
-        "senkou_span_a": 0.1287575,
+        "senkou_span_a": 0.1281725,
         "senkou_span_b": 0.127575
       },
-      "combined_recommendation": "觀望等待",
-      "combined_explanation": "短期回調中，等4H轉多再進場",
-      "ai_advice": "## 操作建議\n\n根據提供的日線和4小時線數據，趨勢方向存在分歧，日線顯示做多信號（轉換線上穿基準線，且價格位於雲層之上），而4小時線顯示做空信號（價格跌破轉換線和基準線，且雲層範圍在上）。綜合來看，市場趨勢不明確，建議 **觀望等待**，尋找更清晰的進場信號。\n\n## 進場價位\n- 若日線趨勢延續，可在 **0.1268（轉換線）之上** 確認做多，目標看向 **0.1350**。\n- 若4小時線趨勢延續，可在 **0.1276（雲層下緣）之下** 確認做空，目標看向 **0.1150**。\n\n## 停損位置\n- 做多： **0.1220（前低）**\n- 做空： **0.1300（前高）**\n\n## 風險提醒\n市場趨勢反覆，進場前需嚴格設置停損，控制倉位風險。同時，密切關注市場消息面和技術面變化，做好隨時調整策略的準備。",
+      "combined_recommendation": "偏多操作",
+      "combined_explanation": "日線多頭，等待4H確認進場點",
+      "ai_advice": "### 操作建議：\n\n根據一目均衡表數據，日線（1D）呈現偏多趨勢，顯示出三役好轉的買入訊號，而4小時線（4H）則呈現觀望態勢。綜合來看，短期內建議偏多操作，但需謹慎進場。\n\n### 進場價位：\n- 建議在 **0.1240 - 0.1250** 區間進場做多。\n\n### 停損位置：\n- 設定停損位在 **0.1148**（基準線），若價格跌破此支撐，則市場趨勢可能轉弱，應及時止損。\n\n### 目標價位：\n- 短期目標可設定在 **0.1300**，若突破雲層上緣（0.1282），則可進一步看向 **0.1350**。\n\n### 風險提醒：\n- 請注意市場波動風險，若價格跌破 **0.1148**，應及時止損出場。同時，需關注市場消息面對幣價的影響，做好風險管理。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "XAUT-USDT",
       "source": "Crypto",
-      "timestamp": "2026-05-02T01:06:23.449544+08:00",
+      "timestamp": "2026-05-02T05:03:07.558309+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
-          "遲行線逆轉",
-          "雲層阻力失守"
+          "三役逆轉",
+          "遲行線逆轉"
         ],
-        "trend": "盤整區間",
-        "recommendation": "觀望",
-        "price": 4626.1,
+        "trend": "趨勢不明確",
+        "recommendation": "做空",
+        "price": 4602.5,
         "tenkan_sen": 4619.05,
         "kijun_sen": 4690.25,
         "cloud_top": 4810.25,
@@ -792,44 +779,44 @@
         "signals": [
           "三役逆轉"
         ],
-        "trend": "趨勢不明確",
+        "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 4626.1,
+        "price": 4602.5,
         "tenkan_sen": 4603.65,
-        "kijun_sen": 4606.65,
+        "kijun_sen": 4603.9,
         "cloud_top": 4730.450000000001,
-        "cloud_bottom": 4689.95,
-        "senkou_span_a": 4689.95,
+        "cloud_bottom": 4687.174999999999,
+        "senkou_span_a": 4687.174999999999,
         "senkou_span_b": 4730.450000000001
       },
-      "combined_recommendation": "短空試單",
-      "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "根據一目均衡表數據，短周期（4H）呈現做空訊號，而日線則呈現盤整區間。綜合建議短空試單。\n\n1. **操作建議**：短空\n2. **進場價位**：4626.1000 - 4630.0000\n3. **停損位置**：4650.0000（基準線與雲層上緣）\n4. **目標價位**：4580.0000（前低或雲層下緣）\n5. **風險提醒**：若價格突破 4650.0000，可能轉為多頭趨勢，需及時停損。\n\n請謹慎操作，嚴格設置停損。",
+      "combined_recommendation": "強力做空",
+      "combined_explanation": "日線與4H共振空頭，高勝率機會",
+      "ai_advice": "## 交易建議\n\n根據一目均衡表數據，XAUT-USDT 短期趨勢呈現強勢下降趨勢，且多個週期發出做空訊號。建議 **做空**。\n\n- **進場價位**：4600-4620\n- **停損位置**：4650（突破雲層上緣）\n- **目標價位**：4500-4550\n- **風險提醒**：需留意市場可能出現的反彈，若價格突破 4690.2500（日線基準線），應及時停損。\n\n請謹慎交易，嚴格執行停損。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "EUR/USD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:06:24.595979+08:00",
+      "timestamp": "2026-05-02T05:03:08.899045+08:00",
       "has_signal": false,
       "daily": {
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 1.1737,
+        "price": 1.17208,
         "tenkan_sen": 1.017195,
         "kijun_sen": 1.0204149999999998,
         "cloud_top": 1.16242,
-        "cloud_bottom": 1.1515024999999999,
-        "senkou_span_a": 1.1515024999999999,
+        "cloud_bottom": 1.1514199999999999,
+        "senkou_span_a": 1.1514199999999999,
         "senkou_span_b": 1.16242
       },
       "h4": {
         "signals": [],
-        "trend": "趨勢不明確",
+        "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 1.1737,
+        "price": 1.17208,
         "tenkan_sen": 1.172755,
         "kijun_sen": 1.017195,
         "cloud_top": 1.17312,
@@ -846,18 +833,18 @@
     {
       "symbol": "GBP/USD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:06:25.748009+08:00",
+      "timestamp": "2026-05-02T05:03:10.185210+08:00",
       "has_signal": true,
       "daily": {
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 1.35976,
+        "price": 1.35758,
         "tenkan_sen": 1.053765,
         "kijun_sen": 1.053765,
         "cloud_top": 1.340515,
-        "cloud_bottom": 1.3278575,
-        "senkou_span_a": 1.3278575,
+        "cloud_bottom": 1.327515,
+        "senkou_span_a": 1.327515,
         "senkou_span_b": 1.340515
       },
       "h4": {
@@ -866,8 +853,8 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 1.35976,
-        "tenkan_sen": 1.356995,
+        "price": 1.35758,
+        "tenkan_sen": 1.358195,
         "kijun_sen": 1.053765,
         "cloud_top": 1.3523075000000002,
         "cloud_bottom": 1.3513700000000002,
@@ -876,20 +863,20 @@
       },
       "combined_recommendation": "短多試單",
       "combined_explanation": "無大趨勢，僅短線多頭機會",
-      "ai_advice": "## 操作建議\n根據4小時線數據，價格突破雲層上緣，且出現三役好轉訊號，短線趨勢轉為多頭，建議短多試單。\n\n## 進場價位\n參考進場價位：1.3600\n\n## 停損位置\n停損位置：1.3510（4小時雲層下緣）\n\n## 目標價位\n初步目標價位：1.3650（短期阻力區）\n\n## 風險提醒\n請注意，若價格跌破1.3510，短多趨勢可能逆轉，應及時停損出場。此外，市場波動性較高，請嚴格控制倉位，設定合理的風險報酬比。",
+      "ai_advice": "### 操作建議\n\n根據提供的技術指標數據，建議在4小時線（4H）上採取短多試單策略。\n\n1. **操作方向**：做多\n2. **進場價位**：1.3570 - 1.3585\n3. **停損位置**：1.3540\n4. **目標價位**：1.3620\n5. **風險提醒**：需密切關注市場趨勢變化，若價格跌破停損位，應及時止損出場。\n\n### 分析\n- 4小時線顯示價格位於雲層上方，且轉換線和基準線呈現多頭排列，趨勢有轉強跡象。\n- 日線趨勢仍不明確，建議謹慎短線操作。\n- 停損位置設在1.3540，為近期重要支撐位，若跌破此位，趨勢可能轉弱。\n\n請嚴格按照紀律執行，控制倉位，管理風險。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "USD/JPY",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:06:26.909728+08:00",
+      "timestamp": "2026-05-02T05:03:11.445065+08:00",
       "has_signal": true,
       "daily": {
         "signals": [],
         "trend": "盤整區間",
         "recommendation": "觀望",
-        "price": 156.95768,
+        "price": 157.06696,
         "tenkan_sen": 158.158345,
         "kijun_sen": 158.158345,
         "cloud_top": 159.23620499999998,
@@ -899,13 +886,12 @@
       },
       "h4": {
         "signals": [
-          "三役逆轉",
-          "死亡交叉"
+          "三役逆轉"
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 156.95768,
-        "tenkan_sen": 157.61067500000001,
+        "price": 157.06696,
+        "tenkan_sen": 156.603925,
         "kijun_sen": 158.158345,
         "cloud_top": 159.33506,
         "cloud_bottom": 158.87193,
@@ -914,14 +900,14 @@
       },
       "combined_recommendation": "短空試單",
       "combined_explanation": "無大趨勢，僅短線空頭機會",
-      "ai_advice": "### 交易建議\n\n#### 標的：USD/JPY (外匯)\n\n根據一目均衡表數據，短線趨勢呈現空頭訊號，建議短空試單。\n\n1. **操作建議**：短空（做空）\n2. **進場價位**：156.90 - 157.00\n3. **停損位置**：158.00（若突破此阻力，停損出場）\n4. **目標價位**：155.50 - 155.80（短線支撐區）\n5. **風險提醒**：若價格意外突破雲層上緣（159.00），需重新評估趨勢。\n\n請嚴格設置停損，控制風險。市場有變，隨時調整策略。",
+      "ai_advice": "根據一目均衡表數據，建議如下：\n\n1. **操作建議**：短空試單\n2. **進場價位**：157.00 ~ 157.50\n3. **停損位置**：158.50（突破基準線，趨勢反轉）\n4. **目標價位**：155.50（雲層下緣，支撐區）\n5. **風險提醒**：若價格突破159.00，趨勢可能反轉，應立即停損出場。\n\n請注意，市場風險永遠存在，應嚴格控制倉位和風險。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "AUD/USD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:06:28.039637+08:00",
+      "timestamp": "2026-05-02T05:03:12.701051+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -929,36 +915,36 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.72122,
+        "price": 0.72025,
         "tenkan_sen": 1.0577299999999998,
-        "kijun_sen": 1.04647,
+        "kijun_sen": 1.047575,
         "cloud_top": 0.701045,
-        "cloud_bottom": 0.6953675,
-        "senkou_span_a": 0.6953675,
+        "cloud_bottom": 0.6947350000000001,
+        "senkou_span_a": 0.6947350000000001,
         "senkou_span_b": 0.701045
       },
       "h4": {
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 0.72122,
-        "tenkan_sen": 0.7178150000000001,
+        "price": 0.72025,
+        "tenkan_sen": 0.718835,
         "kijun_sen": 1.0577299999999998,
-        "cloud_top": 0.715805,
-        "cloud_bottom": 0.715485,
-        "senkou_span_a": 0.715805,
-        "senkou_span_b": 0.715485
+        "cloud_top": 0.716005,
+        "cloud_bottom": 0.715685,
+        "senkou_span_a": 0.716005,
+        "senkou_span_b": 0.715685
       },
       "combined_recommendation": "偏多操作",
       "combined_explanation": "日線多頭，等待4H確認進場點",
-      "ai_advice": "## 一目均衡表分析與交易建議\n\n### 標的：AUD/USD (外匯)\n\n根據日線和4小時線數據，綜合判斷市場趨勢，提出以下交易建議：\n\n1. **操作建議**：做多\n2. **進場價位**：0.7200 - 0.7210\n3. **停損位置**：0.7150\n4. **目標價位**：0.7300\n5. **風險提醒**：需關注市場基本面數據和全球經濟情勢變化\n\n日線顯示三役好轉訊號，偏多趨勢明顯；4小時線雖趨勢不明，但價格位於雲層上，短線有支撐。進場後嚴格設置停損，控制風險。",
+      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，AUD/USD 目前呈現偏多趨勢，日線和 4 小時線數據顯示趨勢不明確，但日線偵測到三役好轉訊號，建議偏多操作。\n\n## 進場價位\n進場價位參考：0.7200 - 0.7220\n\n## 停損位置\n停損位置：0.7150（雲層下緣）\n\n## 目標價位\n目標價位：0.7300（短期阻力區）\n\n## 風險提醒\n風險提醒：若價格跌破 0.7150，趨勢可能轉弱，應及時停損出場。同時，需關注市場基本面和技術面變化，調整策略。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "USD/CHF",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:07:29.207090+08:00",
+      "timestamp": "2026-05-02T05:04:14.121218+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -966,12 +952,12 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.78067,
+        "price": 0.78191,
         "tenkan_sen": 0.785255,
-        "kijun_sen": 0.78973,
-        "cloud_top": 0.7942275,
+        "kijun_sen": 0.78935,
+        "cloud_top": 0.79503,
         "cloud_bottom": 0.78552,
-        "senkou_span_a": 0.7942275,
+        "senkou_span_a": 0.79503,
         "senkou_span_b": 0.78552
       },
       "h4": {
@@ -980,24 +966,24 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 0.78067,
-        "tenkan_sen": 0.78393,
+        "price": 0.78191,
+        "tenkan_sen": 0.78161,
         "kijun_sen": 0.785255,
-        "cloud_top": 0.785415,
+        "cloud_top": 0.7852725,
         "cloud_bottom": 0.78269,
-        "senkou_span_a": 0.785415,
+        "senkou_span_a": 0.7852725,
         "senkou_span_b": 0.78269
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會",
-      "ai_advice": "### **操作建議** \n\n根據日線和4小時線的一目均衡表數據，建議 **做空**。\n\n### **進場價位** \n進場價位參考：0.7800 - 0.7810。\n\n### **停損位置** \n停損位置：0.7850。\n\n### **目標價位** \n目標價位：0.7750。\n\n### **風險提醒** \n請注意市場波動風險，嚴格設置停損，並關注經濟數據發布對市場的影響。",
+      "ai_advice": "根據提供的技術指標數據，建議如下：\n\n1. **操作建議**：做空\n2. **進場價位**：0.7815 - 0.7820\n3. **停損位置**：0.7855（突破雲層上緣）\n4. **目標價位**：0.7750 - 0.7800\n5. **風險提醒**：需關注市場對瑞士央行政策的反應，以及全球經濟數據發布對市場的影響。\n\n當前價格位於雲層下緣，且轉換線和基準線呈現做空信號，趨勢強度不明確，但三役逆轉訊號支持做空方向。進場後，應嚴格設置停損，控制風險。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "USD/CAD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:07:30.341946+08:00",
+      "timestamp": "2026-05-02T05:04:15.416512+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -1005,12 +991,12 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做空",
-        "price": 1.35878,
+        "price": 1.35882,
         "tenkan_sen": 1.36322,
-        "kijun_sen": 1.374905,
-        "cloud_top": 1.384465,
+        "kijun_sen": 1.37402,
+        "cloud_top": 1.3850099999999999,
         "cloud_bottom": 1.37588,
-        "senkou_span_a": 1.384465,
+        "senkou_span_a": 1.3850099999999999,
         "senkou_span_b": 1.37588
       },
       "h4": {
@@ -1019,8 +1005,8 @@
         ],
         "trend": "強勢下降趨勢",
         "recommendation": "做空",
-        "price": 1.35878,
-        "tenkan_sen": 1.36131,
+        "price": 1.35882,
+        "tenkan_sen": 1.36105,
         "kijun_sen": 1.3631449999999998,
         "cloud_top": 1.3698350000000001,
         "cloud_bottom": 1.36496,
@@ -1029,14 +1015,14 @@
       },
       "combined_recommendation": "強力做空",
       "combined_explanation": "日線與4H共振空頭，高勝率機會",
-      "ai_advice": "根據一目均衡表數據，建議 **做空**。當前價格為 1.3588。\n\n*   **進場價位**：1.3580 ~ 1.3590\n*   **停損位置**：1.3632（轉換線）\n*   **目標價位**：1.3500\n\n風險提醒：若價格突破 1.3632，可能趨勢反轉，應及時停損。",
+      "ai_advice": "根據提供的技術指標數據，建議如下：\n\n1. **操作建議**：做空\n2. **進場價位**：1.3580 - 1.3600\n3. **停損位置**：1.3650（基準線之上）\n4. **目標價位**：1.3480（雲層下緣）\n5. **風險提醒**：若價格突破 1.3650，可能趨勢反轉，應及時停損。\n\n當前日線和4小時線均顯示強力做空訊號，且趨勢強度表明下降趨勢明顯，應謹慎進場做空。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "NZD/USD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:07:31.483835+08:00",
+      "timestamp": "2026-05-02T05:04:16.760400+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
@@ -1044,66 +1030,66 @@
         ],
         "trend": "趨勢不明確",
         "recommendation": "做多",
-        "price": 0.59093,
+        "price": 0.58974,
         "tenkan_sen": 1.1489850000000001,
-        "kijun_sen": 1.14225,
+        "kijun_sen": 1.142685,
         "cloud_top": 0.587155,
-        "cloud_bottom": 0.577365,
-        "senkou_span_a": 0.577365,
+        "cloud_bottom": 0.5765025,
+        "senkou_span_a": 0.5765025,
         "senkou_span_b": 0.587155
       },
       "h4": {
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 0.59093,
-        "tenkan_sen": 0.58809,
+        "price": 0.58978,
+        "tenkan_sen": 0.58948,
         "kijun_sen": 1.1489850000000001,
-        "cloud_top": 0.588535,
-        "cloud_bottom": 0.588175,
-        "senkou_span_a": 0.588535,
-        "senkou_span_b": 0.588175
+        "cloud_top": 0.5886199999999999,
+        "cloud_bottom": 0.58821,
+        "senkou_span_a": 0.5886199999999999,
+        "senkou_span_b": 0.58821
       },
       "combined_recommendation": "偏多操作",
       "combined_explanation": "日線多頭，等待4H確認進場點",
-      "ai_advice": "根據提供的日線和4小時線一目均衡表數據，綜合建議偏多操作。以下是具體的交易建議：\n\n1. **操作建議**：做多\n2. **進場價位**：0.5900 - 0.5910\n3. **停損位置**：0.5870（雲層下緣）\n4. **目標價位**：0.6000（短期阻力位）\n5. **風險提醒**：若價格跌破0.5850，則趨勢轉弱，需重新評估。\n\n請注意，市場風險始終存在，應謹慎操作。",
+      "ai_advice": "## 操作建議\n\n根據一目均衡表數據，NZD/USD 目前呈現偏多趨勢，建議 **做多**。\n\n## 進場價位\n進場價位參考：0.5895 - 0.5900。\n\n## 停損位置\n停損位置：0.5880，若價格跌破此水平，趨勢可能轉弱，應及時止損。\n\n## 目標價位\n目標價位：0.5920 - 0.5940，雲層上緣為初步目標。\n\n## 風險提醒\n請注意市場波動風險，若價格意外跌破 0.5880，應及時調整策略。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     },
     {
       "symbol": "XAU/USD",
       "source": "Forex",
-      "timestamp": "2026-05-02T01:07:32.625019+08:00",
+      "timestamp": "2026-05-02T05:04:18.053814+08:00",
       "has_signal": true,
       "daily": {
         "signals": [
-          "雲層阻力失守"
+          "三役逆轉"
         ],
-        "trend": "盤整區間",
-        "recommendation": "做多",
-        "price": 4639.46844,
-        "tenkan_sen": 2376.389170205,
+        "trend": "趨勢不明確",
+        "recommendation": "做空",
+        "price": 4613.12108,
+        "tenkan_sen": 2371.329985205,
         "kijun_sen": 2443.963040205,
         "cloud_top": 4761.2899099999995,
-        "cloud_bottom": 4636.735895,
-        "senkou_span_a": 4636.735895,
+        "cloud_bottom": 4628.7128775,
+        "senkou_span_a": 4628.7128775,
         "senkou_span_b": 4761.2899099999995
       },
       "h4": {
         "signals": [],
         "trend": "趨勢不明確",
         "recommendation": "觀望",
-        "price": 4639.46844,
+        "price": 4613.12108,
         "tenkan_sen": 4610.57652,
-        "kijun_sen": 2351.046550205,
+        "kijun_sen": 2350.534180205,
         "cloud_top": 4748.13077,
-        "cloud_bottom": 4701.4746475,
-        "senkou_span_a": 4701.4746475,
+        "cloud_bottom": 4699.8936825,
+        "senkou_span_a": 4699.8936825,
         "senkou_span_b": 4748.13077
       },
-      "combined_recommendation": "偏多操作",
-      "combined_explanation": "日線多頭，等待4H確認進場點",
-      "ai_advice": "根據一目均衡表數據，建議如下：\n\n1. **操作建議**：做多\n2. **進場價位**：4636.7359（雲層下緣）或現價 4639.4684\n3. **停損位置**：4590（短期支撐區）\n4. **目標價位**：4761.2899（雲層上緣）\n5. **風險提醒**：若跌破 4590，趨勢可能轉弱，需及時停損。\n\n日線顯示雲層阻力失守，且趨勢強度處於盤整區間，偏多操作。4小時線趨勢不明確，需謹慎進場。",
+      "combined_recommendation": "偏空操作",
+      "combined_explanation": "日線空頭，等待4H確認進場點",
+      "ai_advice": "根據一目均衡表數據，綜合日線和4小時線的分析，給出以下交易建議：\n\n1. **操作建議**：做空\n2. **進場價位**：4613.1211 或其下方（若突破 4600 則加碼）\n3. **停損位置**：4650（突破雲層上限 4628.7129 後上調至 4670）\n4. **目標價位**：4500\n5. **風險提醒**：若價格突破 4628.7129，則趨勢反轉，需及時止損。\n\n請嚴格按照紀律執行交易計劃，並動態調整止損和獲利目標。",
       "ai_provider": "groq",
       "ai_model": "meta-llama/llama-4-scout-17b-16e-instruct"
     }
