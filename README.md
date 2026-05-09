@@ -59,6 +59,18 @@ streamlit run app.py
 
 ## 更新紀錄
 
+### v3.0 — 2026-05-09 · 響應式重構 & 跨瀏覽器相容
+
+- **全面響應式**：支援桌面（5 欄）、平板（3 欄）、手機（2 欄）Metrics 自動切換
+- **手機卡片優化**：日線/4H 區域 ≤480px 自動堆疊為單欄，數據項目全寬顯示
+- **iOS Safari 修正**：`dvh` 單位、`safe-area-inset` 安全區、`-webkit-overflow-scrolling: touch`
+- **Firefox 相容**：`background-clip: text` 搭配 `color` fallback
+- **CSS Custom Properties**：統一色彩系統（`--tc-accent`、`--tc-glass`等），便於維護
+- **交易所 Badge**：卡片標頭顯示 OKX / Bybit 交易所標識
+- **觸控優化**：Modal 關閉鈕放大至 40px、sig-pill 增加 padding
+- **Hero 省電**：手機禁用旋轉光環動畫、縮減 padding 和字體
+- **Footer 版本號**：顯示 `TitanCore Dashboard v3.0`
+
 ### v2.1 — 2026-05-09 · 多交易所 TradingView 連結修正
 
 - **修正 VVV (Venice Token) TradingView 連結**：`get_chart_url()` 新增 `exchange` 參數，根據標的所屬交易所自動切換 TradingView 前綴
