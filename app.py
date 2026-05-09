@@ -461,7 +461,7 @@ def load_data():
         if data and 'results' in data:
             for r in data['results']:
                 if not r.get('chart_url'):
-                    r['chart_url'] = get_chart_url(r['symbol'], r['source'])
+                    r['chart_url'] = get_chart_url(r['symbol'], r['source'], r.get('exchange'))
         return data
     except FileNotFoundError:
         return None
@@ -470,9 +470,12 @@ def load_data():
         return None
 
 
-def get_chart_url(symbol, source):
+def get_chart_url(symbol, source, exchange=None):
     if source == 'Forex':
         return f"https://www.tradingview.com/chart/?symbol=FX_IDC:{symbol.replace('/','')}"
+    # 根據交易所決定 TradingView 前綴
+    if exchange == 'Bybit':
+        return f"https://www.tradingview.com/chart/?symbol=BYBIT:{symbol.replace('-','')}"
     return f"https://www.tradingview.com/chart/?symbol=OKX:{symbol.replace('-','')}"
 
 
