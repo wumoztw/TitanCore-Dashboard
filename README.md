@@ -8,12 +8,12 @@
 
 ## 功能
 
-- **多市場支援**：加密貨幣（OKX）與外匯（Forex）同步分析
+- **多市場支援**：加密貨幣（OKX + Bybit）與外匯（Forex）同步分析
 - **多週期共振**：日線（1D）＋ 4小時線（4H）雙週期綜合判斷
 - **AI 分析建議**：由 Groq / LLaMA 4 生成進場、停損、目標價建議
 - **篩選功能**：按來源、建議方向、有無訊號、有無 AI 建議篩選
 - **自動更新**：每 4 小時由 TitanCore 後端自動執行分析並更新資料
-- **TradingView 連結**：每個標的直接連結至對應 K 線圖
+- **TradingView 連結**：每個標的直接連結至對應 K 線圖（依交易所自動切換 OKX / Bybit / FX_IDC）
 
 ---
 
@@ -58,6 +58,14 @@ streamlit run app.py
 ---
 
 ## 更新紀錄
+
+### v2.1 — 2026-05-09 · 多交易所 TradingView 連結修正
+
+- **修正 VVV (Venice Token) TradingView 連結**：`get_chart_url()` 新增 `exchange` 參數，根據標的所屬交易所自動切換 TradingView 前綴
+  - Bybit 標的 → `BYBIT:VVVUSDT`（修正前誤用 `OKX:VVVUSDT` 導致連結失效）
+  - OKX 標的 → `OKX:BTCUSDT`（不變）
+  - 外匯標的 → `FX_IDC:EURUSD`（不變）
+- **向下相容**：舊版 JSON 資料（無 `exchange` 欄位）預設走 OKX 路徑
 
 ### v2.0 — 2026-04-15 · UI 全面美化
 
