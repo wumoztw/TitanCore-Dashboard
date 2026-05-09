@@ -24,11 +24,27 @@ taipei_tz = pytz.timezone('Asia/Taipei')
 GLOBAL_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
 
+:root {
+    --tc-bg-dark: #060b18;
+    --tc-bg-mid: #0d1b2e;
+    --tc-accent: #60b4ff;
+    --tc-accent2: #40e8c0;
+    --tc-accent3: #a060ff;
+    --tc-text: #e8f0ff;
+    --tc-text-dim: rgba(150,190,255,0.6);
+    --tc-border: rgba(80,140,255,0.18);
+    --tc-glass: rgba(18,33,80,0.85);
+    --tc-radius: 16px;
+    --tc-safe-bottom: env(safe-area-inset-bottom, 0px);
+    --tc-safe-top: env(safe-area-inset-top, 0px);
+}
+
 html, body, [class*="css"] {
     font-family: 'Inter', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 .stApp {
-    background: linear-gradient(135deg, #060b18 0%, #0d1b2e 40%, #0a1628 70%, #060e1c 100%);
+    background: linear-gradient(135deg, var(--tc-bg-dark) 0%, var(--tc-bg-mid) 40%, #0a1628 70%, #060e1c 100%);
 }
 
 /* Sidebar */
@@ -50,9 +66,10 @@ html, body, [class*="css"] {
 /* Hero */
 .hero-header {
     background: linear-gradient(135deg, rgba(18,38,100,0.75), rgba(10,28,78,0.85));
-    border: 1px solid rgba(80,140,255,0.18); border-radius: 20px;
+    border: 1px solid var(--tc-border); border-radius: 20px;
     padding: 30px 40px; margin-bottom: 24px;
-    position: relative; overflow: hidden; backdrop-filter: blur(20px);
+    position: relative; overflow: hidden;
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
 }
 .hero-header::before {
     content: ''; position: absolute; top: -60%; left: -60%;
@@ -65,8 +82,9 @@ html, body, [class*="css"] {
 @keyframes heroSpin { to { transform: rotate(360deg); } }
 .hero-title {
     font-size: 2rem; font-weight: 800;
-    background: linear-gradient(135deg, #60b4ff 0%, #40e8c0 55%, #a060ff 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    background: linear-gradient(135deg, var(--tc-accent) 0%, var(--tc-accent2) 55%, var(--tc-accent3) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; color: var(--tc-accent);
     margin: 0 0 6px; letter-spacing: -0.02em;
 }
 .hero-subtitle {
@@ -86,14 +104,14 @@ html, body, [class*="css"] {
     display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 20px 0 28px;
 }
 .metric-card {
-    background: linear-gradient(145deg, rgba(18,33,80,0.85), rgba(12,26,65,0.9));
-    border-radius: 16px; padding: 20px 16px; text-align: center;
+    background: linear-gradient(145deg, var(--tc-glass), rgba(12,26,65,0.9));
+    border-radius: var(--tc-radius); padding: 20px 16px; text-align: center;
     border: 1px solid rgba(60,110,220,0.18); position: relative; overflow: hidden;
     transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s;
 }
 .metric-card::after {
     content: ''; position: absolute; top: 0; left: 0; right: 0;
-    height: 2px; border-radius: 16px 16px 0 0;
+    height: 2px; border-radius: var(--tc-radius) var(--tc-radius) 0 0;
 }
 .mc-blue::after   { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
 .mc-cyan::after   { background: linear-gradient(90deg, #06b6d4, #67e8f9); }
@@ -106,16 +124,16 @@ html, body, [class*="css"] {
 }
 .metric-icon  { font-size: 1.5rem; margin-bottom: 6px; display: block; }
 .metric-value {
-    font-size: 2.1rem; font-weight: 800; color: #e8f0ff; line-height: 1;
+    font-size: 2.1rem; font-weight: 800; color: var(--tc-text); line-height: 1;
     font-family: 'JetBrains Mono', monospace;
 }
 .metric-label {
-    font-size: 0.72rem; color: rgba(150,190,255,0.6); margin-top: 5px;
+    font-size: 0.72rem; color: var(--tc-text-dim); margin-top: 5px;
     font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
 }
 
 /* Section */
-.section-header { display: flex; align-items: center; gap: 12px; margin: 28px 0 14px; }
+.section-header { display: flex; align-items: center; gap: 12px; margin: 28px 0 14px; flex-wrap: wrap; }
 .section-badge {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 5px 13px; background: rgba(40,90,255,0.15);
@@ -137,22 +155,27 @@ html, body, [class*="css"] {
     color: rgba(110,145,200,0.45); font-size: 0.76rem;
     border-top: 1px solid rgba(50,90,200,0.12); margin-top: 14px;
 }
+.footer-ver { font-family: 'JetBrains Mono', monospace; opacity: 0.6; }
 
 /* Streamlit overrides */
 h1, h2, h3 { color: #d8eaff !important; }
 .stAlert { border-radius: 12px !important; }
 #MainMenu, footer { visibility: hidden; }
 .stDeployButton { display: none; }
+[data-testid="stAppViewBlockContainer"] { max-width: 100%; }
 
-/* ── Modal overlay (lives in host page) ── */
+/* Dataframe scroll hint on mobile */
+.stDataFrame { border-radius: 12px; overflow: hidden; }
+
+/* ── Modal overlay ── */
 #tc-modal-backdrop {
     display: none;
     position: fixed; inset: 0; z-index: 99999;
     background: rgba(2, 8, 24, 0.88);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     align-items: center; justify-content: center;
     padding: 28px 20px;
+    padding-bottom: calc(28px + var(--tc-safe-bottom));
     animation: fadeIn 0.2s ease;
 }
 #tc-modal-backdrop.active { display: flex; }
@@ -163,8 +186,8 @@ h1, h2, h3 { color: #d8eaff !important; }
     border: 1px solid rgba(80,140,255,0.28);
     border-radius: 20px;
     width: 100%; max-width: 720px;
-    max-height: 88vh;
-    overflow-y: auto;
+    max-height: 88vh; max-height: 88dvh;
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
     position: relative;
     box-shadow: 0 40px 80px rgba(0,0,0,0.65), 0 0 50px rgba(60,130,255,0.12);
     animation: modalIn 0.32s cubic-bezier(0.34, 1.4, 0.64, 1);
@@ -180,8 +203,8 @@ h1, h2, h3 { color: #d8eaff !important; }
 #tc-modal-close {
     position: sticky; top: 12px; float: right; margin: 12px 12px 0 0;
     background: rgba(60,100,220,0.22); border: 1px solid rgba(80,130,255,0.35);
-    color: #90b8ff; border-radius: 50%; width: 34px; height: 34px;
-    cursor: pointer; font-size: 1rem; line-height: 1;
+    color: #90b8ff; border-radius: 50%; width: 40px; height: 40px;
+    cursor: pointer; font-size: 1.1rem; line-height: 1;
     display: flex; align-items: center; justify-content: center;
     transition: all 0.2s; z-index: 2;
 }
@@ -190,6 +213,40 @@ h1, h2, h3 { color: #d8eaff !important; }
     box-shadow: 0 0 12px rgba(80,120,255,0.3);
 }
 #tc-modal-inner { padding: 0; }
+
+/* ══ Responsive ══ */
+@media (max-width: 768px) {
+    .hero-header { padding: 20px 24px; border-radius: 14px; }
+    .hero-title { font-size: 1.5rem; }
+    .hero-subtitle { font-size: 0.72rem; }
+    .hero-timestamp { font-size: 0.72rem; padding: 5px 12px; }
+    .hero-header::before { animation: none; display: none; }
+    .metric-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0 20px; }
+    .metric-card { padding: 14px 10px; border-radius: 12px; }
+    .metric-value { font-size: 1.6rem; }
+    .metric-label { font-size: 0.65rem; }
+    .metric-icon { font-size: 1.2rem; margin-bottom: 4px; }
+    .section-header { margin: 18px 0 10px; gap: 8px; }
+    .section-title { font-size: 1rem; }
+    .fancy-divider { margin: 14px 0; }
+    #tc-modal-backdrop { padding: 12px 10px; }
+    #tc-modal-box { border-radius: 16px; max-height: 92vh; max-height: 92dvh; }
+    #tc-modal-close { width: 36px; height: 36px; }
+}
+@media (max-width: 480px) {
+    .hero-header { padding: 16px 16px; border-radius: 12px; margin-bottom: 14px; }
+    .hero-title { font-size: 1.3rem; }
+    .hero-subtitle { font-size: 0.65rem; letter-spacing: 0.06em; }
+    .metric-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; margin: 10px 0 14px; }
+    .metric-card { padding: 12px 8px; border-radius: 10px; }
+    .metric-value { font-size: 1.4rem; }
+    .metric-icon { font-size: 1rem; }
+    .section-badge { font-size: 0.7rem; padding: 4px 10px; }
+    .section-title { font-size: 0.9rem; }
+    #tc-modal-backdrop { padding: 6px 6px; padding-bottom: calc(6px + var(--tc-safe-bottom)); }
+    #tc-modal-box { border-radius: 14px; max-height: 95vh; max-height: 95dvh; }
+    .footer-text { font-size: 0.68rem; padding: 12px 8px; }
+}
 """
 
 # ── Modal injector (components.html approach) ──
@@ -212,13 +269,16 @@ MODAL_INJECT_HTML = """\
       display: none; position: fixed; inset: 0; z-index: 99999;
       background: rgba(2,8,24,0.88); backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      align-items: center; justify-content: center; padding: 28px 20px;
+      align-items: center; justify-content: center;
+      padding: 28px 20px;
+      padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px));
     }
     #tc-modal-backdrop.active { display: flex; }
     #tc-modal-box {
       background: linear-gradient(160deg, rgba(16,30,76,0.99), rgba(10,22,62,0.99));
       border: 1px solid rgba(80,140,255,0.28); border-radius: 20px;
-      width: 100%; max-width: 720px; max-height: 88vh; overflow-y: auto;
+      width: 100%; max-width: 720px; max-height: 88vh; max-height: 88dvh;
+      overflow-y: auto; -webkit-overflow-scrolling: touch;
       position: relative;
       box-shadow: 0 40px 80px rgba(0,0,0,0.65), 0 0 50px rgba(60,130,255,0.12);
       animation: tcModalIn 0.32s cubic-bezier(0.34,1.4,0.64,1);
@@ -234,13 +294,21 @@ MODAL_INJECT_HTML = """\
     #tc-modal-close {
       position: sticky; top: 12px; float: right; margin: 12px 12px 0 0;
       background: rgba(60,100,220,0.22); border: 1px solid rgba(80,130,255,0.35);
-      color: #90b8ff; border-radius: 50%; width: 34px; height: 34px;
-      cursor: pointer; font-size: 1rem; display: flex;
+      color: #90b8ff; border-radius: 50%; width: 40px; height: 40px;
+      cursor: pointer; font-size: 1.1rem; display: flex;
       align-items: center; justify-content: center;
       transition: all 0.2s; z-index: 2;
     }
     #tc-modal-close:hover { background: rgba(80,120,255,0.45); color:#fff; }
     #tc-modal-inner { padding: 0; }
+    @media (max-width: 768px) {
+      #tc-modal-backdrop { padding: 12px 10px; }
+      #tc-modal-box { border-radius: 16px; max-height: 92vh; max-height: 92dvh; }
+    }
+    @media (max-width: 480px) {
+      #tc-modal-backdrop { padding: 6px 6px; padding-bottom: calc(6px + env(safe-area-inset-bottom, 0px)); }
+      #tc-modal-box { border-radius: 14px; max-height: 95vh; max-height: 95dvh; }
+    }
   `;
   doc.head.appendChild(style);
 
@@ -308,10 +376,9 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
 }
 .symbol-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 28px rgba(60,130,255,0.12);
-    border-color: rgba(90,155,255,0.42);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 28px rgba(60,130,255,0.15);
+    border-color: rgba(90,155,255,0.45);
 }
-/* Modal variant — no pointer, no hover lift */
 .symbol-card.modal-view {
     cursor: default; border-radius: 0;
     border: none; box-shadow: none;
@@ -351,13 +418,21 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
 }
 .card-symbol a:hover { color: #70b8ff; }
 
+.badge-row { display: flex; align-items: center; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
 .source-badge {
     display: inline-flex; align-items: center; gap: 4px;
-    margin-top: 6px; padding: 3px 10px; border-radius: 50px;
+    padding: 3px 10px; border-radius: 50px;
     font-size: 0.7rem; font-weight: 600; letter-spacing: 0.05em;
 }
 .badge-crypto { background: rgba(60,140,255,0.15); border: 1px solid rgba(60,140,255,0.28); color: #72b8ff; }
 .badge-forex  { background: rgba(255,175,40,0.13); border: 1px solid rgba(255,175,40,0.28); color: #ffc855; }
+.exchange-badge {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 2px 8px; border-radius: 50px;
+    font-size: 0.6rem; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: rgba(200,220,255,0.6);
+}
 
 .card-body { padding: 14px 18px 18px; }
 
@@ -386,7 +461,7 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
 .tf-label.h4    { color: #38c8a0; }
 
 .signal-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
-.sig-pill { padding: 2px 9px; border-radius: 50px; font-size: 0.68rem; font-weight: 600; }
+.sig-pill { padding: 3px 10px; border-radius: 50px; font-size: 0.68rem; font-weight: 600; }
 .sig-bull { background: rgba(24,170,90,0.16); border: 1px solid rgba(24,170,90,0.32); color: #46d880; }
 .sig-bear { background: rgba(200,40,60,0.16); border: 1px solid rgba(200,40,60,0.32); color: #f86078; }
 .sig-none { background: rgba(90,110,180,0.1); border: 1px solid rgba(90,110,180,0.18); color: rgba(150,170,210,0.45); font-style: italic; }
@@ -419,7 +494,7 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
     background-size: 200% 100%; animation: shimmer 3s linear infinite;
 }
 @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
-.ai-header { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; }
+.ai-header { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
 .ai-title  { font-size: 0.76rem; font-weight: 700; color: #bb78ff; letter-spacing: 0.05em; text-transform: uppercase; }
 .ai-model  { font-size: 0.65rem; color: rgba(170,130,255,0.5); font-family: 'JetBrains Mono', monospace; }
 .ai-body   { font-size: 0.82rem; color: rgba(195,178,240,0.85); line-height: 1.7; }
@@ -430,7 +505,7 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
     border-bottom: 1px solid rgba(140,80,255,0.2);
 }
 
-/* expand hint overlay on preview card */
+/* expand hint */
 .expand-hint {
     position: absolute; bottom: 0; left: 0; right: 0;
     padding: 32px 0 10px;
@@ -443,6 +518,19 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
 .expand-hint span {
     background: rgba(60,110,220,0.2); border: 1px solid rgba(80,140,255,0.28);
     border-radius: 50px; padding: 3px 12px;
+}
+
+/* ══ Card responsive ══ */
+@media (max-width: 480px) {
+    .card-header { padding: 12px 14px 10px; }
+    .card-symbol { font-size: 1.1rem; gap: 6px; }
+    .card-body { padding: 12px 14px 14px; }
+    .tf-grid { grid-template-columns: 1fr; gap: 8px; }
+    .data-grid { grid-template-columns: 1fr; }
+    .rec-pill { font-size: 0.75rem; padding: 4px 11px; }
+    .rec-exp { font-size: 0.75rem; }
+    .sig-pill { padding: 3px 8px; font-size: 0.65rem; }
+    .ai-body { font-size: 0.78rem; }
 }
 """
 
@@ -569,6 +657,7 @@ def build_card_html(result, modal_view=False):
     rec       = result['combined_recommendation']
     symbol    = result['symbol']
     source    = result['source']
+    exchange  = result.get('exchange', '')
     exp       = result['combined_explanation']
     chart_url = result.get('chart_url', '#')
 
@@ -576,6 +665,11 @@ def build_card_html(result, modal_view=False):
     src_cls   = 'badge-crypto' if source == 'Crypto' else 'badge-forex'
     src_label = '🪙 加密貨幣' if source == 'Crypto' else '💱 外匯'
     card_cls  = 'symbol-card modal-view' if modal_view else 'symbol-card'
+
+    # Exchange badge
+    exch_html = ''
+    if exchange:
+        exch_html = f'<span class="exchange-badge">⚡ {exchange}</span>'
 
     daily = tf_block_html(result.get('daily'), '📊 日線 (1D)', 'daily')
     h4    = tf_block_html(result.get('h4'),    '⏱ 4小時 (4H)', 'h4')
@@ -590,7 +684,7 @@ def build_card_html(result, modal_view=False):
       {rec_emoji(rec)}&nbsp;{symbol}
       <a href="{chart_url}" target="_blank" title="TradingView K線圖" {stop_prop}>&nearr;</a>
     </div>
-    <div style="margin-top:5px"><span class="source-badge {src_cls}">{src_label}</span></div>
+    <div class="badge-row"><span class="source-badge {src_cls}">{src_label}</span>{exch_html}</div>
   </div>
   <div class="card-body">
     <div><span class="rec-pill {rec_pill_cls(rec)}">{rec_emoji(rec)} {rec}</span></div>
@@ -616,6 +710,7 @@ def render_symbol_card(result):
     iframe_doc = f"""<!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 {CARD_CSS}
 body {{ 
@@ -786,6 +881,7 @@ def main():
     <div class="footer-text">
       ⚠️ <b>免責聲明</b>：本系統僅提供技術分析參考，不構成投資建議。
       AI 建議由第三方模型生成，僅供參考。交易有風險，請謹慎評估自身風險承受能力。
+      <br><span class="footer-ver">TitanCore Dashboard v3.0</span>
     </div>""", unsafe_allow_html=True)
 
 
