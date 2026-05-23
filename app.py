@@ -542,12 +542,43 @@ body { background: transparent; font-family: 'Inter', 'PingFang TC', sans-serif;
 # Data
 # ══════════════════════════════════════════════════════════
 @st.cache_data(ttl=300)
-def load_data():
+def load_data(file_path):
     try:
-        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         if data and 'results' in data:
+            is_ema = 'ema' in file_path.lower()
             for r in data['results']:
+                # 統一 source 欄位格式
+                if r.get('source'):
+                    r['source'] = r['source'].capitalize()
+                
+                # 自動補上交易所
+                if is_ema and r['source'] == 'Crypto' and not r.get('exchange'):
+                    r['exchange'] = 'OKX'
+                    
+                # EMA 專用映射
+                if is_ema:
+                    d1d = r.get('fused', {}).get('s_1d', {}).get('direction', 'NEUTRAL')
+                    grade = r.get('grade', 'WAIT')
+                    action = r.get('action', '')
+                    
+                    combined_rec = '觀望'
+                    if grade in ['S+', 'S']:
+                        combined_rec = '強力做多' if d1d == 'BULL' else '強力做空'
+                    elif grade == 'A+':
+                        combined_rec = '偏多操作' if d1d == 'BULL' else '偏空操作'
+                    elif grade == 'A' or grade == 'CROSS':
+                        combined_rec = '短多試單' if d1d == 'BULL' else '短空試單'
+                    elif grade == 'B+':
+                        combined_rec = '觀望偏多' if d1d == 'BULL' else '觀望偏空'
+                    elif grade == 'SQUEEZE':
+                        combined_rec = '觀望偏多' if d1d == 'BULL' else '觀望偏空'
+                    
+                    r['combined_recommendation'] = combined_rec
+                    r['combined_explanation'] = action
+                    r['has_signal'] = grade in ["S+", "S", "A+", "A", "CROSS", "SQUEEZE"]
+                
                 if not r.get('chart_url'):
                     r['chart_url'] = get_chart_url(r['symbol'], r['source'], r.get('exchange'))
         return data
@@ -700,9 +731,104 @@ def build_card_html(result, modal_view=False):
 # ══════════════════════════════════════════════════════════
 PREVIEW_HEIGHT = 320   # slightly taller for better scroll readability
 
-def render_symbol_card(result):
-    preview_html = build_card_html(result, modal_view=False)
-    full_html    = build_card_html(result, modal_view=True)
+def ema_tf_block_html(r, label, is_daily, lbl_cls):
+    price = fmt_price(r.get('price', 0))
+    e21   = fmt_price(r.get('ema21', 0))
+    e55   = fmt_price(r.get('ema55', 0))
+    e144  = fmt_price(r.get('ema144', 0))
+    
+    fused = r.get('fused', {})
+    s_tf = fused.get('s_1d' if is_daily else 's_4h', {})
+    align_label = s_tf.get('alignment', {}).get('label', '三線纏繞/盤整')
+    
+    sigs = s_tf.get('pullback', {}).get('signals', [])
+    if s_tf.get('cross'):
+        sigs = sigs + [s_tf['cross']['msg']]
+    if s_tf.get('squeeze'):
+        sigs = sigs + [s_tf['squeeze']['msg']]
+        
+    sig_html = signals_html(sigs)
+    trend_val = s_tf.get('alignment', {}).get('direction', 'NEUTRAL')
+    
+    trend_str = "完美多頭" if trend_val == "BULL" else ("完美空頭" if trend_val == "BEAR" else "區間盤整")
+    trend_badge_html = trend_html(trend_str)
+    
+    bb_html = ""
+    if not is_daily:
+        bbu = fmt_price(r.get('bb_upper', 0))
+        bbl = fmt_price(r.get('bb_lower', 0))
+        bbw = r.get('bb_width', 0) * 100
+        pctb = r.get('bb_pct_b', 0)
+        sq = "⏳ SQUEEZE" if r.get('bb_squeeze') else ("🚀 EXPANDING" if r.get('bb_expanding') else "正常波動")
+        bb_html = f"""
+        <div class="data-item" style="grid-column: span 2;">
+          <div class="data-key">布林通道 ({sq})</div>
+          <div class="data-val cloud">{bbl} ~ {bbu} <br>(寬:{bbw:.1f}%, %B:{pctb:.2f})</div>
+        </div>
+        """
+        
+    return f"""
+<div class="tf-section">
+  <div class="tf-label {lbl_cls}">{label}</div>
+  <div class="signal-row">{sig_html}</div>
+  <div style="font-size: 0.72rem; color: #a0c0ff; margin-bottom: 6px;">排列: {align_label}</div>
+  <div class="data-grid">
+    <div class="data-item"><div class="data-key">EMA21 / 55</div><div class="data-val">{e21} / {e55}</div></div>
+    <div class="data-item"><div class="data-key">EMA144</div><div class="data-val">{e144}</div></div>
+    <div class="data-item"><div class="data-key">現價</div><div class="data-val price">{price}</div></div>
+    {bb_html}
+  </div>
+</div>"""
+
+
+def build_ema_card_html(result, modal_view=False):
+    rec       = result['combined_recommendation']
+    symbol    = result['symbol']
+    source    = result['source']
+    exchange  = result.get('exchange', '')
+    exp       = result['combined_explanation']
+    chart_url = result.get('chart_url', '#')
+
+    hdr_cls   = rec_class(rec)
+    src_cls   = 'badge-crypto' if source == 'Crypto' else 'badge-forex'
+    src_label = '🪙 加密貨幣' if source == 'Crypto' else '💱 外匯'
+    card_cls  = 'symbol-card modal-view' if modal_view else 'symbol-card'
+
+    exch_html = ''
+    if exchange:
+        exch_html = f'<span class="exchange-badge">⚡ {exchange}</span>'
+
+    daily = ema_tf_block_html(result, '📊 日線 (1D)', is_daily=True, lbl_cls='daily')
+    h4    = ema_tf_block_html(result, '⏱ 4小時 (4H)', is_daily=False, lbl_cls='h4')
+    ai    = ai_block_html(result)
+
+    stop_prop = 'onclick="event.stopPropagation()"' if not modal_view else ''
+
+    return f"""
+<div class="{card_cls}">
+  <div class="card-header {hdr_cls}">
+    <div class="card-symbol">
+      {rec_emoji(rec)}&nbsp;{symbol}
+      <a href="{chart_url}" target="_blank" title="TradingView K線圖" {stop_prop}>&nearr;</a>
+    </div>
+    <div class="badge-row"><span class="source-badge {src_cls}">{src_label}</span>{exch_html}</div>
+  </div>
+  <div class="card-body">
+    <div><span class="rec-pill {rec_pill_cls(rec)}">{rec_emoji(rec)} {rec}</span></div>
+    <div class="rec-exp">💡 {exp}</div>
+    <div class="tf-grid">{daily}{h4}</div>
+    {ai}
+  </div>
+</div>"""
+
+
+def render_symbol_card(result, is_ema=False):
+    if is_ema:
+        preview_html = build_ema_card_html(result, modal_view=False)
+        full_html    = build_ema_card_html(result, modal_view=True)
+    else:
+        preview_html = build_card_html(result, modal_view=False)
+        full_html    = build_card_html(result, modal_view=True)
 
     # Safely encode data for postMessage using JSON
     modal_data = _json.dumps({'css': CARD_CSS, 'html': full_html})
@@ -749,7 +875,19 @@ function openModal() {{
 def main():
     inject_css()
 
-    data = load_data()
+    # Sidebar 頂部策略切換
+    with st.sidebar:
+        st.markdown("### 🛠️ 策略設定")
+        strategy_mode = st.selectbox(
+            "策略模式", ["一目均衡表 (IKH)", "三均線 + 布林通道 (EMA/BB)"],
+            index=0
+        )
+        st.divider()
+
+    is_ema = (strategy_mode == "三均線 + 布林通道 (EMA/BB)")
+    data_file = 'data/titan_core_ema_results.json' if is_ema else 'data/analysis_results.json'
+
+    data = load_data(data_file)
 
     # Hero
     if data:
@@ -762,10 +900,12 @@ def main():
     else:
         ts = ''
 
+    subtitle = "EMA 21/55/144 & Bollinger Bands · Multi-Timeframe Analysis" if is_ema else "Ichimoku Kinko Hyo · Multi-Timeframe Signal Analysis"
+
     st.markdown(f"""
     <div class="hero-header">
       <div class="hero-title">📊 TitanCore Dashboard</div>
-      <div class="hero-subtitle">Ichimoku Kinko Hyo &nbsp;·&nbsp; Multi-Timeframe Signal Analysis</div>
+      <div class="hero-subtitle">{subtitle}</div>
       {ts}
     </div>""", unsafe_allow_html=True)
 
@@ -778,10 +918,9 @@ def main():
         st.warning("沒有分析結果")
         st.stop()
 
-    # Sidebar
+    # Sidebar 篩選條件
     with st.sidebar:
         st.markdown("### 🔍 篩選條件")
-        st.divider()
         source_filter = st.selectbox(
             "資料來源", ['全部', '加密貨幣', '外匯'],
             format_func=lambda x: {'全部':'🌐 全部','加密貨幣':'🪙 加密貨幣','外匯':'💱 外匯'}[x])
@@ -840,20 +979,47 @@ def main():
 
     table_data = []
     for r in filtered:
-        d = r.get('daily'); h = r.get('h4')
-        price = d['price'] if d else (h['price'] if h else '-')
-        table_data.append({
-            '標的': r['symbol'],
-            '來源': '💱' if r['source'] == 'Forex' else '🪙',
-            '綜合建議': f"{rec_emoji(r['combined_recommendation'])} {r['combined_recommendation']}",
-            '日線訊號': ' / '.join(d['signals']) if d and d['signals'] else '無訊號',
-            '4H訊號':   ' / '.join(h['signals']) if h and h['signals'] else '無訊號',
-            '日線趨勢': d['trend'] if d else '-',
-            '4H趨勢':   h['trend'] if h else '-',
-            '價格': fmt_price(price),
-            'AI': '✅' if r.get('ai_advice') else '❌',
-            'K線圖': r.get('chart_url', ''),
-        })
+        if is_ema:
+            price = r.get('price', '-')
+            fused = r.get('fused', {})
+            s_1d_sigs = fused.get('s_1d', {}).get('pullback', {}).get('signals', [])
+            if fused.get('s_1d', {}).get('cross'):
+                s_1d_sigs = s_1d_sigs + [fused['s_1d']['cross']['type']]
+                
+            s_4h_sigs = fused.get('s_4h', {}).get('pullback', {}).get('signals', [])
+            if fused.get('s_4h', {}).get('squeeze'):
+                s_4h_sigs = s_4h_sigs + ['SQUEEZE']
+            if fused.get('s_4h', {}).get('cross'):
+                s_4h_sigs = s_4h_sigs + [fused['s_4h']['cross']['type']]
+                
+            table_data.append({
+                '標的': r['symbol'],
+                '來源': '💱' if r['source'] == 'Forex' else '🪙',
+                '綜合建議': f"{rec_emoji(r['combined_recommendation'])} {r['combined_recommendation']}",
+                '日線排列': r.get('zone_1d', '-'),
+                '4H排列': r.get('zone_4h', '-'),
+                '日線訊號': ' / '.join(s_1d_sigs) if s_1d_sigs else '無訊號',
+                '4H訊號':   ' / '.join(s_4h_sigs) if s_4h_sigs else '無訊號',
+                '4H布林寬': f"{r.get('bb_width', 0)*100:.1f}% (%B:{r.get('bb_pct_b', 0):.2f})",
+                '價格': fmt_price(price),
+                'AI': '✅' if r.get('ai_advice') else '❌',
+                'K線圖': r.get('chart_url', ''),
+            })
+        else:
+            d = r.get('daily'); h = r.get('h4')
+            price = d['price'] if d else (h['price'] if h else '-')
+            table_data.append({
+                '標的': r['symbol'],
+                '來源': '💱' if r['source'] == 'Forex' else '🪙',
+                '綜合建議': f"{rec_emoji(r['combined_recommendation'])} {r['combined_recommendation']}",
+                '日線訊號': ' / '.join(d['signals']) if d and d['signals'] else '無訊號',
+                '4H訊號':   ' / '.join(h['signals']) if h and h['signals'] else '無訊號',
+                '日線趨勢': d['trend'] if d else '-',
+                '4H趨勢':   h['trend'] if h else '-',
+                '價格': fmt_price(price),
+                'AI': '✅' if r.get('ai_advice') else '❌',
+                'K線圖': r.get('chart_url', ''),
+            })
 
     st.dataframe(pd.DataFrame(table_data), use_container_width=True, hide_index=True,
                  column_config={"K線圖": st.column_config.LinkColumn("K線圖", display_text="🔗 查看")})
@@ -861,7 +1027,7 @@ def main():
     st.markdown('<hr class="fancy-divider">', unsafe_allow_html=True)
 
     priority = {'強力做多':0,'強力做空':1,'偏多操作':2,'偏空操作':3,
-                '短多試單':4,'短空試單':5,'觀望等待':6,'觀望':7}
+                '短多試單':4,'短空試單':5,'觀望偏多':6,'觀望偏空':7,'觀望等待':8,'觀望':9}
     filtered.sort(key=lambda x: priority.get(x['combined_recommendation'], 99))
 
     st.markdown("""
@@ -875,7 +1041,7 @@ def main():
         for j, col in enumerate(cols):
             if i + j < len(filtered):
                 with col:
-                    render_symbol_card(filtered[i + j])
+                    render_symbol_card(filtered[i + j], is_ema=is_ema)
 
     st.markdown("""
     <div class="footer-text">
