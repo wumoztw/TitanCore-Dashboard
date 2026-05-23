@@ -59,9 +59,17 @@ streamlit run app.py
 
 ## 更新紀錄
 
+### v4.0 — 2026-05-23 · 雙策略整合 (IKH & EMA/BB)
+
+- **雙策略切換**：在側邊欄最上方新增「策略模式」選擇器，可自由切換展示「一目均衡表 (IKH)」或「三均線 + 布林通道 (EMA/BB)」策略。
+- **資料自動載入與映射**：支援動態載入 `titan_core_ema_results.json` 檔案。並在載入時，將 EMA 特徵映射為 Dashboard 原生之綜合建議格式，使舊有篩選條件完美向下相容。
+- **EMA 專屬總覽表格**：切換為 EMA 策略後，總覽表格自動展示日線排列、4H排列與 4H布林帶寬 %B 等策略關鍵數值。
+- **EMA 專屬卡片與 Modal 詳情**：新設計 EMA-BB 卡片 HTML。支援動態呈現均線（EMA 21/55/144）數值、布林通道上下軌、寬度與 Squeeze 蓄能 / Expanding 擴張等即時狀態。
+
 ### v3.0 — 2026-05-09 · 響應式重構 & 跨瀏覽器相容
 
 - **全面響應式**：支援桌面（5 欄）、平板（3 欄）、手機（2 欄）Metrics 自動切換
+
 - **手機卡片優化**：日線/4H 區域 ≤480px 自動堆疊為單欄，數據項目全寬顯示
 - **iOS Safari 修正**：`dvh` 單位、`safe-area-inset` 安全區、`-webkit-overflow-scrolling: touch`
 - **Firefox 相容**：`background-clip: text` 搭配 `color` fallback
