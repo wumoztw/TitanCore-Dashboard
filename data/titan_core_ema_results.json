@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-29T18:32:23.125651+00:00",
+  "generated_at": "2026-05-29T21:52:21.726645+00:00",
   "results": [
     {
       "symbol": "BTC-USDT",
       "name": "Bitcoin",
       "category": "加密幣",
       "source": "crypto",
-      "price": 73766.6,
-      "atr": 893.211531891218,
+      "price": 73462.8,
+      "atr": 868.9619943057231,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -17,13 +17,13 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BEAR 偏空排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 74424.83233309706,
-      "ema55": 75721.04885502066,
-      "ema144": 77001.40589348563,
-      "bb_upper": 78797.57933355002,
-      "bb_lower": 72644.51837649131,
-      "bb_width": 0.08125958435731222,
-      "bb_pct_b": 0.1823615321446571,
+      "ema21": 74317.09385653454,
+      "ema55": 75631.94744420597,
+      "ema144": 76950.62519404067,
+      "bb_upper": 78761.09976038634,
+      "bb_lower": 72502.79512802561,
+      "bb_width": 0.08274683971317155,
+      "bb_pct_b": 0.15339695466570238,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
@@ -53,9 +53,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 76465.1053181214,
-            "ema55": 76212.58318534697,
-            "ema144": 78662.79223003033
+            "ema21": 76437.0962272123,
+            "ema55": 76201.5796139184,
+            "ema144": 78658.54257485791
           },
           "cross": null,
           "pullback": {
@@ -69,7 +69,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.3042158877349955,
+          "bb_pct_b": 0.28082404408529926,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -83,9 +83,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 74424.83233309706,
-            "ema55": 75721.04885502066,
-            "ema144": 77001.40589348563
+            "ema21": 74317.09385653454,
+            "ema55": 75631.94744420597,
+            "ema144": 76950.62519404067
           },
           "cross": null,
           "pullback": {
@@ -99,7 +99,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.1823615321446571,
+          "bb_pct_b": 0.15339695466570238,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -110,45 +110,41 @@
       "name": "Ethereum",
       "category": "加密幣",
       "source": "crypto",
-      "price": 2024.74,
-      "atr": 31.70723450185764,
-      "grade": "S",
-      "action": "🔴 反彈放空 [EMA21]",
+      "price": 2009.26,
+      "atr": 31.540492123832173,
+      "grade": "S+",
+      "action": "🚀 S+ 超級共振",
       "resonance": true,
-      "has_pullback": true,
-      "pullback_type": "SELL_RALLY",
+      "has_pullback": false,
+      "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 2035.1000751914219,
-      "ema55": 2078.322010275242,
-      "ema144": 2156.052038598966,
-      "bb_upper": 2174.670432930509,
-      "bb_lower": 1981.9735876199754,
-      "bb_width": 0.09271751170311367,
-      "bb_pct_b": 0.22193623518385028,
+      "ema21": 2032.1080022401338,
+      "ema55": 2075.587507359865,
+      "ema144": 2153.863045009887,
+      "bb_upper": 2172.8207537670405,
+      "bb_lower": 1978.3542609526894,
+      "bb_width": 0.09369226405766498,
+      "bb_pct_b": 0.1589257799636207,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
-        "pullback_type": "SELL_RALLY",
-        "grade": "A",
-        "msg": "🔴 反彈放空 [EMA21]",
-        "signals": [
-          "反彈EMA21",
-          "陰線反轉",
-          "144向下"
-        ],
-        "support_level": "EMA21",
-        "entry": 2024.74,
-        "stop": 2082.6609269442083
+        "pullback_type": null,
+        "grade": null,
+        "msg": "",
+        "signals": [],
+        "support_level": null,
+        "entry": null,
+        "stop": null
       },
       "fused": {
-        "final_grade": "S",
-        "final_msg": "🔴 反彈放空 [EMA21]",
+        "final_grade": "S+",
+        "final_msg": "🚀 S+ 超級共振",
         "resonance": true,
-        "has_pullback": true,
-        "pullback_type": "SELL_RALLY",
+        "has_pullback": false,
+        "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
@@ -161,9 +157,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 2130.6530744647885,
-            "ema55": 2194.049913569707,
-            "ema144": 2394.650787671131
+            "ema21": 2129.2458017375156,
+            "ema55": 2193.4970564268497,
+            "ema144": 2394.437270429752
           },
           "cross": null,
           "pullback": {
@@ -177,7 +173,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.11561927928582043,
+          "bb_pct_b": 0.08392795954160702,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -191,27 +187,23 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 2035.1000751914219,
-            "ema55": 2078.322010275242,
-            "ema144": 2156.052038598966
+            "ema21": 2032.1080022401338,
+            "ema55": 2075.587507359865,
+            "ema144": 2153.863045009887
           },
           "cross": null,
           "pullback": {
-            "pullback_type": "SELL_RALLY",
-            "grade": "A",
-            "msg": "🔴 反彈放空 [EMA21]",
-            "signals": [
-              "反彈EMA21",
-              "陰線反轉",
-              "144向下"
-            ],
-            "support_level": "EMA21",
-            "entry": 2024.74,
-            "stop": 2082.6609269442083
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.22193623518385028,
+          "bb_pct_b": 0.1589257799636207,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -222,8 +214,8 @@
       "name": "BNB",
       "category": "加密幣",
       "source": "crypto",
-      "price": 641.9,
-      "atr": 7.1880076737434795,
+      "price": 642.0,
+      "atr": 6.562939983911016,
       "grade": "B+",
       "action": "✅ B+ 方向一致",
       "resonance": false,
@@ -233,13 +225,13 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BEAR 偏空排列",
       "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 644.150511435782,
-      "ema55": 649.3285556347823,
-      "ema144": 648.2444279297877,
-      "bb_upper": 667.4466322528081,
-      "bb_lower": 631.2104790167566,
-      "bb_width": 0.05580557473038754,
-      "bb_pct_b": 0.2949960199585516,
+      "ema21": 643.938481470545,
+      "ema55": 649.0599008652828,
+      "ema144": 648.1276722513362,
+      "bb_upper": 667.3766154634294,
+      "bb_lower": 630.7431862671361,
+      "bb_width": 0.056440752459759186,
+      "bb_pct_b": 0.30728255530068904,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
@@ -269,9 +261,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 648.4534389777683,
-            "ema55": 644.3931042191257,
-            "ema144": 688.0732528816939
+            "ema21": 648.4625298868592,
+            "ema55": 644.3966756476972,
+            "ema144": 688.0746321920386
           },
           "cross": null,
           "pullback": {
@@ -285,7 +277,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.4691162049403472,
+          "bb_pct_b": 0.4703116051472583,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -298,10 +290,10 @@
             "bear_score": 2,
             "label": "偏空排列",
             "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 644.150511435782,
-            "ema55": 649.3285556347823,
-            "ema144": 648.2444279297877
+            "slope_bear": false,
+            "ema21": 643.938481470545,
+            "ema55": 649.0599008652828,
+            "ema144": 648.1276722513362
           },
           "cross": null,
           "pullback": {
@@ -315,7 +307,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.2949960199585516,
+          "bb_pct_b": 0.30728255530068904,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -326,10 +318,114 @@
       "name": "Solana",
       "category": "加密幣",
       "source": "crypto",
-      "price": 82.66,
-      "atr": 1.4369833230176767,
+      "price": 81.86,
+      "atr": 1.3905411021708756,
+      "grade": "S+",
+      "action": "🚀 S+ 超級共振",
+      "resonance": true,
+      "has_pullback": false,
+      "pullback_type": null,
+      "has_cross": false,
+      "has_squeeze": false,
+      "zone_1d": "BEAR 完美空頭排列",
+      "zone_4h": "BEAR 完美空頭排列",
+      "ema21": 82.65310050761724,
+      "ema55": 84.12836419706771,
+      "ema144": 85.86888821419137,
+      "bb_upper": 87.9692482844085,
+      "bb_lower": 80.28748010972693,
+      "bb_width": 0.09131008605715066,
+      "bb_pct_b": 0.20470806388768134,
+      "bb_squeeze": false,
+      "bb_expanding": false,
+      "pullback_info": {
+        "pullback_type": null,
+        "grade": null,
+        "msg": "",
+        "signals": [],
+        "support_level": null,
+        "entry": null,
+        "stop": null
+      },
+      "fused": {
+        "final_grade": "S+",
+        "final_msg": "🚀 S+ 超級共振",
+        "resonance": true,
+        "has_pullback": false,
+        "pullback_type": null,
+        "has_cross": false,
+        "has_squeeze": false,
+        "s_1d": {
+          "grade": "A+",
+          "msg": "🔴 強勢空方（完美空頭排列）",
+          "alignment": {
+            "direction": "BEAR",
+            "bull_score": 0,
+            "bear_score": 3,
+            "label": "完美空頭排列",
+            "slope_bull": false,
+            "slope_bear": true,
+            "ema21": 85.39490022920562,
+            "ema55": 86.68398975640943,
+            "ema144": 98.38942693753224
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": null,
+          "direction": "BEAR",
+          "bb_pct_b": 0.15259913909377862,
+          "bb_expanding": false,
+          "bb_squeeze": false
+        },
+        "s_4h": {
+          "grade": "A+",
+          "msg": "🔴 強勢空方（完美空頭排列）",
+          "alignment": {
+            "direction": "BEAR",
+            "bull_score": 0,
+            "bear_score": 3,
+            "label": "完美空頭排列",
+            "slope_bull": false,
+            "slope_bear": true,
+            "ema21": 82.65310050761724,
+            "ema55": 84.12836419706771,
+            "ema144": 85.86888821419137
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": null,
+          "direction": "BEAR",
+          "bb_pct_b": 0.20470806388768134,
+          "bb_expanding": false,
+          "bb_squeeze": false
+        }
+      }
+    },
+    {
+      "symbol": "XRP-USDT",
+      "name": "XRP",
+      "category": "加密幣",
+      "source": "crypto",
+      "price": 1.3189,
+      "atr": 0.020840428711572136,
       "grade": "S",
-      "action": "🟠 反彈觀察 [EMA21]",
+      "action": "🔴 反彈放空 [EMA21]",
       "resonance": true,
       "has_pullback": true,
       "pullback_type": "SELL_RALLY",
@@ -337,30 +433,31 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 82.7869560129246,
-      "ema55": 84.23381459345092,
-      "ema144": 85.94014908350304,
-      "bb_upper": 88.00922759068185,
-      "bb_lower": 80.45840159621999,
-      "bb_width": 0.08964126854405723,
-      "bb_pct_b": 0.2915705388251258,
+      "ema21": 1.320755727358399,
+      "ema55": 1.3406263551917097,
+      "ema144": 1.370945358335726,
+      "bb_upper": 1.3879760459206123,
+      "bb_lower": 1.293276664462807,
+      "bb_width": 0.07063816184955068,
+      "bb_pct_b": 0.27057553220249647,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
         "pullback_type": "SELL_RALLY",
-        "grade": "B+",
-        "msg": "🟠 反彈觀察 [EMA21]",
+        "grade": "A",
+        "msg": "🔴 反彈放空 [EMA21]",
         "signals": [
           "反彈EMA21",
+          "射擊之星",
           "144向下"
         ],
         "support_level": "EMA21",
-        "entry": 82.66,
-        "stop": 84.94243099745113
+        "entry": 1.3189,
+        "stop": 1.352016370425757
       },
       "fused": {
         "final_grade": "S",
-        "final_msg": "🟠 反彈觀察 [EMA21]",
+        "final_msg": "🔴 反彈放空 [EMA21]",
         "resonance": true,
         "has_pullback": true,
         "pullback_type": "SELL_RALLY",
@@ -376,9 +473,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 85.4676275019329,
-            "ema55": 86.71256118498086,
-            "ema144": 98.40046142029087
+            "ema21": 1.363485354887831,
+            "ema55": 1.3909267156693839,
+            "ema144": 1.557990988917654
           },
           "cross": null,
           "pullback": {
@@ -392,7 +489,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.206784506282772,
+          "bb_pct_b": 0.10543481266194321,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -406,9 +503,120 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 82.7869560129246,
-            "ema55": 84.23381459345092,
-            "ema144": 85.94014908350304
+            "ema21": 1.320755727358399,
+            "ema55": 1.3406263551917097,
+            "ema144": 1.370945358335726
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": "SELL_RALLY",
+            "grade": "A",
+            "msg": "🔴 反彈放空 [EMA21]",
+            "signals": [
+              "反彈EMA21",
+              "射擊之星",
+              "144向下"
+            ],
+            "support_level": "EMA21",
+            "entry": 1.3189,
+            "stop": 1.352016370425757
+          },
+          "squeeze": null,
+          "direction": "BEAR",
+          "bb_pct_b": 0.27057553220249647,
+          "bb_expanding": false,
+          "bb_squeeze": false
+        }
+      }
+    },
+    {
+      "symbol": "DOGE-USDT",
+      "name": "Dogecoin",
+      "category": "加密幣",
+      "source": "crypto",
+      "price": 0.09982,
+      "atr": 0.001739167921498509,
+      "grade": "WAIT",
+      "action": "觀望",
+      "resonance": false,
+      "has_pullback": false,
+      "pullback_type": null,
+      "has_cross": false,
+      "has_squeeze": false,
+      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_4h": "BEAR 完美空頭排列",
+      "ema21": 0.10024244654801155,
+      "ema55": 0.10202527355609414,
+      "ema144": 0.10409545865073962,
+      "bb_upper": 0.10647964263663988,
+      "bb_lower": 0.0975709044755484,
+      "bb_width": 0.08731893432457588,
+      "bb_pct_b": 0.2524594935649166,
+      "bb_squeeze": false,
+      "bb_expanding": false,
+      "pullback_info": {
+        "pullback_type": "SELL_RALLY",
+        "grade": "B+",
+        "msg": "🟠 反彈觀察 [EMA21]",
+        "signals": [
+          "反彈EMA21",
+          "144向下"
+        ],
+        "support_level": "EMA21",
+        "entry": 0.09982,
+        "stop": 0.10285119843025932
+      },
+      "fused": {
+        "final_grade": "WAIT",
+        "final_msg": "觀望",
+        "resonance": false,
+        "has_pullback": false,
+        "pullback_type": null,
+        "has_cross": false,
+        "has_squeeze": false,
+        "s_1d": {
+          "grade": "B+",
+          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "alignment": {
+            "direction": "LEAN_BEAR",
+            "bull_score": 1,
+            "bear_score": 2,
+            "label": "偏空排列",
+            "slope_bull": false,
+            "slope_bear": true,
+            "ema21": 0.10360786784849046,
+            "ema55": 0.1029011558121463,
+            "ema144": 0.11163522043511244
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": null,
+          "direction": "LEAN_BEAR",
+          "bb_pct_b": 0.38551656522434236,
+          "bb_expanding": false,
+          "bb_squeeze": false
+        },
+        "s_4h": {
+          "grade": "A+",
+          "msg": "🔴 強勢空方（完美空頭排列）",
+          "alignment": {
+            "direction": "BEAR",
+            "bull_score": 0,
+            "bear_score": 3,
+            "label": "完美空頭排列",
+            "slope_bull": false,
+            "slope_bear": true,
+            "ema21": 0.10024244654801155,
+            "ema55": 0.10202527355609414,
+            "ema144": 0.10409545865073962
           },
           "cross": null,
           "pullback": {
@@ -420,228 +628,12 @@
               "144向下"
             ],
             "support_level": "EMA21",
-            "entry": 82.66,
-            "stop": 84.94243099745113
+            "entry": 0.09982,
+            "stop": 0.10285119843025932
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.2915705388251258,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        }
-      }
-    },
-    {
-      "symbol": "XRP-USDT",
-      "name": "XRP",
-      "category": "加密幣",
-      "source": "crypto",
-      "price": 1.3249,
-      "atr": 0.021976904923608875,
-      "grade": "WAIT",
-      "action": "觀望",
-      "resonance": false,
-      "has_pullback": false,
-      "pullback_type": null,
-      "has_cross": false,
-      "has_squeeze": false,
-      "zone_1d": "BEAR 完美空頭排列",
-      "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 1.3212958455487853,
-      "ema55": 1.341570369987122,
-      "ema144": 1.3717679296069194,
-      "bb_upper": 1.3892143617684922,
-      "bb_lower": 1.2939263782057517,
-      "bb_width": 0.07102719745044397,
-      "bb_pct_b": 0.32505275729603683,
-      "bb_squeeze": false,
-      "bb_expanding": false,
-      "pullback_info": {
-        "pullback_type": null,
-        "grade": null,
-        "msg": "",
-        "signals": [],
-        "support_level": null,
-        "entry": null,
-        "stop": null
-      },
-      "fused": {
-        "final_grade": "WAIT",
-        "final_msg": "觀望",
-        "resonance": false,
-        "has_pullback": false,
-        "pullback_type": null,
-        "has_cross": false,
-        "has_squeeze": false,
-        "s_1d": {
-          "grade": "A+",
-          "msg": "🔴 強勢空方（完美空頭排列）",
-          "alignment": {
-            "direction": "BEAR",
-            "bull_score": 0,
-            "bear_score": 3,
-            "label": "完美空頭排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 1.3640217185241945,
-            "ema55": 1.3911374299550983,
-            "ema144": 1.5580723682279989
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.13534188538201775,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        },
-        "s_4h": {
-          "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
-          "alignment": {
-            "direction": "LEAN_BEAR",
-            "bull_score": 1,
-            "bear_score": 2,
-            "label": "偏空排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 1.3212958455487853,
-            "ema55": 1.341570369987122,
-            "ema144": 1.3717679296069194
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.32505275729603683,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        }
-      }
-    },
-    {
-      "symbol": "DOGE-USDT",
-      "name": "Dogecoin",
-      "category": "加密幣",
-      "source": "crypto",
-      "price": 0.10011,
-      "atr": 0.0018055014478828933,
-      "grade": "WAIT",
-      "action": "觀望",
-      "resonance": false,
-      "has_pullback": false,
-      "pullback_type": null,
-      "has_cross": false,
-      "has_squeeze": false,
-      "zone_1d": "LEAN_BEAR 偏空排列",
-      "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 0.10028560029372198,
-      "ema55": 0.10210731488620693,
-      "ema144": 0.10416152386498301,
-      "bb_upper": 0.10655665486676857,
-      "bb_lower": 0.09765797490564529,
-      "bb_width": 0.08715026901882966,
-      "bb_pct_b": 0.2755493067586616,
-      "bb_squeeze": false,
-      "bb_expanding": false,
-      "pullback_info": {
-        "pullback_type": "SELL_RALLY",
-        "grade": "A",
-        "msg": "🔴 反彈放空 [EMA21]",
-        "signals": [
-          "反彈EMA21",
-          "陰線反轉",
-          "144向下"
-        ],
-        "support_level": "EMA21",
-        "entry": 0.10011,
-        "stop": 0.10299385246554632
-      },
-      "fused": {
-        "final_grade": "WAIT",
-        "final_msg": "觀望",
-        "resonance": false,
-        "has_pullback": false,
-        "pullback_type": null,
-        "has_cross": false,
-        "has_squeeze": false,
-        "s_1d": {
-          "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
-          "alignment": {
-            "direction": "LEAN_BEAR",
-            "bull_score": 1,
-            "bear_score": 2,
-            "label": "偏空排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 0.103633322393945,
-            "ema55": 0.1029111558121463,
-            "ema144": 0.11163908250407795
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.39552477923819174,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        },
-        "s_4h": {
-          "grade": "A+",
-          "msg": "🔴 強勢空方（完美空頭排列）",
-          "alignment": {
-            "direction": "BEAR",
-            "bull_score": 0,
-            "bear_score": 3,
-            "label": "完美空頭排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 0.10028560029372198,
-            "ema55": 0.10210731488620693,
-            "ema144": 0.10416152386498301
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": "SELL_RALLY",
-            "grade": "A",
-            "msg": "🔴 反彈放空 [EMA21]",
-            "signals": [
-              "反彈EMA21",
-              "陰線反轉",
-              "144向下"
-            ],
-            "support_level": "EMA21",
-            "entry": 0.10011,
-            "stop": 0.10299385246554632
-          },
-          "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.2755493067586616,
+          "bb_pct_b": 0.2524594935649166,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -652,8 +644,8 @@
       "name": "Cardano",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.2333,
-      "atr": 0.004377231349011791,
+      "price": 0.2328,
+      "atr": 0.004259378280254668,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -663,13 +655,13 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 0.23655406999489292,
-      "ema55": 0.24194705782776255,
-      "ema144": 0.2492628695461011,
-      "bb_upper": 0.2538645429306872,
-      "bb_lower": 0.23002957272483784,
-      "bb_width": 0.09851316407747777,
-      "bb_pct_b": 0.13721130116452013,
+      "ema21": 0.23617146859039756,
+      "ema55": 0.24160311213026853,
+      "ema144": 0.2489902370186188,
+      "bb_upper": 0.2536275966912045,
+      "bb_lower": 0.22957862756933253,
+      "bb_width": 0.09953915291002188,
+      "bb_pct_b": 0.13395054126198336,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
@@ -699,9 +691,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.24698418329059119,
-            "ema55": 0.25400352108005037,
-            "ema144": 0.3035995363024304
+            "ema21": 0.24693872874513664,
+            "ema55": 0.25398566393719324,
+            "ema144": 0.3035926397507063
           },
           "cross": null,
           "pullback": {
@@ -715,7 +707,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.009878297098333055,
+          "bb_pct_b": -0.0007521367791005137,
           "bb_expanding": true,
           "bb_squeeze": false
         },
@@ -729,9 +721,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.23655406999489292,
-            "ema55": 0.24194705782776255,
-            "ema144": 0.2492628695461011
+            "ema21": 0.23617146859039756,
+            "ema55": 0.24160311213026853,
+            "ema144": 0.2489902370186188
           },
           "cross": null,
           "pullback": {
@@ -745,7 +737,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.13721130116452013,
+          "bb_pct_b": 0.13395054126198336,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -756,8 +748,8 @@
       "name": "Avalanche",
       "category": "加密幣",
       "source": "crypto",
-      "price": 8.884,
-      "atr": 0.17556556763133876,
+      "price": 8.813,
+      "atr": 0.1727612697249381,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -767,13 +759,13 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 9.00667880953424,
-      "ema55": 9.156493537875143,
-      "ema144": 9.31337548325522,
-      "bb_upper": 9.568641453528107,
-      "bb_lower": 8.744345622222179,
-      "bb_width": 0.0900230888490546,
-      "bb_pct_b": 0.16942264230132986,
+      "ema21": 8.985104702882346,
+      "ema55": 9.142571827222026,
+      "ema144": 9.304952657822847,
+      "bb_upper": 9.569454906807497,
+      "bb_lower": 8.715688747636555,
+      "bb_width": 0.09338358782469186,
+      "bb_pct_b": 0.11397881178370933,
       "bb_squeeze": false,
       "bb_expanding": true,
       "pullback_info": {
@@ -803,9 +795,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 9.257351827040294,
-            "ema55": 9.37576885980736,
-            "ema144": 10.672632485542616
+            "ema21": 9.25080637249484,
+            "ema55": 9.373197431235932,
+            "ema144": 10.67163938209434
           },
           "cross": null,
           "pullback": {
@@ -819,7 +811,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.0984797152934954,
+          "bb_pct_b": 0.044967188246514946,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -833,9 +825,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 9.00667880953424,
-            "ema55": 9.156493537875143,
-            "ema144": 9.31337548325522
+            "ema21": 8.985104702882346,
+            "ema55": 9.142571827222026,
+            "ema144": 9.304952657822847
           },
           "cross": null,
           "pullback": {
@@ -849,7 +841,7 @@
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.16942264230132986,
+          "bb_pct_b": 0.11397881178370933,
           "bb_expanding": true,
           "bb_squeeze": false
         }
@@ -860,8 +852,8 @@
       "name": "TRON",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.34498,
-      "atr": 0.004723663583376201,
+      "price": 0.34418,
+      "atr": 0.004251175105592702,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -871,13 +863,13 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BULL 偏多排列",
       "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 0.3570867228614193,
-      "ema55": 0.3605723697303605,
-      "ema144": 0.3548489072354682,
-      "bb_upper": 0.37703707481943555,
-      "bb_lower": 0.34410766464128545,
-      "bb_width": 0.09132538414625344,
-      "bb_pct_b": 0.026491071476688253,
+      "ema21": 0.3558547067335217,
+      "ema55": 0.3599624780678931,
+      "ema144": 0.3546934871214945,
+      "bb_upper": 0.3772580281699717,
+      "bb_lower": 0.3426669279658145,
+      "bb_width": 0.09609640535265164,
+      "bb_pct_b": 0.04374165682083878,
       "bb_squeeze": false,
       "bb_expanding": true,
       "pullback_info": {
@@ -907,9 +899,9 @@
             "label": "偏多排列",
             "slope_bull": true,
             "slope_bear": false,
-            "ema21": 0.3548464651945038,
-            "ema55": 0.34118429075828527,
-            "ema144": 0.32195583410896383
+            "ema21": 0.3547737379217766,
+            "ema55": 0.34115571932971384,
+            "ema144": 0.3219447996262052
           },
           "cross": null,
           "pullback": {
@@ -923,7 +915,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BULL",
-          "bb_pct_b": 0.5568293050702129,
+          "bb_pct_b": 0.5452919402064587,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -937,9 +929,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.3570867228614193,
-            "ema55": 0.3605723697303605,
-            "ema144": 0.3548489072354682
+            "ema21": 0.3558547067335217,
+            "ema55": 0.3599624780678931,
+            "ema144": 0.3546934871214945
           },
           "cross": null,
           "pullback": {
@@ -953,7 +945,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.026491071476688253,
+          "bb_pct_b": 0.04374165682083878,
           "bb_expanding": true,
           "bb_squeeze": false
         }
@@ -964,50 +956,46 @@
       "name": "Polkadot",
       "category": "加密幣",
       "source": "crypto",
-      "price": 1.216,
-      "atr": 0.02984074237066302,
-      "grade": "S",
-      "action": "🔴 反彈放空 [EMA21]",
-      "resonance": true,
-      "has_pullback": true,
-      "pullback_type": "SELL_RALLY",
+      "price": 1.188,
+      "atr": 0.03025308783235243,
+      "grade": "WAIT",
+      "action": "觀望",
+      "resonance": false,
+      "has_pullback": false,
+      "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "BEAR 完美空頭排列",
-      "ema21": 1.2258810534188034,
-      "ema55": 1.2467919704626178,
-      "ema144": 1.2664326856944603,
-      "bb_upper": 1.3145191514446373,
-      "bb_lower": 1.1790647894805983,
-      "bb_width": 0.10864231176735847,
-      "bb_pct_b": 0.27267642018946103,
+      "ema21": 1.220453850215437,
+      "ema55": 1.2438655256582198,
+      "ema144": 1.264853856090277,
+      "bb_upper": 1.3151930435935517,
+      "bb_lower": 1.172538007722888,
+      "bb_width": 0.11468686359417718,
+      "bb_pct_b": 0.10838728673504654,
       "bb_squeeze": false,
-      "bb_expanding": false,
+      "bb_expanding": true,
       "pullback_info": {
-        "pullback_type": "SELL_RALLY",
-        "grade": "A",
-        "msg": "🔴 反彈放空 [EMA21]",
-        "signals": [
-          "反彈EMA21",
-          "陰線反轉",
-          "144向下"
-        ],
-        "support_level": "EMA21",
-        "entry": 1.216,
-        "stop": 1.2706421669747978
+        "pullback_type": null,
+        "grade": null,
+        "msg": "",
+        "signals": [],
+        "support_level": null,
+        "entry": null,
+        "stop": null
       },
       "fused": {
-        "final_grade": "S",
-        "final_msg": "🔴 反彈放空 [EMA21]",
-        "resonance": true,
-        "has_pullback": true,
-        "pullback_type": "SELL_RALLY",
+        "final_grade": "WAIT",
+        "final_msg": "觀望",
+        "resonance": false,
+        "has_pullback": false,
+        "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
-          "grade": "A+",
-          "msg": "🔴 強勢空方（完美空頭排列）",
+          "grade": "S",
+          "msg": "💎 S 強勢（完整排列 + BB擴張）",
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
@@ -1015,9 +1003,9 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 1.2607193475247662,
-            "ema55": 1.2921414288534108,
-            "ema144": 1.550240435351122
+            "ema21": 1.2581738929793118,
+            "ema55": 1.2911414288534109,
+            "ema144": 1.5498542284545704
           },
           "cross": null,
           "pullback": {
@@ -1035,13 +1023,13 @@
             "direction": "BEAR"
           },
           "direction": "BEAR",
-          "bb_pct_b": 0.12414230471878096,
-          "bb_expanding": false,
+          "bb_pct_b": -0.0026147274157661193,
+          "bb_expanding": true,
           "bb_squeeze": true
         },
         "s_4h": {
-          "grade": "A+",
-          "msg": "🔴 強勢空方（完美空頭排列）",
+          "grade": "S",
+          "msg": "💎 S 強勢（完整排列 + BB擴張）",
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
@@ -1049,28 +1037,24 @@
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 1.2258810534188034,
-            "ema55": 1.2467919704626178,
-            "ema144": 1.2664326856944603
+            "ema21": 1.220453850215437,
+            "ema55": 1.2438655256582198,
+            "ema144": 1.264853856090277
           },
           "cross": null,
           "pullback": {
-            "pullback_type": "SELL_RALLY",
-            "grade": "A",
-            "msg": "🔴 反彈放空 [EMA21]",
-            "signals": [
-              "反彈EMA21",
-              "陰線反轉",
-              "144向下"
-            ],
-            "support_level": "EMA21",
-            "entry": 1.216,
-            "stop": 1.2706421669747978
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
           },
           "squeeze": null,
           "direction": "BEAR",
-          "bb_pct_b": 0.27267642018946103,
-          "bb_expanding": false,
+          "bb_pct_b": 0.10838728673504654,
+          "bb_expanding": true,
           "bb_squeeze": false
         }
       }
@@ -1080,8 +1064,8 @@
       "name": "歐元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.16649,
-      "atr": 0.0023647047486059195,
+      "price": 1.16615,
+      "atr": 0.0021366107821251413,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -1091,13 +1075,13 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BEAR 偏空排列",
       "zone_4h": "LEAN_BULL 偏多排列",
-      "ema21": 1.1640351767446155,
-      "ema55": 1.1635291031956365,
-      "ema144": 1.1657812484720036,
-      "bb_upper": 1.167390748768697,
-      "bb_lower": 1.159667457622576,
-      "bb_width": 0.006637815182197738,
-      "bb_pct_b": 0.8833724183569909,
+      "ema21": 1.1641976813380805,
+      "ema55": 1.1636103174629735,
+      "ema144": 1.1657888790239048,
+      "bb_upper": 1.1675692430390772,
+      "bb_lower": 1.1596513918868698,
+      "bb_width": 0.006804555643224849,
+      "bb_pct_b": 0.8207540137097059,
       "bb_squeeze": false,
       "bb_expanding": true,
       "pullback_info": {
@@ -1127,9 +1111,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.165429206278769,
-            "ema55": 1.1670359250886675,
-            "ema144": 1.1678272057116517
+            "ema21": 1.1654649809145827,
+            "ema55": 1.1669918754381414,
+            "ema144": 1.1677894080388658
           },
           "cross": null,
           "pullback": {
@@ -1147,7 +1131,7 @@
             "direction": "BEAR"
           },
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.47953619663878455,
+          "bb_pct_b": 0.4663134691627599,
           "bb_expanding": false,
           "bb_squeeze": true
         },
@@ -1161,9 +1145,9 @@
             "label": "偏多排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.1640351767446155,
-            "ema55": 1.1635291031956365,
-            "ema144": 1.1657812484720036
+            "ema21": 1.1641976813380805,
+            "ema55": 1.1636103174629735,
+            "ema144": 1.1657888790239048
           },
           "cross": null,
           "pullback": {
@@ -1177,7 +1161,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BULL",
-          "bb_pct_b": 0.8833724183569909,
+          "bb_pct_b": 0.8207540137097059,
           "bb_expanding": true,
           "bb_squeeze": false
         }
@@ -1188,24 +1172,24 @@
       "name": "英鎊/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.34593,
-      "atr": 0.0028064196378211246,
-      "grade": "WAIT",
-      "action": "觀望",
+      "price": 1.34562,
+      "atr": 0.0025360525750005455,
+      "grade": "CROSS",
+      "action": "⚡ 🔺 EMA21 上穿 EMA55（黃金叉初期） [4H]",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
-      "has_cross": false,
+      "has_cross": true,
       "has_squeeze": false,
-      "zone_1d": "LEAN_BULL 偏多排列",
-      "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 1.344062523952495,
-      "ema55": 1.3441251135865964,
-      "ema144": 1.34601522676673,
-      "bb_upper": 1.3493936764213164,
-      "bb_lower": 1.3388565507518764,
-      "bb_width": 0.007839393493157229,
-      "bb_pct_b": 0.6712883067000215,
+      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_4h": "LEAN_BULL 偏多排列",
+      "ema21": 1.3441826250807805,
+      "ema55": 1.3441695433727543,
+      "ema144": 1.3460020528609835,
+      "bb_upper": 1.3494378763913295,
+      "bb_lower": 1.338901210354179,
+      "bb_width": 0.007838792426967287,
+      "bb_pct_b": 0.6376580240971566,
       "bb_squeeze": true,
       "bb_expanding": false,
       "pullback_info": {
@@ -1218,26 +1202,26 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "WAIT",
-        "final_msg": "觀望",
+        "final_grade": "CROSS",
+        "final_msg": "⚡ 🔺 EMA21 上穿 EMA55（黃金叉初期） [4H]",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
-        "has_cross": false,
+        "has_cross": true,
         "has_squeeze": false,
         "s_1d": {
           "grade": "B+",
-          "msg": "🟡 偏多觀察（三線未完整排列）",
+          "msg": "🟠 偏空觀察（三線未完整排列）",
           "alignment": {
-            "direction": "LEAN_BULL",
-            "bull_score": 2,
-            "bear_score": 1,
-            "label": "偏多排列",
+            "direction": "LEAN_BEAR",
+            "bull_score": 1,
+            "bear_score": 2,
+            "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.3456952212845068,
-            "ema55": 1.3461846340981114,
-            "ema144": 1.3450704208571114
+            "ema21": 1.3456668953826092,
+            "ema55": 1.3461555022726017,
+            "ema144": 1.3450640776309486
           },
           "cross": null,
           "pullback": {
@@ -1250,26 +1234,30 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "LEAN_BULL",
-          "bb_pct_b": 0.49321891744216295,
+          "direction": "LEAN_BEAR",
+          "bb_pct_b": 0.48427692541651296,
           "bb_expanding": false,
           "bb_squeeze": false
         },
         "s_4h": {
-          "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "grade": "CROSS",
+          "msg": "🔺 EMA21 上穿 EMA55（黃金叉初期）",
           "alignment": {
-            "direction": "LEAN_BEAR",
-            "bull_score": 1,
-            "bear_score": 2,
-            "label": "偏空排列",
+            "direction": "LEAN_BULL",
+            "bull_score": 2,
+            "bear_score": 1,
+            "label": "偏多排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.344062523952495,
-            "ema55": 1.3441251135865964,
-            "ema144": 1.34601522676673
+            "ema21": 1.3441826250807805,
+            "ema55": 1.3441695433727543,
+            "ema144": 1.3460020528609835
           },
-          "cross": null,
+          "cross": {
+            "type": "GOLDEN_CROSS_21_55",
+            "msg": "🔺 EMA21 上穿 EMA55（黃金叉初期）",
+            "direction": "BULL"
+          },
           "pullback": {
             "pullback_type": null,
             "grade": null,
@@ -1280,12 +1268,12 @@
             "stop": null
           },
           "squeeze": {
-            "type": "SQUEEZE_BEAR",
-            "msg": "⏳ BB Squeeze（空方蓄能，等待向下突破）",
-            "direction": "BEAR"
+            "type": "SQUEEZE_BULL",
+            "msg": "⏳ BB Squeeze（多方蓄能，等待向上突破）",
+            "direction": "BULL"
           },
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.6712883067000215,
+          "direction": "LEAN_BULL",
+          "bb_pct_b": 0.6376580240971566,
           "bb_expanding": false,
           "bb_squeeze": true
         }
@@ -1296,24 +1284,24 @@
       "name": "美元/日圓",
       "category": "外匯",
       "source": "forex",
-      "price": 159.28039,
-      "atr": 0.15314098112582222,
-      "grade": "WAIT",
-      "action": "觀望",
-      "resonance": false,
+      "price": 159.29993,
+      "atr": 0.13958751697571273,
+      "grade": "S+",
+      "action": "🚀 S+ 超級共振",
+      "resonance": true,
       "has_pullback": false,
       "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
       "zone_1d": "BULL 多頭排列（144 走平）",
-      "zone_4h": "LEAN_BULL 偏多排列",
-      "ema21": 159.28963138648757,
-      "ema55": 159.13449473162652,
-      "ema144": 158.73836087476968,
-      "bb_upper": 159.49507020397968,
-      "bb_lower": 158.77391925927336,
-      "bb_width": 0.004531707257578023,
-      "bb_pct_b": 0.7023089194355931,
+      "zone_4h": "BULL 多頭排列（144 走平）",
+      "ema21": 159.2887469629226,
+      "ema55": 159.1396443535747,
+      "ema144": 158.74572699041306,
+      "bb_upper": 159.49470931847677,
+      "bb_lower": 158.78457938867265,
+      "bb_width": 0.004462306879524956,
+      "bb_pct_b": 0.7257131261450904,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
@@ -1326,9 +1314,9 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "WAIT",
-        "final_msg": "觀望",
-        "resonance": false,
+        "final_grade": "S+",
+        "final_msg": "🚀 S+ 超級共振",
+        "resonance": true,
         "has_pullback": false,
         "pullback_type": null,
         "has_cross": false,
@@ -1343,9 +1331,9 @@
             "label": "多頭排列（144 走平）",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 158.80279866173709,
-            "ema55": 158.53185369602477,
-            "ema144": 157.38401259523732
+            "ema21": 158.84617175860348,
+            "ema55": 158.55850312273918,
+            "ema144": 157.39046629889117
           },
           "cross": null,
           "pullback": {
@@ -1359,23 +1347,23 @@
           },
           "squeeze": null,
           "direction": "BULL",
-          "bb_pct_b": 0.6826955310214883,
+          "bb_pct_b": 0.6821380843757479,
           "bb_expanding": false,
           "bb_squeeze": false
         },
         "s_4h": {
-          "grade": "B+",
-          "msg": "🟡 偏多觀察（三線未完整排列）",
+          "grade": "A+",
+          "msg": "🟢 強勢多方（完美多頭排列）",
           "alignment": {
-            "direction": "LEAN_BULL",
-            "bull_score": 2,
-            "bear_score": 1,
-            "label": "偏多排列",
+            "direction": "BULL",
+            "bull_score": 3,
+            "bear_score": 0,
+            "label": "多頭排列（144 走平）",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 159.28963138648757,
-            "ema55": 159.13449473162652,
-            "ema144": 158.73836087476968
+            "ema21": 159.2887469629226,
+            "ema55": 159.1396443535747,
+            "ema144": 158.74572699041306
           },
           "cross": null,
           "pullback": {
@@ -1388,8 +1376,8 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "LEAN_BULL",
-          "bb_pct_b": 0.7023089194355931,
+          "direction": "BULL",
+          "bb_pct_b": 0.7257131261450904,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -1400,8 +1388,8 @@
       "name": "澳元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 0.71848,
-      "atr": 0.0019019496596230298,
+      "price": 0.71878,
+      "atr": 0.0017603563716732861,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -1411,13 +1399,13 @@
       "has_squeeze": false,
       "zone_1d": "BULL 完美多頭排列",
       "zone_4h": "LEAN_BULL 偏多排列",
-      "ema21": 0.7157797350673962,
-      "ema55": 0.7153662084143337,
-      "ema144": 0.7162279655880511,
-      "bb_upper": 0.7192945630102948,
-      "bb_lower": 0.7114378538183727,
-      "bb_width": 0.010982779308708451,
-      "bb_pct_b": 0.896322621800448,
+      "ema21": 0.7160417426232526,
+      "ema55": 0.7154836382515906,
+      "ema144": 0.7162493054958852,
+      "bb_upper": 0.7195513850198904,
+      "bb_lower": 0.7114158914832908,
+      "bb_width": 0.011370621355479341,
+      "bb_pct_b": 0.9051827628624978,
       "bb_squeeze": false,
       "bb_expanding": true,
       "pullback_info": {
@@ -1447,28 +1435,29 @@
             "label": "完美多頭排列",
             "slope_bull": true,
             "slope_bear": false,
-            "ema21": 0.7165587467678409,
-            "ema55": 0.7137812428645707,
-            "ema144": 0.7018320842965645
+            "ema21": 0.7167499350782025,
+            "ema55": 0.713955301990691,
+            "ema144": 0.7020718247114217
           },
           "cross": null,
           "pullback": {
-            "pullback_type": "BUY_DIP",
-            "grade": "B+",
-            "msg": "🟡 回調觀察 [EMA21]",
-            "signals": [
-              "回測EMA21",
-              "144向上"
-            ],
-            "support_level": "EMA21",
-            "entry": 0.71848,
-            "stop": 0.7091575545439013
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
           },
-          "squeeze": null,
+          "squeeze": {
+            "type": "SQUEEZE_BULL",
+            "msg": "⏳ BB Squeeze（多方蓄能，等待向上突破）",
+            "direction": "BULL"
+          },
           "direction": "BULL",
-          "bb_pct_b": 0.6583207575613124,
+          "bb_pct_b": 0.6850724021864288,
           "bb_expanding": false,
-          "bb_squeeze": false
+          "bb_squeeze": true
         },
         "s_4h": {
           "grade": "B+",
@@ -1480,9 +1469,9 @@
             "label": "偏多排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 0.7157797350673962,
-            "ema55": 0.7153662084143337,
-            "ema144": 0.7162279655880511
+            "ema21": 0.7160417426232526,
+            "ema55": 0.7154836382515906,
+            "ema144": 0.7162493054958852
           },
           "cross": null,
           "pullback": {
@@ -1496,7 +1485,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BULL",
-          "bb_pct_b": 0.896322621800448,
+          "bb_pct_b": 0.9051827628624978,
           "bb_expanding": true,
           "bb_squeeze": false
         }
@@ -1507,8 +1496,8 @@
       "name": "美元/瑞郎",
       "category": "外匯",
       "source": "forex",
-      "price": 0.78159,
-      "atr": 0.0019874110202745864,
+      "price": 0.78116,
+      "atr": 0.0019862451064601907,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -1518,15 +1507,15 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 空頭排列（144 走平）",
       "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 0.7843807114537872,
-      "ema55": 0.784854188461101,
-      "ema144": 0.7845278190953778,
-      "bb_upper": 0.7888526556084751,
-      "bb_lower": 0.7808557213137269,
-      "bb_width": 0.01018907003659887,
-      "bb_pct_b": 0.09182002242475572,
+      "ema21": 0.7840416385117072,
+      "ema55": 0.7847029504542649,
+      "ema144": 0.7844593312020016,
+      "bb_upper": 0.7888278315810089,
+      "bb_lower": 0.7805780693275208,
+      "bb_width": 0.01051322955866582,
+      "bb_pct_b": 0.07053908398791636,
       "bb_squeeze": false,
-      "bb_expanding": false,
+      "bb_expanding": true,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -1554,9 +1543,9 @@
             "label": "空頭排列（144 走平）",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 0.7843460691924634,
-            "ema55": 0.7847327492663548,
-            "ema144": 0.7864464627510729
+            "ema21": 0.7840101455468675,
+            "ema55": 0.784585865363985,
+            "ema144": 0.7863659284253743
           },
           "cross": null,
           "pullback": {
@@ -1574,7 +1563,7 @@
             "direction": "BEAR"
           },
           "direction": "BEAR",
-          "bb_pct_b": 0.34131936955808573,
+          "bb_pct_b": 0.31075183919357086,
           "bb_expanding": false,
           "bb_squeeze": true
         },
@@ -1588,9 +1577,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 0.7843807114537872,
-            "ema55": 0.784854188461101,
-            "ema144": 0.7845278190953778
+            "ema21": 0.7840416385117072,
+            "ema55": 0.7847029504542649,
+            "ema144": 0.7844593312020016
           },
           "cross": null,
           "pullback": {
@@ -1604,8 +1593,8 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.09182002242475572,
-          "bb_expanding": false,
+          "bb_pct_b": 0.07053908398791636,
+          "bb_expanding": true,
           "bb_squeeze": false
         }
       }
@@ -1615,8 +1604,8 @@
       "name": "美元/加元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.37912,
-      "atr": 0.0024131426442173696,
+      "price": 1.37977,
+      "atr": 0.002223923624988399,
       "grade": "B+",
       "action": "✅ B+ 方向一致",
       "resonance": false,
@@ -1626,13 +1615,13 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BULL 偏多排列",
       "zone_4h": "LEAN_BULL 偏多排列",
-      "ema21": 1.38115566837087,
-      "ema55": 1.3801104940328768,
-      "ema144": 1.3761324968102506,
-      "bb_upper": 1.3848479307803163,
-      "bb_lower": 1.3753730572854372,
-      "bb_width": 0.0068653006667547065,
-      "bb_pct_b": 0.3954609754513121,
+      "ema21": 1.38107763240327,
+      "ema55": 1.3801183067426532,
+      "ema144": 1.376189473726151,
+      "bb_upper": 1.384532350659933,
+      "bb_lower": 1.3757042628253735,
+      "bb_width": 0.006396616718602524,
+      "bb_pct_b": 0.46054561880436096,
       "bb_squeeze": false,
       "bb_expanding": false,
       "pullback_info": {
@@ -1662,9 +1651,9 @@
             "label": "偏多排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.3765230110934037,
-            "ema55": 1.3740024404654618,
-            "ema144": 1.374720340431253
+            "ema21": 1.3768661257873929,
+            "ema55": 1.3742284448973812,
+            "ema144": 1.3748366376011412
           },
           "cross": null,
           "pullback": {
@@ -1678,7 +1667,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BULL",
-          "bb_pct_b": 0.6486088861493594,
+          "bb_pct_b": 0.6694349737721208,
           "bb_expanding": false,
           "bb_squeeze": false
         },
@@ -1692,9 +1681,9 @@
             "label": "偏多排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 1.38115566837087,
-            "ema55": 1.3801104940328768,
-            "ema144": 1.3761324968102506
+            "ema21": 1.38107763240327,
+            "ema55": 1.3801183067426532,
+            "ema144": 1.376189473726151
           },
           "cross": null,
           "pullback": {
@@ -1708,7 +1697,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BULL",
-          "bb_pct_b": 0.3954609754513121,
+          "bb_pct_b": 0.46054561880436096,
           "bb_expanding": false,
           "bb_squeeze": false
         }
@@ -1719,8 +1708,8 @@
       "name": "紐元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 0.59854,
-      "atr": 0.0017236257655761497,
+      "price": 0.59856,
+      "atr": 0.0015521201079437734,
       "grade": "WAIT",
       "action": "觀望",
       "resonance": false,
@@ -1730,13 +1719,13 @@
       "has_squeeze": false,
       "zone_1d": "BULL 多頭排列（144 走平）",
       "zone_4h": "BULL 完美多頭排列",
-      "ema21": 0.5922787211225573,
-      "ema55": 0.5892069398077492,
-      "ema144": 0.5886707652169795,
-      "bb_upper": 0.5969850967047144,
-      "bb_lower": 0.5814287829107839,
-      "bb_width": 0.026402122485193996,
-      "bb_pct_b": 1.0999531968744536,
+      "ema21": 0.5928745398634818,
+      "ema55": 0.5895513047371079,
+      "ema144": 0.5888073736076997,
+      "bb_upper": 0.5978794004163798,
+      "bb_lower": 0.5812232090578361,
+      "bb_width": 0.02825231871206017,
+      "bb_pct_b": 1.040861657324266,
       "bb_squeeze": false,
       "bb_expanding": true,
       "pullback_info": {
@@ -1766,113 +1755,9 @@
             "label": "多頭排列（144 走平）",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 0.5891396444186145,
-            "ema55": 0.5881218935128422,
-            "ema144": 0.5870883673249337
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "BULL",
-          "bb_pct_b": 0.9564561850356107,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        },
-        "s_4h": {
-          "grade": "S",
-          "msg": "💎 S 強勢（完整排列 + BB擴張）",
-          "alignment": {
-            "direction": "BULL",
-            "bull_score": 3,
-            "bear_score": 0,
-            "label": "完美多頭排列",
-            "slope_bull": true,
-            "slope_bear": false,
-            "ema21": 0.5922787211225573,
-            "ema55": 0.5892069398077492,
-            "ema144": 0.5886707652169795
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "BULL",
-          "bb_pct_b": 1.0999531968744536,
-          "bb_expanding": true,
-          "bb_squeeze": false
-        }
-      }
-    },
-    {
-      "symbol": "XAU/USD",
-      "name": "黃金/美元",
-      "category": "外匯",
-      "source": "forex",
-      "price": 4560.82861,
-      "atr": 37.29415862270247,
-      "grade": "WAIT",
-      "action": "觀望",
-      "resonance": false,
-      "has_pullback": false,
-      "pullback_type": null,
-      "has_cross": false,
-      "has_squeeze": false,
-      "zone_1d": "LEAN_BULL 偏多排列",
-      "zone_4h": "LEAN_BEAR 偏空排列",
-      "ema21": 4502.686467050525,
-      "ema55": 4514.507128476014,
-      "ema144": 4565.170561130561,
-      "bb_upper": 4595.567804023052,
-      "bb_lower": 4433.446452928976,
-      "bb_width": 0.03591119616834103,
-      "bb_pct_b": 0.7857210429803647,
-      "bb_squeeze": false,
-      "bb_expanding": false,
-      "pullback_info": {
-        "pullback_type": null,
-        "grade": null,
-        "msg": "",
-        "signals": [],
-        "support_level": null,
-        "entry": null,
-        "stop": null
-      },
-      "fused": {
-        "final_grade": "WAIT",
-        "final_msg": "觀望",
-        "resonance": false,
-        "has_pullback": false,
-        "pullback_type": null,
-        "has_cross": false,
-        "has_squeeze": false,
-        "s_1d": {
-          "grade": "B+",
-          "msg": "🟡 偏多觀察（三線未完整排列）",
-          "alignment": {
-            "direction": "LEAN_BULL",
-            "bull_score": 2,
-            "bear_score": 1,
-            "label": "偏多排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 4559.185046969569,
-            "ema55": 4634.61612937102,
-            "ema144": 4627.859773655435
+            "ema21": 0.5900208337689887,
+            "ema55": 0.5885050218242426,
+            "ema144": 0.5872567545457801
           },
           "cross": null,
           "pullback": {
@@ -1889,8 +1774,116 @@
             "msg": "⏳ BB Squeeze（多方蓄能，等待向上突破）",
             "direction": "BULL"
           },
-          "direction": "LEAN_BULL",
-          "bb_pct_b": 0.3272235837922365,
+          "direction": "BULL",
+          "bb_pct_b": 0.9726789441651219,
+          "bb_expanding": false,
+          "bb_squeeze": true
+        },
+        "s_4h": {
+          "grade": "S",
+          "msg": "💎 S 強勢（完整排列 + BB擴張）",
+          "alignment": {
+            "direction": "BULL",
+            "bull_score": 3,
+            "bear_score": 0,
+            "label": "完美多頭排列",
+            "slope_bull": true,
+            "slope_bear": false,
+            "ema21": 0.5928745398634818,
+            "ema55": 0.5895513047371079,
+            "ema144": 0.5888073736076997
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": null,
+          "direction": "BULL",
+          "bb_pct_b": 1.040861657324266,
+          "bb_expanding": true,
+          "bb_squeeze": false
+        }
+      }
+    },
+    {
+      "symbol": "XAU/USD",
+      "name": "黃金/美元",
+      "category": "外匯",
+      "source": "forex",
+      "price": 4542.54679,
+      "atr": 34.26232138412,
+      "grade": "B+",
+      "action": "✅ B+ 方向一致",
+      "resonance": false,
+      "has_pullback": false,
+      "pullback_type": null,
+      "has_cross": false,
+      "has_squeeze": false,
+      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_4h": "LEAN_BEAR 偏空排列",
+      "ema21": 4504.601799715353,
+      "ema55": 4514.796606488843,
+      "ema144": 4564.526076081037,
+      "bb_upper": 4595.069813155699,
+      "bb_lower": 4434.523399821987,
+      "bb_width": 0.0355600544890479,
+      "bb_pct_b": 0.6728483554065796,
+      "bb_squeeze": false,
+      "bb_expanding": false,
+      "pullback_info": {
+        "pullback_type": null,
+        "grade": null,
+        "msg": "",
+        "signals": [],
+        "support_level": null,
+        "entry": null,
+        "stop": null
+      },
+      "fused": {
+        "final_grade": "B+",
+        "final_msg": "✅ B+ 方向一致",
+        "resonance": false,
+        "has_pullback": false,
+        "pullback_type": null,
+        "has_cross": false,
+        "has_squeeze": false,
+        "s_1d": {
+          "grade": "B+",
+          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "alignment": {
+            "direction": "LEAN_BEAR",
+            "bull_score": 1,
+            "bear_score": 2,
+            "label": "偏空排列",
+            "slope_bull": false,
+            "slope_bear": true,
+            "ema21": 4555.964145096303,
+            "ema55": 4630.61606243214,
+            "ema144": 4626.40341085062
+          },
+          "cross": null,
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": {
+            "type": "SQUEEZE_BEAR",
+            "msg": "⏳ BB Squeeze（空方蓄能，等待向下突破）",
+            "direction": "BEAR"
+          },
+          "direction": "LEAN_BEAR",
+          "bb_pct_b": 0.29647009189108703,
           "bb_expanding": false,
           "bb_squeeze": true
         },
@@ -1904,9 +1897,9 @@
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 4502.686467050525,
-            "ema55": 4514.507128476014,
-            "ema144": 4565.170561130561
+            "ema21": 4504.601799715353,
+            "ema55": 4514.796606488843,
+            "ema144": 4564.526076081037
           },
           "cross": null,
           "pullback": {
@@ -1920,7 +1913,7 @@
           },
           "squeeze": null,
           "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.7857210429803647,
+          "bb_pct_b": 0.6728483554065796,
           "bb_expanding": false,
           "bb_squeeze": false
         }
