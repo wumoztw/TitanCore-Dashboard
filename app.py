@@ -703,8 +703,14 @@ def build_card_html(result, modal_view=False):
         exch_html = f'<span class="exchange-badge">⚡ {exchange}</span>'
 
     daily = tf_block_html(result.get('daily'), '📊 日線 (1D)', 'daily')
-    h4    = tf_block_html(result.get('h4'),    '⏱ 4小時 (4H)', 'h4')
-    ai    = ai_block_html(result)
+    h4_data = result.get('h4')
+    if h4_data:
+        h4 = tf_block_html(h4_data, '⏱ 4小時 (4H)', 'h4')
+        tf_html = f'<div class="tf-grid">{daily}{h4}</div>'
+    else:
+        tf_html = f'<div class="tf-grid" style="grid-template-columns: 1fr;">{daily}</div>'
+        
+    ai = ai_block_html(result)
 
     stop_prop = 'onclick="event.stopPropagation()"' if not modal_view else ''
 
@@ -720,7 +726,7 @@ def build_card_html(result, modal_view=False):
   <div class="card-body">
     <div><span class="rec-pill {rec_pill_cls(rec)}">{rec_emoji(rec)} {rec}</span></div>
     <div class="rec-exp">💡 {exp}</div>
-    <div class="tf-grid">{daily}{h4}</div>
+    {tf_html}
     {ai}
   </div>
 </div>"""
@@ -1006,16 +1012,14 @@ def main():
                 'K線圖': r.get('chart_url', ''),
             })
         else:
-            d = r.get('daily'); h = r.get('h4')
-            price = d['price'] if d else (h['price'] if h else '-')
+            d = r.get('daily')
+            price = d['price'] if d else '-'
             table_data.append({
                 '標的': r['symbol'],
                 '來源': '💱' if r['source'] == 'Forex' else '🪙',
                 '綜合建議': f"{rec_emoji(r['combined_recommendation'])} {r['combined_recommendation']}",
                 '日線訊號': ' / '.join(d['signals']) if d and d['signals'] else '無訊號',
-                '4H訊號':   ' / '.join(h['signals']) if h and h['signals'] else '無訊號',
                 '日線趨勢': d['trend'] if d else '-',
-                '4H趨勢':   h['trend'] if h else '-',
                 '價格': fmt_price(price),
                 'AI': '✅' if r.get('ai_advice') else '❌',
                 'K線圖': r.get('chart_url', ''),
