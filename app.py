@@ -760,7 +760,7 @@ def ema_tf_block_html(r, label, is_daily, lbl_cls):
     trend_badge_html = trend_html(trend_str)
     
     bb_html = ""
-    if not is_daily:
+    if is_daily:
         bbu = fmt_price(r.get('bb_upper', 0))
         bbl = fmt_price(r.get('bb_lower', 0))
         bbw = r.get('bb_width', 0) * 100
@@ -805,7 +805,6 @@ def build_ema_card_html(result, modal_view=False):
         exch_html = f'<span class="exchange-badge">⚡ {exchange}</span>'
 
     daily = ema_tf_block_html(result, '📊 日線 (1D)', is_daily=True, lbl_cls='daily')
-    h4    = ema_tf_block_html(result, '⏱ 4小時 (4H)', is_daily=False, lbl_cls='h4')
     ai    = ai_block_html(result)
 
     stop_prop = 'onclick="event.stopPropagation()"' if not modal_view else ''
@@ -822,7 +821,7 @@ def build_ema_card_html(result, modal_view=False):
   <div class="card-body">
     <div><span class="rec-pill {rec_pill_cls(rec)}">{rec_emoji(rec)} {rec}</span></div>
     <div class="rec-exp">💡 {exp}</div>
-    <div class="tf-grid">{daily}{h4}</div>
+    <div class="tf-grid" style="grid-template-columns: 1fr;">{daily}</div>
     {ai}
   </div>
 </div>"""
@@ -992,21 +991,12 @@ def main():
             if fused.get('s_1d', {}).get('cross'):
                 s_1d_sigs = s_1d_sigs + [fused['s_1d']['cross']['type']]
                 
-            s_4h_sigs = fused.get('s_4h', {}).get('pullback', {}).get('signals', [])
-            if fused.get('s_4h', {}).get('squeeze'):
-                s_4h_sigs = s_4h_sigs + ['SQUEEZE']
-            if fused.get('s_4h', {}).get('cross'):
-                s_4h_sigs = s_4h_sigs + [fused['s_4h']['cross']['type']]
-                
             table_data.append({
                 '標的': r['symbol'],
                 '來源': '💱' if r['source'] == 'Forex' else '🪙',
                 '綜合建議': f"{rec_emoji(r['combined_recommendation'])} {r['combined_recommendation']}",
                 '日線排列': r.get('zone_1d', '-'),
-                '4H排列': r.get('zone_4h', '-'),
                 '日線訊號': ' / '.join(s_1d_sigs) if s_1d_sigs else '無訊號',
-                '4H訊號':   ' / '.join(s_4h_sigs) if s_4h_sigs else '無訊號',
-                '4H布林寬': f"{r.get('bb_width', 0)*100:.1f}% (%B:{r.get('bb_pct_b', 0):.2f})",
                 '價格': fmt_price(price),
                 'AI': '✅' if r.get('ai_advice') else '❌',
                 'K線圖': r.get('chart_url', ''),
