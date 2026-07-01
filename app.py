@@ -739,50 +739,31 @@ PREVIEW_HEIGHT = 320   # slightly taller for better scroll readability
 
 def ema_tf_block_html(r, label, is_daily, lbl_cls):
     price = fmt_price(r.get('price', 0))
-    e21   = fmt_price(r.get('ema21', 0))
-    e55   = fmt_price(r.get('ema55', 0))
-    e144  = fmt_price(r.get('ema144', 0))
+    e20   = fmt_price(r.get('ema20', 0))
+    e50   = fmt_price(r.get('ema50', 0))
+    e120  = fmt_price(r.get('ema120', 0))
+    e240  = fmt_price(r.get('ema240', 0))
     
     fused = r.get('fused', {})
     s_tf = fused.get('s_1d' if is_daily else 's_4h', {})
-    align_label = s_tf.get('alignment', {}).get('label', '三線纏繞/盤整')
+    align_label = s_tf.get('alignment', {}).get('label', '四線纏繞/盤整')
     
     sigs = s_tf.get('pullback', {}).get('signals', [])
     if s_tf.get('cross'):
         sigs = sigs + [s_tf['cross']['msg']]
-    if s_tf.get('squeeze'):
-        sigs = sigs + [s_tf['squeeze']['msg']]
         
     sig_html = signals_html(sigs)
     trend_val = s_tf.get('alignment', {}).get('direction', 'NEUTRAL')
     
-    trend_str = "完美多頭" if trend_val == "BULL" else ("完美空頭" if trend_val == "BEAR" else "區間盤整")
-    trend_badge_html = trend_html(trend_str)
-    
-    bb_html = ""
-    if is_daily:
-        bbu = fmt_price(r.get('bb_upper', 0))
-        bbl = fmt_price(r.get('bb_lower', 0))
-        bbw = r.get('bb_width', 0) * 100
-        pctb = r.get('bb_pct_b', 0)
-        sq = "⏳ SQUEEZE" if r.get('bb_squeeze') else ("🚀 EXPANDING" if r.get('bb_expanding') else "正常波動")
-        bb_html = f"""
-        <div class="data-item" style="grid-column: span 2;">
-          <div class="data-key">布林通道 ({sq})</div>
-          <div class="data-val cloud">{bbl} ~ {bbu} <br>(寬:{bbw:.1f}%, %B:{pctb:.2f})</div>
-        </div>
-        """
-        
     return f"""
 <div class="tf-section">
   <div class="tf-label {lbl_cls}">{label}</div>
   <div class="signal-row">{sig_html}</div>
   <div style="font-size: 0.72rem; color: #a0c0ff; margin-bottom: 6px;">排列: {align_label}</div>
   <div class="data-grid">
-    <div class="data-item"><div class="data-key">EMA21 / 55</div><div class="data-val">{e21} / {e55}</div></div>
-    <div class="data-item"><div class="data-key">EMA144</div><div class="data-val">{e144}</div></div>
-    <div class="data-item"><div class="data-key">現價</div><div class="data-val price">{price}</div></div>
-    {bb_html}
+    <div class="data-item"><div class="data-key">EMA20 / 50</div><div class="data-val">{e20} / {e50}</div></div>
+    <div class="data-item"><div class="data-key">EMA120 / 240</div><div class="data-val">{e120} / {e240}</div></div>
+    <div class="data-item" style="grid-column: span 2;"><div class="data-key">現價</div><div class="data-val price">{price}</div></div>
   </div>
 </div>"""
 
