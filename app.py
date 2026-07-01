@@ -865,12 +865,12 @@ def main():
     with st.sidebar:
         st.markdown("### 🛠️ 策略設定")
         strategy_mode = st.selectbox(
-            "策略模式", ["一目均衡表 (IKH)", "三均線 + 布林通道 (EMA/BB)"],
+            "策略模式", ["一目均衡表 (IKH)", "四均線 (EMA 20/50/120/240)"],
             index=0
         )
         st.divider()
 
-    is_ema = (strategy_mode == "三均線 + 布林通道 (EMA/BB)")
+    is_ema = (strategy_mode == "四均線 (EMA 20/50/120/240)")
     data_file = 'data/titan_core_ema_results.json' if is_ema else 'data/analysis_results.json'
 
     data = load_data(data_file)
@@ -886,7 +886,7 @@ def main():
     else:
         ts = ''
 
-    subtitle = "EMA 21/55/144 & Bollinger Bands · Multi-Timeframe Analysis" if is_ema else "Ichimoku Kinko Hyo · Multi-Timeframe Signal Analysis"
+    subtitle = "EMA 20/50/120/240 · Daily Trend Analysis" if is_ema else "Ichimoku Kinko Hyo · Multi-Timeframe Signal Analysis"
 
     st.markdown(f"""
     <div class="hero-header">
