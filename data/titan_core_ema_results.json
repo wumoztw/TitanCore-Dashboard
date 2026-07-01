@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-01T06:57:39.214489+00:00",
+  "generated_at": "2026-07-01T07:11:49.538485+00:00",
   "results": [
     {
       "symbol": "BTC-USDT",
       "name": "Bitcoin",
       "category": "加密幣",
       "source": "crypto",
-      "price": 58761.6,
+      "price": 58661.9,
       "atr": 2118.211223084729,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -17,15 +17,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 62289.30435925808,
-      "ema55": 66851.02295451274,
-      "ema144": 72995.33111720273,
-      "bb_upper": 82357.33135648815,
-      "bb_lower": 51344.71455253732,
-      "bb_width": 0.4639063911565372,
-      "bb_pct_b": 0.2391570338726724,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 62108.803000087035,
+      "ema50": 66355.8328677468,
+      "ema120": 71438.51779421557,
+      "ema240": 78898.26194981097,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -49,13 +44,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 62289.30435925808,
-            "ema55": 66851.02295451274,
-            "ema144": 72995.33111720273
+            "ema20": 62108.803000087035,
+            "ema50": 66355.8328677468,
+            "ema120": 71438.51779421557,
+            "ema240": 78898.26194981097
           },
           "cross": null,
           "pullback": {
@@ -68,20 +64,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.2391570338726724,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：58,400 ~ 58,600  \n**停損位置**：59,200（突破 EMA20）  \n**目標價位**：56,800（接近 EMA50）或 55,500（接近 EMA120）  \n**風險提醒**：若價格回升破 62,108（EMA20）或出現重大新聞、波動率急升，趨勢可能反轉，請即時調整部位或止盈。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "ETH-USDT",
       "name": "Ethereum",
       "category": "加密幣",
       "source": "crypto",
-      "price": 1576.53,
+      "price": 1574.25,
       "atr": 70.75856174768268,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -92,15 +88,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 1665.5807056926146,
-      "ema55": 1835.85409487886,
-      "ema144": 2146.5964320610274,
-      "bb_upper": 2353.8793519007354,
-      "bb_lower": 1317.8288378569846,
-      "bb_width": 0.5643425133477806,
-      "bb_pct_b": 0.2496993714459861,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 1659.8902365828353,
+      "ema50": 1814.7763358774364,
+      "ema120": 2063.7110305112333,
+      "ema240": 2465.7480675810225,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -124,13 +115,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 1665.5807056926146,
-            "ema55": 1835.85409487886,
-            "ema144": 2146.5964320610274
+            "ema20": 1659.8902365828353,
+            "ema50": 1814.7763358774364,
+            "ema120": 2063.7110305112333,
+            "ema240": 2465.7480675810225
           },
           "cross": null,
           "pullback": {
@@ -143,23 +135,23 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.2496993714459861,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：於 1,570 ≈ 1,560 USDT 区间，价格跌破即进场  \n**停損位置**：上方 1,620 USDT（接近 EMA20）或近期高点 1,660 USDT  \n**目標價位**：1,500 USDT（跌破 EMA50）或 1,440 USDT（接近 EMA120）  \n**風險提醒**：若價格回升突破 EMA20 或出現多頭排列，應即時止盈或平倉；加密資產波動劇烈，建議單筆倉位不超 2% 資金。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "BNB-USDT",
       "name": "BNB",
       "category": "加密幣",
       "source": "crypto",
-      "price": 545.9,
+      "price": 545.7,
       "atr": 17.58267738889755,
-      "grade": "S",
-      "action": "💎 S 強勢（完整排列 + BB擴張）",
+      "grade": "A+",
+      "action": "🔴 強勢空方（完美空頭排列）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
@@ -167,15 +159,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 577.035298379654,
-      "ema55": 604.6133243306247,
-      "ema144": 654.7965834447256,
-      "bb_upper": 690.2362916072484,
-      "bb_lower": 518.9903570540009,
-      "bb_width": 0.2832321546053192,
-      "bb_pct_b": 0.15714033163007282,
-      "bb_squeeze": false,
-      "bb_expanding": true,
+      "ema20": 575.7061684231938,
+      "ema50": 601.8270020597167,
+      "ema120": 640.4682273923588,
+      "ema240": 704.2950894484665,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -186,26 +173,27 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "S",
-        "final_msg": "💎 S 強勢（完整排列 + BB擴張）",
+        "final_grade": "A+",
+        "final_msg": "🔴 強勢空方（完美空頭排列）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
-          "grade": "S",
-          "msg": "💎 S 強勢（完整排列 + BB擴張）",
+          "grade": "A+",
+          "msg": "🔴 強勢空方（完美空頭排列）",
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 577.035298379654,
-            "ema55": 604.6133243306247,
-            "ema144": 654.7965834447256
+            "ema20": 575.7061684231938,
+            "ema50": 601.8270020597167,
+            "ema120": 640.4682273923588,
+            "ema240": 704.2950894484665
           },
           "cross": null,
           "pullback": {
@@ -218,23 +206,23 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.15714033163007282,
-          "bb_expanding": true,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：540 ~ 545 USDT，逢跌破即可進場  \n**停損位置**：550 USDT（上方近期波段高點）  \n**目標價位**：525 USDT（接近 EMA20）或 510 USDT（突破 EMA50）  \n**風險提醒**：若價格回升破 EMA20（575）或出現大額資金流入，空頭趨勢可能逆轉；請控制單筆部位不超 2% 資金，並密切留意市場情緒與重大新聞。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "SOL-USDT",
       "name": "Solana",
       "category": "加密幣",
       "source": "crypto",
-      "price": 74.33,
+      "price": 74.28,
       "atr": 4.108882507138062,
       "grade": "B+",
-      "action": "🟠 偏空觀察（三線未完整排列）",
+      "action": "🟠 偏空觀察（四線未完整排列）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
@@ -242,15 +230,10 @@
       "has_squeeze": false,
       "zone_1d": "LEAN_BEAR 偏空排列",
       "zone_4h": "-",
-      "ema21": 71.9800646931334,
-      "ema55": 75.7470506904056,
-      "ema144": 88.87853797780284,
-      "bb_upper": 94.78784416904575,
-      "bb_lower": 56.70625721176545,
-      "bb_width": 0.5027467948940731,
-      "bb_pct_b": 0.46278908512937655,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 71.9218840195897,
+      "ema50": 75.15151032422672,
+      "ema120": 84.78776573926389,
+      "ema240": 105.68245540337472,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -262,7 +245,7 @@
       },
       "fused": {
         "final_grade": "B+",
-        "final_msg": "🟠 偏空觀察（三線未完整排列）",
+        "final_msg": "🟠 偏空觀察（四線未完整排列）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
@@ -270,17 +253,18 @@
         "has_squeeze": false,
         "s_1d": {
           "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "msg": "🟠 偏空觀察（四線未完整排列）",
           "alignment": {
             "direction": "LEAN_BEAR",
             "bull_score": 1,
-            "bear_score": 2,
+            "bear_score": 3,
             "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 71.9800646931334,
-            "ema55": 75.7470506904056,
-            "ema144": 88.87853797780284
+            "ema20": 71.9218840195897,
+            "ema50": 75.15151032422672,
+            "ema120": 84.78776573926389,
+            "ema240": 105.68245540337472
           },
           "cross": null,
           "pullback": {
@@ -293,20 +277,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.46278908512937655,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "LEAN_BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": null,
+      "ai_provider": null,
+      "ai_model": null
     },
     {
       "symbol": "XRP-USDT",
       "name": "XRP",
       "category": "加密幣",
       "source": "crypto",
-      "price": 1.0427,
+      "price": 1.041,
       "atr": 0.04602614822409389,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -317,15 +301,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 1.1082014790108683,
-      "ema55": 1.2052711335669384,
-      "ema144": 1.4019855753978945,
-      "bb_upper": 1.4825558660993787,
-      "bb_lower": 0.927986401034498,
-      "bb_width": 0.4601200921685237,
-      "bb_pct_b": 0.20685163210722618,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 1.1044895340962568,
+      "ema50": 1.1935136329631821,
+      "ema120": 1.346694353583722,
+      "ema240": 1.6166044935579715,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -349,13 +328,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 1.1082014790108683,
-            "ema55": 1.2052711335669384,
-            "ema144": 1.4019855753978945
+            "ema20": 1.1044895340962568,
+            "ema50": 1.1935136329631821,
+            "ema120": 1.346694353583722,
+            "ema240": 1.6166044935579715
           },
           "cross": null,
           "pullback": {
@@ -368,23 +348,23 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.20685163210722618,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：偏空，建議做空。  \n**進場價位**：1.0300‑1.0350，跌破即可掛單。  \n**停損位置**：1.0580（上方最近阻力，約 2.7% 距離）。  \n**目標價位**：1.0000‑0.9700（接近 EMA20 支撐），若跌破可再下探至 0.9400。  \n**風險提醒**：若價格回升突破 EMA20（1.1045）且站上 EMA50，空頭趨勢失效；同時留意大戶資金流入與突發新聞，避免被套。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "DOGE-USDT",
       "name": "Dogecoin",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.07148,
+      "price": 0.0714,
       "atr": 0.0034785038701714618,
-      "grade": "S",
-      "action": "💎 S 強勢（完整排列 + BB擴張）",
+      "grade": "A+",
+      "action": "🔴 強勢空方（完美空頭排列）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
@@ -392,15 +372,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 0.07962764315294034,
-      "ema55": 0.08817584118700213,
-      "ema144": 0.10135580071618117,
-      "bb_upper": 0.11366284109763167,
-      "bb_lower": 0.06268884127637259,
-      "bb_width": 0.5780948515495771,
-      "bb_pct_b": 0.172463584463721,
-      "bb_squeeze": false,
-      "bb_expanding": true,
+      "ema20": 0.07924643704648952,
+      "ema50": 0.08731358656537191,
+      "ema120": 0.09749434534403513,
+      "ema240": 0.11752051077287393,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -411,26 +386,27 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "S",
-        "final_msg": "💎 S 強勢（完整排列 + BB擴張）",
+        "final_grade": "A+",
+        "final_msg": "🔴 強勢空方（完美空頭排列）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
-          "grade": "S",
-          "msg": "💎 S 強勢（完整排列 + BB擴張）",
+          "grade": "A+",
+          "msg": "🔴 強勢空方（完美空頭排列）",
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.07962764315294034,
-            "ema55": 0.08817584118700213,
-            "ema144": 0.10135580071618117
+            "ema20": 0.07924643704648952,
+            "ema50": 0.08731358656537191,
+            "ema120": 0.09749434534403513,
+            "ema240": 0.11752051077287393
           },
           "cross": null,
           "pullback": {
@@ -443,20 +419,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.172463584463721,
-          "bb_expanding": true,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：偏空，建議做空。  \n**進場價位**：0.0710 ~ 0.0714，跌破即可下單。  \n**停損位置**：0.0735（略高於近期波動高點，約2.5%風險）。  \n**目標價位**：0.0650（接近 EMA20 ≈ 0.0792 的 20% 回撤區），若持續跌破可逐步加碼至 0.0600。  \n**風險提醒**：若價格回升突破 EMA20（0.0792）或出現強勢多頭訊號，立即止盈或平倉；加密市場波動劇烈，請勿超過 2%‑3% 資金風險。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "ADA-USDT",
       "name": "Cardano",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.1501,
+      "price": 0.1502,
       "atr": 0.008664344204992567,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -467,15 +443,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 0.1601299935253576,
-      "ema55": 0.19128680735007828,
-      "ema144": 0.2550013178874996,
-      "bb_upper": 0.28552941354042094,
-      "bb_lower": 0.09704420115973564,
-      "bb_width": 0.9853539561446822,
-      "bb_pct_b": 0.28148520602829624,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 0.1591014848550565,
+      "ema50": 0.18746567763095345,
+      "ema120": 0.23664959321738321,
+      "ema240": 0.3313353451671741,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -499,13 +470,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.1601299935253576,
-            "ema55": 0.19128680735007828,
-            "ema144": 0.2550013178874996
+            "ema20": 0.1591014848550565,
+            "ema50": 0.18746567763095345,
+            "ema120": 0.23664959321738321,
+            "ema240": 0.3313353451671741
           },
           "cross": null,
           "pullback": {
@@ -518,20 +490,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.28148520602829624,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：偏空，建議做空。  \n**進場價位**：0.1495 ~ 0.1500（跌破即進場）。  \n**停損位置**：0.1525 左右，若價格回升至 EMA20 附近即止損。  \n**目標價位**：第一目標 0.1440（接近 EMA50），次目標 0.1380（接近 EMA120）。  \n**風險提醒**：若出現快速反彈突破 EMA20，需立即止損；加密市場波動大，請控制單筆倉位 ≤ 2% 資金。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "AVAX-USDT",
       "name": "Avalanche",
       "category": "加密幣",
       "source": "crypto",
-      "price": 6.632,
+      "price": 6.629,
       "atr": 0.4139913666836455,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -542,26 +514,21 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 6.662761774528087,
-      "ema55": 7.518160347378388,
-      "ema144": 9.29092388995827,
-      "bb_upper": 10.391223543097901,
-      "bb_lower": 4.645097151658876,
-      "bb_width": 0.7642995262055992,
-      "bb_pct_b": 0.3457812642794193,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 6.637704935127268,
+      "ema50": 7.410594691719372,
+      "ema120": 8.778518993236068,
+      "ema240": 11.411540683666828,
       "pullback_info": {
         "pullback_type": "SELL_RALLY",
         "grade": "B+",
-        "msg": "🟠 反彈觀察 [EMA21]",
+        "msg": "🟠 反彈觀察 [EMA20]",
         "signals": [
-          "反彈EMA21",
-          "144向下"
+          "反彈EMA20",
+          "240向下"
         ],
-        "support_level": "EMA21",
-        "entry": 6.632,
-        "stop": 7.283748824553555
+        "support_level": "EMA20",
+        "entry": 6.629,
+        "stop": 7.258691985152737
       },
       "fused": {
         "final_grade": "A+",
@@ -577,61 +544,57 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 6.662761774528087,
-            "ema55": 7.518160347378388,
-            "ema144": 9.29092388995827
+            "ema20": 6.637704935127268,
+            "ema50": 7.410594691719372,
+            "ema120": 8.778518993236068,
+            "ema240": 11.411540683666828
           },
           "cross": null,
           "pullback": {
             "pullback_type": "SELL_RALLY",
             "grade": "B+",
-            "msg": "🟠 反彈觀察 [EMA21]",
+            "msg": "🟠 反彈觀察 [EMA20]",
             "signals": [
-              "反彈EMA21",
-              "144向下"
+              "反彈EMA20",
+              "240向下"
             ],
-            "support_level": "EMA21",
-            "entry": 6.632,
-            "stop": 7.283748824553555
+            "support_level": "EMA20",
+            "entry": 6.629,
+            "stop": 7.258691985152737
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.3457812642794193,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：偏空，建議做空。  \n\n**進場價位**：6.62 ~ 6.58（跌破 EMA20 6.6377 後可考慮掛空單）。  \n\n**停損位置**：6.71 左右，約在 EMA20 上方 0.09 USDT，若價格回測突破即止損。  \n\n**目標價位**：第一目標 6.35（接近 EMA50 7.4106 的下方支撐），若持續下跌可觀望 5.90 以下。  \n\n**風險提醒**：  \n- 若價格快速回彈破 EMA20，空頭趨勢可能失效。  \n- 加密市場波動大，請控制單筆倉位在總資金的 1‑2%。  \n- 注意重大新聞或資金流向，可能造成突發反彈。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "TRX-USDT",
       "name": "TRON",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.31661,
+      "price": 0.31667,
       "atr": 0.005077221842575686,
-      "grade": "B+",
-      "action": "🟠 偏空觀察（三線未完整排列）",
+      "grade": "WAIT",
+      "action": "⚪ 觀望（四線鋪設纏繞）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
-      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_1d": "NEUTRAL 四線纏繞/盤整",
       "zone_4h": "-",
-      "ema21": 0.3239247536814759,
-      "ema55": 0.3290919087461322,
-      "ema144": 0.32272927348630526,
-      "bb_upper": 0.3645754986441971,
-      "bb_lower": 0.2936083188480673,
-      "bb_width": 0.21564547140195783,
-      "bb_pct_b": 0.3241171653997035,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 0.3236609895174955,
+      "ema50": 0.3289390293203495,
+      "ema120": 0.3246203157226373,
+      "ema240": 0.31870800152505285,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -642,26 +605,27 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "B+",
-        "final_msg": "🟠 偏空觀察（三線未完整排列）",
+        "final_grade": "WAIT",
+        "final_msg": "⚪ 觀望（四線鋪設纏繞）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
-          "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "grade": "WAIT",
+          "msg": "⚪ 觀望（四線鋪設纏繞）",
           "alignment": {
-            "direction": "LEAN_BEAR",
-            "bull_score": 1,
+            "direction": "NEUTRAL",
+            "bull_score": 2,
             "bear_score": 2,
-            "label": "偏空排列",
+            "label": "四線纏繞/盤整",
             "slope_bull": false,
             "slope_bear": false,
-            "ema21": 0.3239247536814759,
-            "ema55": 0.3290919087461322,
-            "ema144": 0.32272927348630526
+            "ema20": 0.3236609895174955,
+            "ema50": 0.3289390293203495,
+            "ema120": 0.3246203157226373,
+            "ema240": 0.31870800152505285
           },
           "cross": null,
           "pullback": {
@@ -674,20 +638,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.3241171653997035,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "NEUTRAL"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": null,
+      "ai_provider": null,
+      "ai_model": null
     },
     {
       "symbol": "DOT-USDT",
       "name": "Polkadot",
       "category": "加密幣",
       "source": "crypto",
-      "price": 0.8331,
+      "price": 0.834,
       "atr": 0.04755646552571774,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -698,15 +662,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 0.9140800017881467,
-      "ema55": 1.0446688124936911,
-      "ema144": 1.3347083131788655,
-      "bb_upper": 1.4050698845519256,
-      "bb_lower": 0.6842677404354567,
-      "bb_width": 0.6899814903020491,
-      "bb_pct_b": 0.2064814329138491,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 0.9093526714177504,
+      "ema50": 1.0287229415282386,
+      "ema120": 1.249420720445854,
+      "ema240": 1.683579603764998,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -730,13 +689,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.9140800017881467,
-            "ema55": 1.0446688124936911,
-            "ema144": 1.3347083131788655
+            "ema20": 0.9093526714177504,
+            "ema50": 1.0287229415282386,
+            "ema120": 1.249420720445854,
+            "ema240": 1.683579603764998
           },
           "cross": null,
           "pullback": {
@@ -749,21 +709,21 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.2064814329138491,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：0.820 ~ 0.830（跌破0.834）  \n**停損位置**：0.860（上方近期阻力）  \n**目標價位**：0.770 ~ 0.750（接近 EMA20、EMA50）  \n**風險提醒**：若價格回彈突破 EMA20（≈0.91）即出現多頭訊號，需立即止盈或止損；加密市場波動大，請控制單筆倉位 ≤ 5 %資金。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "EUR/USD",
       "name": "歐元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.14038,
-      "atr": 0.004557525105243798,
+      "price": 1.13992,
+      "atr": 0.004581525105243778,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
       "resonance": false,
@@ -773,15 +733,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 1.1455110624718827,
-      "ema55": 1.153836981667695,
-      "ema144": 1.1611915534486559,
-      "bb_upper": 1.1763883372780568,
-      "bb_lower": 1.1312856260573332,
-      "bb_width": 0.039089327121006774,
-      "bb_pct_b": 0.2016369680784981,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 1.1451175787211085,
+      "ema50": 1.1529666090633113,
+      "ema120": 1.1600178727663732,
+      "ema240": 1.1638089290476956,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -805,13 +760,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 1.1455110624718827,
-            "ema55": 1.153836981667695,
-            "ema144": 1.1611915534486559
+            "ema20": 1.1451175787211085,
+            "ema50": 1.1529666090633113,
+            "ema120": 1.1600178727663732,
+            "ema240": 1.1638089290476956
           },
           "cross": null,
           "pullback": {
@@ -824,20 +780,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.2016369680784981,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：1.1385 ≈ 1.1390（跌破當前價格即可）  \n**停損位置**：1.1440（上方突破 EMA20）  \n**目標價位**：1.1320 ≈ EMA50下方，若持續跌破可再看 1.1250（接近 EMA120）  \n**風險提醒**：  \n- 若價格快速回彈至 EMA20 以上，即為趨勢反轉訊號，需即時止盈或止損。  \n- 重要經濟數據（如美國非農、ECB 決策）可能造成劇烈波動，建議降低倉位或使用限價單。  \n- 交易成本與滑點在高波動時會放大，請確保風險/報酬比 ≥1:2。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "GBP/USD",
       "name": "英鎊/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.32441,
+      "price": 1.32409,
       "atr": 0.005612307039156086,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -846,17 +802,12 @@
       "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
-      "zone_1d": "BEAR 空頭排列（144 走平）",
+      "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 1.3268656220185626,
-      "ema55": 1.334446645831742,
-      "ema144": 1.339945388852219,
-      "bb_upper": 1.3579452392304352,
-      "bb_lower": 1.310948052433049,
-      "bb_width": 0.035218483214886034,
-      "bb_pct_b": 0.28644156138511206,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 1.3265159626992116,
+      "ema50": 1.333697522233005,
+      "ema120": 1.339163450586327,
+      "ema240": 1.341961421276686,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -880,13 +831,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
-            "label": "空頭排列（144 走平）",
+            "bear_score": 4,
+            "label": "完美空頭排列",
             "slope_bull": false,
-            "slope_bear": false,
-            "ema21": 1.3268656220185626,
-            "ema55": 1.334446645831742,
-            "ema144": 1.339945388852219
+            "slope_bear": true,
+            "ema20": 1.3265159626992116,
+            "ema50": 1.333697522233005,
+            "ema120": 1.339163450586327,
+            "ema240": 1.341961421276686
           },
           "cross": null,
           "pullback": {
@@ -899,20 +851,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.28644156138511206,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做空  \n**進場價位**：1.3235 ~ 1.3220（跌破 EMA20）  \n**停損位置**：1.3270（上方突破 EMA20 + 30 點）  \n**目標價位**：1.3150 ~ 1.3120（接近 EMA120、240）  \n**風險提醒**：若價格回彈穿過 EMA20 並站上 1.3265，空頭趨勢失效；留意美國非農、英國央行政策會議等宏觀消息，避免突發波動。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "USD/JPY",
       "name": "美元/日圓",
       "category": "外匯",
       "source": "forex",
-      "price": 162.6959,
+      "price": 162.65515,
       "atr": 0.4641857892544264,
       "grade": "A+",
       "action": "🟢 強勢多方（完美多頭排列）",
@@ -923,15 +875,10 @@
       "has_squeeze": false,
       "zone_1d": "BULL 完美多頭排列",
       "zone_4h": "-",
-      "ema21": 161.4061471924435,
-      "ema55": 160.33684997325543,
-      "ema144": 158.70449716575328,
-      "bb_upper": 163.26856261305585,
-      "bb_lower": 157.405137333455,
-      "bb_width": 0.03656941795088827,
-      "bb_pct_b": 0.9023330927319605,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 161.44652888245975,
+      "ema50": 160.4530234793565,
+      "ema120": 159.1232276730229,
+      "ema240": 157.0948856070393,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -954,14 +901,15 @@
           "msg": "🟢 強勢多方（完美多頭排列）",
           "alignment": {
             "direction": "BULL",
-            "bull_score": 3,
+            "bull_score": 4,
             "bear_score": 0,
             "label": "完美多頭排列",
             "slope_bull": true,
             "slope_bear": false,
-            "ema21": 161.4061471924435,
-            "ema55": 160.33684997325543,
-            "ema144": 158.70449716575328
+            "ema20": 161.44652888245975,
+            "ema50": 160.4530234793565,
+            "ema120": 159.1232276730229,
+            "ema240": 157.0948856070393
           },
           "cross": null,
           "pullback": {
@@ -974,39 +922,109 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BULL",
-          "bb_pct_b": 0.9023330927319605,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BULL"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做多  \n**進場價位**：162.70 ~ 162.80（突破當前價位稍上方）  \n**停損位置**：161.30（低於 EMA20 且接近近期低點）  \n**目標價位**：短線 163.40；若持續上漲可觀望 165.00 左右  \n**風險提醒**：若價格跌破 EMA20 或日線趨勢線即止損；留意美日利差變化、重要經濟數據及突發政治風險，避免倉位過度集中。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "AUD/USD",
       "name": "澳元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 0.68908,
+      "price": 0.68904,
       "atr": 0.003888503516509318,
+      "grade": "CROSS",
+      "action": "🚨 🔻 EMA50 下穿 EMA120（中長期轉空） [1D]",
+      "resonance": false,
+      "has_pullback": false,
+      "pullback_type": null,
+      "has_cross": true,
+      "has_squeeze": false,
+      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_4h": "-",
+      "ema20": 0.6959998819411447,
+      "ema50": 0.7030233792090732,
+      "ema120": 0.7031486689893669,
+      "ema240": 0.6936497184028194,
+      "pullback_info": {
+        "pullback_type": null,
+        "grade": null,
+        "msg": "",
+        "signals": [],
+        "support_level": null,
+        "entry": null,
+        "stop": null
+      },
+      "fused": {
+        "final_grade": "CROSS",
+        "final_msg": "🚨 🔻 EMA50 下穿 EMA120（中長期轉空） [1D]",
+        "resonance": false,
+        "has_pullback": false,
+        "pullback_type": null,
+        "has_cross": true,
+        "has_squeeze": false,
+        "s_1d": {
+          "grade": "CROSS",
+          "msg": "🔻 EMA50 下穿 EMA120（中長期轉空）",
+          "alignment": {
+            "direction": "LEAN_BEAR",
+            "bull_score": 1,
+            "bear_score": 3,
+            "label": "偏空排列",
+            "slope_bull": false,
+            "slope_bear": false,
+            "ema20": 0.6959998819411447,
+            "ema50": 0.7030233792090732,
+            "ema120": 0.7031486689893669,
+            "ema240": 0.6936497184028194
+          },
+          "cross": {
+            "type": "DEATH_CROSS_50_120",
+            "msg": "🔻 EMA50 下穿 EMA120（中長期轉空）",
+            "direction": "BEAR"
+          },
+          "pullback": {
+            "pullback_type": null,
+            "grade": null,
+            "msg": "",
+            "signals": [],
+            "support_level": null,
+            "entry": null,
+            "stop": null
+          },
+          "squeeze": null,
+          "direction": "LEAN_BEAR"
+        },
+        "s_4h": null
+      },
+      "ai_advice": "**操作建議**：短線做空。  \n**進場價位**：0.6888±0.0002（約 0.6886 ~ 0.6890）。  \n**停損位置**：0.6970（EMA20 上方），風險比約 1:2。  \n**目標價位**：0.6800 ~ 0.6780（接近 EMA240）。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "symbol": "USD/CHF",
+      "name": "美元/瑞郎",
+      "category": "外匯",
+      "source": "forex",
+      "price": 0.80977,
+      "atr": 0.0033821334234092207,
       "grade": "B+",
-      "action": "🟠 偏空觀察（三線未完整排列）",
+      "action": "🟡 偏多觀察（四線未完整排列）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
-      "zone_1d": "LEAN_BEAR 偏空排列",
+      "zone_1d": "LEAN_BULL 偏多排列",
       "zone_4h": "-",
-      "ema21": 0.6963683788010432,
-      "ema55": 0.7035594977036207,
-      "ema144": 0.7014425368906229,
-      "bb_upper": 0.7254851180170279,
-      "bb_lower": 0.6816338773902135,
-      "bb_width": 0.06232769335065813,
-      "bb_pct_b": 0.16980414928633314,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 0.8052798717637305,
+      "ema50": 0.7980075988525962,
+      "ema120": 0.7924482618642256,
+      "ema240": 0.792669230928899,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -1018,7 +1036,7 @@
       },
       "fused": {
         "final_grade": "B+",
-        "final_msg": "🟠 偏空觀察（三線未完整排列）",
+        "final_msg": "🟡 偏多觀察（四線未完整排列）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
@@ -1026,92 +1044,18 @@
         "has_squeeze": false,
         "s_1d": {
           "grade": "B+",
-          "msg": "🟠 偏空觀察（三線未完整排列）",
+          "msg": "🟡 偏多觀察（四線未完整排列）",
           "alignment": {
-            "direction": "LEAN_BEAR",
-            "bull_score": 1,
-            "bear_score": 2,
-            "label": "偏空排列",
-            "slope_bull": false,
-            "slope_bear": true,
-            "ema21": 0.6963683788010432,
-            "ema55": 0.7035594977036207,
-            "ema144": 0.7014425368906229
-          },
-          "cross": null,
-          "pullback": {
-            "pullback_type": null,
-            "grade": null,
-            "msg": "",
-            "signals": [],
-            "support_level": null,
-            "entry": null,
-            "stop": null
-          },
-          "squeeze": null,
-          "direction": "LEAN_BEAR",
-          "bb_pct_b": 0.16980414928633314,
-          "bb_expanding": false,
-          "bb_squeeze": false
-        },
-        "s_4h": null
-      }
-    },
-    {
-      "symbol": "USD/CHF",
-      "name": "美元/瑞郎",
-      "category": "外匯",
-      "source": "forex",
-      "price": 0.80946,
-      "atr": 0.0033688000900758885,
-      "grade": "A+",
-      "action": "🟢 強勢多方（完美多頭排列）",
-      "resonance": false,
-      "has_pullback": false,
-      "pullback_type": null,
-      "has_cross": false,
-      "has_squeeze": false,
-      "zone_1d": "BULL 完美多頭排列",
-      "zone_4h": "-",
-      "ema21": 0.8049272013423043,
-      "ema55": 0.797225114504935,
-      "ema144": 0.7920014457538176,
-      "bb_upper": 0.8188940406155636,
-      "bb_lower": 0.7755561883943065,
-      "bb_width": 0.05436087176978768,
-      "bb_pct_b": 0.7823140711404183,
-      "bb_squeeze": false,
-      "bb_expanding": false,
-      "pullback_info": {
-        "pullback_type": null,
-        "grade": null,
-        "msg": "",
-        "signals": [],
-        "support_level": null,
-        "entry": null,
-        "stop": null
-      },
-      "fused": {
-        "final_grade": "A+",
-        "final_msg": "🟢 強勢多方（完美多頭排列）",
-        "resonance": false,
-        "has_pullback": false,
-        "pullback_type": null,
-        "has_cross": false,
-        "has_squeeze": false,
-        "s_1d": {
-          "grade": "A+",
-          "msg": "🟢 強勢多方（完美多頭排列）",
-          "alignment": {
-            "direction": "BULL",
+            "direction": "LEAN_BULL",
             "bull_score": 3,
-            "bear_score": 0,
-            "label": "完美多頭排列",
+            "bear_score": 1,
+            "label": "偏多排列",
             "slope_bull": true,
             "slope_bear": false,
-            "ema21": 0.8049272013423043,
-            "ema55": 0.797225114504935,
-            "ema144": 0.7920014457538176
+            "ema20": 0.8052798717637305,
+            "ema50": 0.7980075988525962,
+            "ema120": 0.7924482618642256,
+            "ema240": 0.792669230928899
           },
           "cross": null,
           "pullback": {
@@ -1124,20 +1068,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BULL",
-          "bb_pct_b": 0.7823140711404183,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "LEAN_BULL"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": null,
+      "ai_provider": null,
+      "ai_model": null
     },
     {
       "symbol": "USD/CAD",
       "name": "美元/加元",
       "category": "外匯",
       "source": "forex",
-      "price": 1.42196,
+      "price": 1.42187,
       "atr": 0.004586464917583432,
       "grade": "A+",
       "action": "🟢 強勢多方（完美多頭排列）",
@@ -1148,15 +1092,10 @@
       "has_squeeze": false,
       "zone_1d": "BULL 完美多頭排列",
       "zone_4h": "-",
-      "ema21": 1.4127162875685388,
-      "ema55": 1.398301721474795,
-      "ema144": 1.3864553285306647,
-      "bb_upper": 1.4347423123292025,
-      "bb_lower": 1.3618611306203876,
-      "bb_width": 0.052121212889552015,
-      "bb_pct_b": 0.824614365059663,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 1.4132808590609809,
+      "ema50": 1.399815284681104,
+      "ema120": 1.3880032937114513,
+      "ema240": 1.383851288084786,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -1179,14 +1118,15 @@
           "msg": "🟢 強勢多方（完美多頭排列）",
           "alignment": {
             "direction": "BULL",
-            "bull_score": 3,
+            "bull_score": 4,
             "bear_score": 0,
             "label": "完美多頭排列",
             "slope_bull": true,
             "slope_bear": false,
-            "ema21": 1.4127162875685388,
-            "ema55": 1.398301721474795,
-            "ema144": 1.3864553285306647
+            "ema20": 1.4132808590609809,
+            "ema50": 1.399815284681104,
+            "ema120": 1.3880032937114513,
+            "ema240": 1.383851288084786
           },
           "cross": null,
           "pullback": {
@@ -1199,20 +1139,20 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BULL",
-          "bb_pct_b": 0.824614365059663,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BULL"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "**操作建議**：做多  \n**進場價位**：1.4220 ~ 1.4240（突破近期高點 1.4245 前可先掛單）  \n**停損位置**：1.4165（低於 EMA20 1.4133 約 30 點，亦在近期低點 1.4150 之下）  \n**目標價位**：1.4350（接近前期阻力 1.4340）或 1.4400（突破後可視為次級目標）  \n**風險提醒**：  \n- 若價格跌破 EMA20 並跌至 1.4100 以下，則多頭排列失效，需即時止損。  \n- 美元指數、油價與加拿大央行政策變動均可能造成短線波動，請控制單筆風險在 1‑2% 之內。",
+      "ai_provider": "groq",
+      "ai_model": "openai/gpt-oss-120b"
     },
     {
       "symbol": "NZD/USD",
       "name": "紐元/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 0.56742,
+      "price": 0.56738,
       "atr": 0.003694648542597496,
       "grade": "A+",
       "action": "🔴 強勢空方（完美空頭排列）",
@@ -1223,15 +1163,10 @@
       "has_squeeze": false,
       "zone_1d": "BEAR 完美空頭排列",
       "zone_4h": "-",
-      "ema21": 0.5717122715878905,
-      "ema55": 0.5788250670297682,
-      "ema144": 0.583157817697088,
-      "bb_upper": 0.5990328417778532,
-      "bb_lower": 0.5586172922816832,
-      "bb_width": 0.06982342645172876,
-      "bb_pct_b": 0.21780497427483972,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 0.57135962218595,
+      "ema50": 0.5781922071804949,
+      "ema120": 0.582627533149758,
+      "ema240": 0.5843158204758154,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -1255,13 +1190,14 @@
           "alignment": {
             "direction": "BEAR",
             "bull_score": 0,
-            "bear_score": 3,
+            "bear_score": 4,
             "label": "完美空頭排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 0.5717122715878905,
-            "ema55": 0.5788250670297682,
-            "ema144": 0.583157817697088
+            "ema20": 0.57135962218595,
+            "ema50": 0.5781922071804949,
+            "ema120": 0.582627533149758,
+            "ema240": 0.5843158204758154
           },
           "cross": null,
           "pullback": {
@@ -1274,39 +1210,34 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.21780497427483972,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": "<thought>\n*   Asset: NZD/USD (Forex)\n    *   Current Price: 0.567380\n    *   EMA20: 0.571360\n    *   EMA50: 0.578192\n    *   EMA120: 0.582628\n    *   EMA240: 0.584316\n    *   Trend: BEAR perfect bearish alignment (EMA240 > EMA120 > EMA50 > EMA20 > Price).\n    *   Signal: No specific detection signal (but trend is strongly bearish).\n\n    *   Role: Professional Technical Analyst specializing in EMA 20/50/120/240.\n    *   Tone: Professional but easy to understand.\n    *   Language: Traditional Chinese.\n    *   Constraint: Under 200 words.\n    *   Output Requirements: Direction, Entry, Stop Loss, Target, Risk Warning.\n\n    *   *Direction*: The trend is a \"perfect bearish alignment\" (BEAR 完美空頭排列). The price is below all EMAs. This is a strong downtrend. The recommendation is **Short (做空)**.\n    *   *Entry Strategy*: In a strong downtrend, waiting for a \"pullback\" (retrace) to the EMA20 or EMA50 is the standard professional approach. Since the price is currently at 0.56738, a pullback towards 0.5713 (EMA20) or 0.5781 (EMA50) would be ideal. However, given the current price is already far below EMA20, a \"sell on strength\" approach near 0.5700-0.5715 is sensible.\n    *   *Stop Loss*: Should be placed above the recent resistance or the nearest EMA. EMA20 (0.57136) is a good candidate, but to be safer, above the EMA50 (0.5781) or at least above 0.5720. Let's suggest 0.5720-0.5730 to avoid noise.\n    *   *Take Profit*: Since it's a trend-following strategy, we look for psychological levels or recent lows. Without low data, I'll suggest a ratio-based or psychological target. Let's aim for 0.5600 or 0.5550.\n    *   *Risk*: Fundamental news (RBNZ, US data), trend reversal.\n\n    *   *Direction*: 偏空操作 (做空)。\n    *   *Reasoning*: 日線呈現完美的空頭排列，價格位於所有均線下方，趨勢極強。\n    *   *Entry*: 建議在回測 EMA20 (0.5713) 或 0.5700 附近進場。\n    *   *Stop Loss*: 設於 0.5730 (突破 EMA20 則趨勢轉弱)。\n    *   *Target*: 第一目標 0.5600，第二目標 0.5550。\n    *   *Risk*: 注意紐西蘭央行政策或美聯儲數據對匯率的劇烈波動。\n\n    *   Include all requested parts.\n    *   Check word count.\n    *   Professional tone.\n\n    *Draft:*\n    **【NZD/USD 技術分析報告】**\n    **操作方向**：**做空 (Sell)**\n    **分析</thought>",
+      "ai_provider": "google",
+      "ai_model": "gemma-4-26b-a4b-it"
     },
     {
       "symbol": "XAU/USD",
       "name": "黃金/美元",
       "category": "外匯",
       "source": "forex",
-      "price": 3972.56859,
-      "atr": 74.29567271893882,
-      "grade": "A+",
-      "action": "🔴 強勢空方（完美空頭排列）",
+      "price": 3960.44159,
+      "atr": 74.82124471893879,
+      "grade": "B+",
+      "action": "🟠 偏空觀察（四線未完整排列）",
       "resonance": false,
       "has_pullback": false,
       "pullback_type": null,
       "has_cross": false,
       "has_squeeze": false,
-      "zone_1d": "BEAR 完美空頭排列",
+      "zone_1d": "LEAN_BEAR 偏空排列",
       "zone_4h": "-",
-      "ema21": 4137.67277605704,
-      "ema55": 4318.204271607231,
-      "ema144": 4474.781465062486,
-      "bb_upper": 4761.802217289036,
-      "bb_lower": 3874.6063259254256,
-      "bb_width": 0.20545482231978734,
-      "bb_pct_b": 0.1104178513766642,
-      "bb_squeeze": false,
-      "bb_expanding": false,
+      "ema20": 4129.746989781777,
+      "ema50": 4296.65459524958,
+      "ema120": 4464.457868936415,
+      "ema240": 4414.512205507247,
       "pullback_info": {
         "pullback_type": null,
         "grade": null,
@@ -1317,26 +1248,27 @@
         "stop": null
       },
       "fused": {
-        "final_grade": "A+",
-        "final_msg": "🔴 強勢空方（完美空頭排列）",
+        "final_grade": "B+",
+        "final_msg": "🟠 偏空觀察（四線未完整排列）",
         "resonance": false,
         "has_pullback": false,
         "pullback_type": null,
         "has_cross": false,
         "has_squeeze": false,
         "s_1d": {
-          "grade": "A+",
-          "msg": "🔴 強勢空方（完美空頭排列）",
+          "grade": "B+",
+          "msg": "🟠 偏空觀察（四線未完整排列）",
           "alignment": {
-            "direction": "BEAR",
-            "bull_score": 0,
+            "direction": "LEAN_BEAR",
+            "bull_score": 1,
             "bear_score": 3,
-            "label": "完美空頭排列",
+            "label": "偏空排列",
             "slope_bull": false,
             "slope_bear": true,
-            "ema21": 4137.67277605704,
-            "ema55": 4318.204271607231,
-            "ema144": 4474.781465062486
+            "ema20": 4129.746989781777,
+            "ema50": 4296.65459524958,
+            "ema120": 4464.457868936415,
+            "ema240": 4414.512205507247
           },
           "cross": null,
           "pullback": {
@@ -1349,13 +1281,13 @@
             "stop": null
           },
           "squeeze": null,
-          "direction": "BEAR",
-          "bb_pct_b": 0.1104178513766642,
-          "bb_expanding": false,
-          "bb_squeeze": false
+          "direction": "LEAN_BEAR"
         },
         "s_4h": null
-      }
+      },
+      "ai_advice": null,
+      "ai_provider": null,
+      "ai_model": null
     }
   ]
 }
