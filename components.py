@@ -1,0 +1,175 @@
+"""Streamlit card/CSS helpers for the Taiwan chip + resonance dashboard."""
+
+from __future__ import annotations
+
+import html
+from urllib.parse import quote
+
+DASHBOARD_CSS = """
+<style>
+:root {
+  --tc-bg: #07080d;
+  --tc-glass: rgba(18, 22, 34, 0.78);
+  --tc-line: rgba(255,255,255,0.08);
+  --tc-text: #e8edf7;
+  --tc-muted: #93a0b8;
+  --tc-bull: #ef4444;
+  --tc-bear: #10b981;
+  --tc-gold: #f5c16c;
+}
+html, body, [data-testid="stAppViewContainer"] {
+  background: radial-gradient(1200px 600px at 10% -10%, #1a1430 0%, var(--tc-bg) 45%);
+  color: var(--tc-text);
+}
+.tc-card {
+  background: var(--tc-glass);
+  border: 1px solid var(--tc-line);
+  border-radius: 16px;
+  padding: 14px 16px 12px;
+  margin-bottom: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.28);
+}
+.tc-card.bull { box-shadow: 0 0 0 1px rgba(239,68,68,.45), 0 0 24px rgba(239,68,68,.25); }
+.tc-card.bear { box-shadow: 0 0 0 1px rgba(88,28,135,.7), 0 0 22px rgba(76,29,149,.35); }
+.tc-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.tc-symbol { font-size: 1.15rem; font-weight: 700; letter-spacing: .02em; }
+.tc-price { font-variant-numeric: tabular-nums; font-weight: 650; }
+.tc-up { color: var(--tc-bull); }
+.tc-down { color: var(--tc-bear); }
+.tc-muted { color: var(--tc-muted); font-size: .86rem; }
+.tc-badge {
+  display: inline-block; margin: 6px 6px 0 0; padding: 3px 8px; border-radius: 999px;
+  font-size: .78rem; border: 1px solid var(--tc-line); background: rgba(255,255,255,.04);
+}
+.tc-badge.bull { color: #fff; background: linear-gradient(90deg, #b91c1c, #f59e0b); border: 0; }
+.tc-badge.bear { color: #f5e9ff; background: #2e1064; border-color: #6d28d9; }
+.tc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-top: 10px; }
+.tc-note { margin-top: 10px; font-size: .9rem; line-height: 1.45; color: #d5dced; }
+a.tc-link { color: #93c5fd; text-decoration: none; }
+@media (max-width: 720px) { .tc-grid { grid-template-columns: 1fr; } }
+</style>
+"""
+
+
+def tradingview_url(symbol: str) -> str:
+    code = quote(str(symbol).strip(), safe="")
+    return f"https://tw.tradingview.com/chart/?symbol=TWSE%3A{code}"
+
+
+def yahoo_url(symbol: str) -> str:
+    return f"https://tw.stock.yahoo.com/quote/{quote(str(symbol).strip(), safe='')}.TW"
+
+
+def apply_palette(mode: str) -> str:
+    """Taiwan default: up red / down green. International flips the pair."""
+    if mode == "intl":
+        return DASHBOARD_CSS.replace("--tc-bull: #ef4444;", "--tc-bull: #10b981;").replace(
+            "--tc-bear: #10b981;", "--tc-bear: #ef4444;")
+    return DASHBOARD_CSS
+
+
+def _fmt_num(value, signed=False, digits=1, suffix="") -> str:
+    if value is None:
+        return "—"
+    try:
+        if value != value:  # NaN
+            return "—"
+        number = float(value)
+    except (TypeError, ValueError):
+        return "—"
+    text = f"{number:+,.{digits}f}" if signed else f"{number:,.{digits}f}"
+    return text + suffix
+
+
+def _get(row, key, default=""):
+    if hasattr(row, "get"):
+        value = row.get(key, default)
+    else:
+        value = getattr(row, key, default)
+    return default if value is None else value
+
+
+def _truthy_flag(row, key) -> bool:
+    value = _get(row, key, False)
+    if isinstance(value, str):
+        return value.strip().lower() in {"1", "true", "yes"}
+    return bool(value)
+
+
+def render_chip_card(row, modal_view: bool = False) -> str:
+    symbol = html.escape(str(_get(row, "symbol", "")))
+    name = html.escape(str(_get(row, "name", "")))
+    close = _fmt_num(_get(row, "close", None), digits=2)
+    change = _get(row, "change_pct", None)
+    change_html = ""
+    if change == change and change not in ("", None):
+        try:
+            number = float(change)
+            klass = "tc-up" if number > 0 else "tc-down" if number < 0 else "tc-muted"
+            change_html = f'<div class="{klass}">{number:+.2f}%</div>'
+        except (TypeError, ValueError):
+            change_html = ""
+    bull = _truthy_flag(row, "is_resonance_bull") or str(_get(row, "resonance", "")).upper() == "RESONANCE_BULL"
+    bear = _truthy_flag(row, "is_resonance_bear") or str(_get(row, "resonance", "")).upper() == "RESONANCE_BEAR"
+    klass = "bull" if bull else "bear" if bear else ""
+    if bull:
+        badge = '<span class="tc-badge bull">💎 雙共振多頭</span>'
+    elif bear:
+        badge = '<span class="tc-badge bear">💀 雙共振空頭</span>'
+    else:
+        cat = html.escape(str(_get(row, "chip_category") or _get(row, "category") or "NEUTRAL"))
+        badge = f'<span class="tc-badge">{cat}</span>'
+    note = _esc(_get(row, "summary_note", ""))
+    tv = tradingview_url(str(_get(row, "symbol", "")))
+    yh = yahoo_url(str(_get(row, "symbol", "")))
+    extra = ""
+    if modal_view:
+        extra = f'<div class="tc-muted">訊號 {_esc(_get(row, "signals", ""))} · 資料日 {_esc(_get(row, "date", ""))}</div>'
+    return f"""
+<article class="tc-card {klass}">
+  <div class="tc-head">
+    <div>
+      <div class="tc-symbol">{symbol} {name}</div>
+      <div class="tc-price">{close}</div>
+      {change_html}
+      {badge}
+    </div>
+    <div class="tc-muted">
+      <a class="tc-link" href="{tv}" target="_blank" rel="noopener">TradingView</a><br>
+      <a class="tc-link" href="{yh}" target="_blank" rel="noopener">Yahoo</a>
+    </div>
+  </div>
+  <div class="tc-grid">
+    <div><div class="tc-muted">技術面</div>
+      EMA {_esc(_get(row, "ema_trend", "—"))} · 一目 {_esc(_get(row, "ichimoku_trend", "—"))}<br>
+      ADX {_fmt_num(_get(row, "adx", None), digits=1)} · 布林 {_esc(_get(row, "bollinger_signal", "—"))}<br>
+      建議 {_esc(_get(row, "tech_action", "—"))}
+    </div>
+    <div><div class="tc-muted">籌碼</div>
+      投信 {_fmt_num(_get(row, "trust_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "trust_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "trust_5d_lots", None), signed=True)}<br>
+      外資 {_fmt_num(_get(row, "foreign_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "foreign_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "foreign_5d_lots", None), signed=True)}<br>
+      融資5日 {_fmt_num(_get(row, "margin_diff_5d", None), signed=True)} · 融券5日 {_fmt_num(_get(row, "short_diff_5d", None), signed=True)} · 券資比 {_fmt_num(_get(row, "short_margin_ratio", None), digits=2, suffix="%")}
+    </div>
+  </div>
+  <div class="tc-note">{note}</div>
+  {extra}
+</article>
+"""
+
+
+def _esc(value) -> str:
+    if value is None or value != value or str(value).strip() == "":
+        return "—"
+    return html.escape(str(value))
+
+
+def render_kpi_metrics(df) -> dict:
+    rows = 0 if df is None else len(df)
+    if rows == 0:
+        return {"scanned": 0, "bull": 0, "bear": 0, "trust_active": 0}
+    bull = int(df["is_resonance_bull"].sum()) if "is_resonance_bull" in df.columns else 0
+    bear = int(df["is_resonance_bear"].sum()) if "is_resonance_bear" in df.columns else 0
+    trust = df["trust_net_lots"] if "trust_net_lots" in df.columns else None
+    trust_active = int((trust.fillna(0) > 0).sum()) if trust is not None else 0
+    return {"scanned": int(rows), "bull": bull, "bear": bear, "trust_active": trust_active}
