@@ -240,3 +240,79 @@ def render_cards_container(rows, grid_class: str = "tc-cards-grid") -> str:
     """Render a list of row dicts into a unified CSS Grid container."""
     cards_html = "".join(render_chip_card(r) for r in rows)
     return f'<div class="{grid_class}">{cards_html}</div>'
+
+
+def render_report_table_as_cards(table_lines: list[str]) -> str:
+    """Convert markdown table lines into clean visual cards."""
+    if len(table_lines) < 3:
+        return ""
+    headers = [c.strip() for c in table_lines[0].strip('|').split('|')]
+    rows = []
+    for line in table_lines[2:]:
+        vals = [c.strip() for c in line.strip('|').split('|')]
+        if len(vals) == len(headers):
+            rows.append(dict(zip(headers, vals)))
+    
+    cards = []
+    for r in rows:
+        sym = r.get("代碼", "")
+        name = r.get("名稱", "")
+        close = r.get("收盤", "")
+        tech = r.get("技術面", "")
+        res = r.get("雙共振", "")
+        cat = r.get("分類", "")
+        note = r.get("說明", "")
+        advice = r.get("進出場建議", "")
+        
+        is_bull = "BULL" in res or "多" in res or "多" in cat
+        is_bear = "BEAR" in res or "空" in res or "空" in cat
+        klass = "bull" if is_bull else "bear" if is_bear else ""
+        
+        badge = ""
+        if is_bull:
+            badge = '<span class="tc-badge bull">💎 雙共振多頭</span>'
+        elif is_bear:
+            badge = '<span class="tc-badge bear">💀 雙共振空頭</span>'
+        elif cat or res:
+            badge = f'<span class="tc-badge">{cat or res}</span>'
+            
+        tv = tradingview_url(sym)
+        yh = yahoo_url(sym)
+        
+        grid_items = []
+        if tech: grid_items.append(f'<div><span class="tc-muted">技術面：</span>{tech}</div>')
+        if "EMA" in r and r["EMA"]: grid_items.append(f'<div><span class="tc-muted">EMA：</span>{r["EMA"]}</div>')
+        if "一目" in r and r["一目"]: grid_items.append(f'<div><span class="tc-muted">一目：</span>{r["一目"]}</div>')
+        if "ADX" in r and r["ADX"]: grid_items.append(f'<div><span class="tc-muted">ADX：</span>{r["ADX"]}</div>')
+        if "布林" in r and r["布林"]: grid_items.append(f'<div><span class="tc-muted">布林：</span>{r["布林"]}</div>')
+        if "投信(張)" in r and r["投信(張)"]: grid_items.append(f'<div><span class="tc-muted">投信：</span>{r["投信(張)"]} 張</div>')
+        if "外資(張)" in r and r["外資(張)"]: grid_items.append(f'<div><span class="tc-muted">外資：</span>{r["外資(張)"]} 張</div>')
+        if "券資比" in r and r["券資比"]: grid_items.append(f'<div><span class="tc-muted">券資比：</span>{r["券資比"]}</div>')
+        
+        grid_html = f'<div class="tc-grid">{"".join(grid_items)}</div>' if grid_items else ""
+        
+        body_parts = []
+        if close:
+            body_parts.append(f'<div class="tc-price" style="font-size:1.1rem;margin-top:2px;">{close} 元</div>')
+        if badge:
+            body_parts.append(badge)
+            
+        note_html = f'<div class="tc-note">{note}</div>' if note and note != "—" else ""
+        advice_html = f'<div class="tc-note" style="color:#fef08a;">{advice}</div>' if advice and advice != "—" else ""
+        
+        card = (
+            f'<article class="tc-card {klass}">'
+            f'<div class="tc-head">'
+            f'<div><div class="tc-symbol">{sym} {name}</div>'
+            f'{"".join(body_parts)}'
+            f'</div>'
+            f'<div class="tc-muted"><a class="tc-link" href="{tv}" target="_blank">TradingView</a><br><a class="tc-link" href="{yh}" target="_blank">Yahoo</a></div>'
+            f'</div>'
+            f'{grid_html}'
+            f'{note_html}'
+            f'{advice_html}'
+            f'</article>'
+        )
+        cards.append(card)
+        
+    return f'<div class="tc-cards-grid">{"".join(cards)}</div>'

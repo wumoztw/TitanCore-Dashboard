@@ -103,10 +103,25 @@ with tab_md:
     if not md_content or not md_content.strip():
         st.info("目前沒有盤後 Markdown 報告。")
     else:
-        import re
-        sections = re.split(r"\n(?=## )", md_content.strip())
-        for sec in sections:
-            sec = sec.strip()
-            if sec:
-                with st.container(border=True):
-                    st.markdown(sec)
+        lines = md_content.splitlines()
+        i = 0
+        current_text = []
+        while i < len(lines):
+            line = lines[i].strip()
+            if line.startswith('|') and i + 1 < len(lines) and '---' in lines[i + 1]:
+                if current_text:
+                    st.markdown("\n".join(current_text))
+                    current_text = []
+                table_lines = [line, lines[i + 1]]
+                i += 2
+                while i < len(lines) and lines[i].strip().startswith('|'):
+                    table_lines.append(lines[i].strip())
+                    i += 1
+                cards_html = components.render_report_table_as_cards(table_lines)
+                if cards_html:
+                    st.markdown(cards_html, unsafe_allow_html=True)
+            else:
+                current_text.append(lines[i])
+                i += 1
+        if current_text:
+            st.markdown("\n".join(current_text))
