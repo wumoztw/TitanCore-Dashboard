@@ -104,8 +104,7 @@ with tab_md:
         st.info("目前沒有盤後 Markdown 報告。")
     else:
         import re
-        sections = re.split(r'
-(?=## )', md_content.strip())
+        sections = re.split(r"\n(?=## )", md_content.strip())
         for sec in sections:
             sec = sec.strip()
             if sec:
