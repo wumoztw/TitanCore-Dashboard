@@ -1,4 +1,4 @@
-"""TitanCore Taiwan chip + technical resonance dashboard."""
+"""Taiwan chip + technical resonance dashboard."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ st.set_page_config(page_title="台股籌碼雷達盤後報告", page_icon="💎"
 st.markdown(
     '<div class="tc-head" style="margin-bottom:12px">'
     '<div>'
-    '<div class="tc-symbol" style="font-size:1.65rem">TitanCore 台股籌碼雷達盤後報告</div>'
+    '<div class="tc-symbol" style="font-size:1.65rem">台股籌碼雷達盤後報告</div>'
     '<div class="tc-muted">公開籌碼 × EMA / 一目均衡表雙共振 · 不構成投資建議</div>'
     '</div>'
     '</div>',
