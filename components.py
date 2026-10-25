@@ -77,6 +77,37 @@ a.tc-link { color: #93c5fd; text-decoration: none; }
   .tc-cards-grid, .tc-cards-grid-2 { grid-template-columns: 1fr; }
   .tc-grid { grid-template-columns: 1fr; }
 }
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+  background: var(--tc-glass);
+  border: 1px solid var(--tc-line) !important;
+  border-radius: 16px !important;
+  padding: 8px 12px !important;
+  margin-bottom: 16px !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.28);
+}
+.stMarkdown table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 12px 0 !important;
+  font-size: 0.88rem !important;
+}
+.stMarkdown th {
+  background: rgba(255,255,255,0.06) !important;
+  color: var(--tc-text) !important;
+  font-weight: 600 !important;
+  padding: 8px 10px !important;
+  border: 1px solid var(--tc-line) !important;
+}
+.stMarkdown td {
+  padding: 8px 10px !important;
+  border: 1px solid var(--tc-line) !important;
+  color: #d5dced !important;
+}
+.stMarkdown tr:hover td {
+  background: rgba(255,255,255,0.03) !important;
+}
 </style>
 """
 

@@ -99,4 +99,15 @@ with tab_all:
         st.markdown(components.render_cards_container(all_rows, grid_class="tc-cards-grid"), unsafe_allow_html=True)
 
 with tab_md:
-    st.markdown(data_loader.load_latest_summary_md())
+    md_content = data_loader.load_latest_summary_md()
+    if not md_content or not md_content.strip():
+        st.info("目前沒有盤後 Markdown 報告。")
+    else:
+        import re
+        sections = re.split(r'
+(?=## )', md_content.strip())
+        for sec in sections:
+            sec = sec.strip()
+            if sec:
+                with st.container(border=True):
+                    st.markdown(sec)
