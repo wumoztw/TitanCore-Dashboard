@@ -10,14 +10,12 @@ import data_loader
 st.set_page_config(page_title="TitanCore 台股籌碼共振", page_icon="💎", layout="wide")
 
 st.markdown(
-    """
-    <div class="tc-head" style="margin-bottom:8px">
-      <div>
-        <div class="tc-symbol" style="font-size:1.6rem">TitanCore 台股籌碼與技術共振雷達</div>
-        <div class="tc-muted">公開籌碼 × EMA / 一目均衡表雙共振 · 不構成投資建議</div>
-      </div>
-    </div>
-    """,
+    '<div class="tc-head" style="margin-bottom:8px">'
+    '<div>'
+    '<div class="tc-symbol" style="font-size:1.6rem">TitanCore 台股籌碼與技術共振雷達</div>'
+    '<div class="tc-muted">公開籌碼 × EMA / 一目均衡表雙共振 · 不構成投資建議</div>'
+    '</div>'
+    '</div>',
     unsafe_allow_html=True,
 )
 

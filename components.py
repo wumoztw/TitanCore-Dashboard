@@ -126,36 +126,37 @@ def render_chip_card(row, modal_view: bool = False) -> str:
     extra = ""
     if modal_view:
         extra = f'<div class="tc-muted">訊號 {_esc(_get(row, "signals", ""))} · 資料日 {_esc(_get(row, "date", ""))}</div>'
-    return f"""
-<article class="tc-card {klass}">
-  <div class="tc-head">
-    <div>
-      <div class="tc-symbol">{symbol} {name}</div>
-      <div class="tc-price">{close}</div>
-      {change_html}
-      {badge}
-    </div>
-    <div class="tc-muted">
-      <a class="tc-link" href="{tv}" target="_blank" rel="noopener">TradingView</a><br>
-      <a class="tc-link" href="{yh}" target="_blank" rel="noopener">Yahoo</a>
-    </div>
-  </div>
-  <div class="tc-grid">
-    <div><div class="tc-muted">技術面</div>
-      EMA {_esc(_get(row, "ema_trend", "—"))} · 一目 {_esc(_get(row, "ichimoku_trend", "—"))}<br>
-      ADX {_fmt_num(_get(row, "adx", None), digits=1)} · 布林 {_esc(_get(row, "bollinger_signal", "—"))}<br>
-      建議 {_esc(_get(row, "tech_action", "—"))}
-    </div>
-    <div><div class="tc-muted">籌碼</div>
-      投信 {_fmt_num(_get(row, "trust_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "trust_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "trust_5d_lots", None), signed=True)}<br>
-      外資 {_fmt_num(_get(row, "foreign_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "foreign_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "foreign_5d_lots", None), signed=True)}<br>
-      融資5日 {_fmt_num(_get(row, "margin_diff_5d", None), signed=True)} · 融券5日 {_fmt_num(_get(row, "short_diff_5d", None), signed=True)} · 券資比 {_fmt_num(_get(row, "short_margin_ratio", None), digits=2, suffix="%")}
-    </div>
-  </div>
-  <div class="tc-note">{note}</div>
-  {extra}
-</article>
-"""
+    card_html = (
+        f'<article class="tc-card {klass}">'
+        f'<div class="tc-head">'
+        f'<div>'
+        f'<div class="tc-symbol">{symbol} {name}</div>'
+        f'<div class="tc-price">{close}</div>'
+        f'{change_html}'
+        f'{badge}'
+        f'</div>'
+        f'<div class="tc-muted">'
+        f'<a class="tc-link" href="{tv}" target="_blank" rel="noopener">TradingView</a><br>'
+        f'<a class="tc-link" href="{yh}" target="_blank" rel="noopener">Yahoo</a>'
+        f'</div>'
+        f'</div>'
+        f'<div class="tc-grid">'
+        f'<div><div class="tc-muted">技術面</div>'
+        f'EMA {_esc(_get(row, "ema_trend", "—"))} · 一目 {_esc(_get(row, "ichimoku_trend", "—"))}<br>'
+        f'ADX {_fmt_num(_get(row, "adx", None), digits=1)} · 布林 {_esc(_get(row, "bollinger_signal", "—"))}<br>'
+        f'建議 {_esc(_get(row, "tech_action", "—"))}'
+        f'</div>'
+        f'<div><div class="tc-muted">籌碼</div>'
+        f'投信 {_fmt_num(_get(row, "trust_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "trust_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "trust_5d_lots", None), signed=True)}<br>'
+        f'外資 {_fmt_num(_get(row, "foreign_net_lots", None), signed=True)} 張 / 連{_fmt_num(_get(row, "foreign_streak", None), digits=0)} / 5日 {_fmt_num(_get(row, "foreign_5d_lots", None), signed=True)}<br>'
+        f'融資5日 {_fmt_num(_get(row, "margin_diff_5d", None), signed=True)} · 融券5日 {_fmt_num(_get(row, "short_diff_5d", None), signed=True)} · 券資比 {_fmt_num(_get(row, "short_margin_ratio", None), digits=2, suffix="%")}'
+        f'</div>'
+        f'</div>'
+        f'<div class="tc-note">{note}</div>'
+        f'{extra}'
+        f'</article>'
+    )
+    return card_html
 
 
 def _esc(value) -> str:
