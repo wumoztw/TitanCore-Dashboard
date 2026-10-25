@@ -80,10 +80,8 @@ with tab_focus:
         if focus.empty:
             st.warning("今日無雙共振標的。")
         else:
-            cols = st.columns(2)
-            for index, row in enumerate(focus.to_dict(orient="records")):
-                with cols[index % 2]:
-                    st.markdown(components.render_chip_card(row), unsafe_allow_html=True)
+            focus_rows = focus.to_dict(orient="records")
+            st.markdown(components.render_cards_container(focus_rows, grid_class="tc-cards-grid-2"), unsafe_allow_html=True)
 
 with tab_all:
     mode = st.radio("檢視", ["卡片網格", "表格"], horizontal=True)
@@ -97,10 +95,8 @@ with tab_all:
         ] if c in view.columns]
         st.dataframe(view[show_cols], use_container_width=True, hide_index=True)
     else:
-        cols = st.columns(3)
-        for index, row in enumerate(view.to_dict(orient="records")):
-            with cols[index % 3]:
-                st.markdown(components.render_chip_card(row), unsafe_allow_html=True)
+        all_rows = view.to_dict(orient="records")
+        st.markdown(components.render_cards_container(all_rows, grid_class="tc-cards-grid"), unsafe_allow_html=True)
 
 with tab_md:
     st.markdown(data_loader.load_latest_summary_md())

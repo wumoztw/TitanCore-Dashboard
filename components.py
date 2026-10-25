@@ -21,12 +21,31 @@ html, body, [data-testid="stAppViewContainer"] {
   background: radial-gradient(1200px 600px at 10% -10%, #1a1430 0%, var(--tc-bg) 45%);
   color: var(--tc-text);
 }
+.tc-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.tc-cards-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
 .tc-card {
   background: var(--tc-glass);
   border: 1px solid var(--tc-line);
   border-radius: 16px;
-  padding: 14px 16px 12px;
-  margin-bottom: 12px;
+  padding: 16px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0,0,0,.28);
 }
@@ -34,7 +53,7 @@ html, body, [data-testid="stAppViewContainer"] {
 .tc-card.bear { box-shadow: 0 0 0 1px rgba(88,28,135,.7), 0 0 22px rgba(76,29,149,.35); }
 .tc-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
 .tc-symbol { font-size: 1.15rem; font-weight: 700; letter-spacing: .02em; }
-.tc-price { font-variant-numeric: tabular-nums; font-weight: 650; }
+.tc-price { font-variant-numeric: tabular-nums; font-weight: 650; margin-top: 2px; }
 .tc-up { color: var(--tc-bull); }
 .tc-down { color: var(--tc-bear); }
 .tc-muted { color: var(--tc-muted); font-size: .86rem; }
@@ -44,10 +63,20 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 .tc-badge.bull { color: #fff; background: linear-gradient(90deg, #b91c1c, #f59e0b); border: 0; }
 .tc-badge.bear { color: #f5e9ff; background: #2e1064; border-color: #6d28d9; }
-.tc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-top: 10px; }
-.tc-note { margin-top: 10px; font-size: .9rem; line-height: 1.45; color: #d5dced; }
+.tc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-top: 12px; }
+.tc-note {
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: .88rem;
+  line-height: 1.45;
+  color: #d5dced;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
 a.tc-link { color: #93c5fd; text-decoration: none; }
-@media (max-width: 720px) { .tc-grid { grid-template-columns: 1fr; } }
+@media (max-width: 720px) {
+  .tc-cards-grid, .tc-cards-grid-2 { grid-template-columns: 1fr; }
+  .tc-grid { grid-template-columns: 1fr; }
+}
 </style>
 """
 
@@ -174,3 +203,9 @@ def render_kpi_metrics(df) -> dict:
     trust = df["trust_net_lots"] if "trust_net_lots" in df.columns else None
     trust_active = int((trust.fillna(0) > 0).sum()) if trust is not None else 0
     return {"scanned": int(rows), "bull": bull, "bear": bear, "trust_active": trust_active}
+
+
+def render_cards_container(rows, grid_class: str = "tc-cards-grid") -> str:
+    """Render a list of row dicts into a unified CSS Grid container."""
+    cards_html = "".join(render_chip_card(r) for r in rows)
+    return f'<div class="{grid_class}">{cards_html}</div>'
