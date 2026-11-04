@@ -108,6 +108,21 @@ a.tc-link { color: #93c5fd; text-decoration: none; }
 .stMarkdown tr:hover td {
   background: rgba(255,255,255,0.03) !important;
 }
+.tc-kpi-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px;
+}
+.tc-kpi-card {
+  background: var(--tc-glass); border: 1px solid var(--tc-line);
+  border-radius: 12px; padding: 12px 14px; text-align: center;
+}
+.tc-kpi-label { color: var(--tc-muted); font-size: .78rem; }
+.tc-kpi-value {
+  color: var(--tc-text); font-size: 1.7rem; font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 640px) {
+  .tc-kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
 </style>
 """
 
@@ -234,6 +249,16 @@ def render_kpi_metrics(df) -> dict:
     trust = df["trust_net_lots"] if "trust_net_lots" in df.columns else None
     trust_active = int((trust.fillna(0) > 0).sum()) if trust is not None else 0
     return {"scanned": int(rows), "bull": bull, "bear": bear, "trust_active": trust_active}
+
+
+def render_kpi_cards(kpis: dict) -> str:
+    items = [("今日掃描", "scanned"), ("💎 多頭雙共振", "bull"),
+             ("💀 空頭雙共振", "bear"), ("投信積極買超", "trust_active")]
+    cards = "".join(
+        f'<div class="tc-kpi-card"><div class="tc-kpi-label">{label}</div>'
+        f'<div class="tc-kpi-value">{_esc(kpis.get(key, 0))}</div></div>'
+        for label, key in items)
+    return f'<div class="tc-kpi-grid">{cards}</div>'
 
 
 def render_cards_container(rows, grid_class: str = "tc-cards-grid") -> str:

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import streamlit as st
 
 import components
@@ -30,15 +32,12 @@ st.markdown(components.apply_palette("intl" if palette else "tw"), unsafe_allow_
 
 df, meta = data_loader.load_chip_data(as_of=selected_date if dates else None)
 if meta.get("as_of"):
-    src = meta.get("source", "")
-    st.caption(f"資料日 {meta['as_of']} · 來源 {src}")
+    src_name = Path(meta.get("source", "")).name
+    tag = "最新盤後雷達" if src_name == "latest.csv" else "歷史紀錄"
+    st.caption(f"資料日：{meta['as_of']}（{tag}）")
 
 kpis = components.render_kpi_metrics(df)
-c1, c2, c3, c4 = st.columns(4)
-c1.metric("今日掃描", kpis["scanned"])
-c2.metric("💎 多頭雙共振", kpis["bull"])
-c3.metric("💀 空頭雙共振", kpis["bear"])
-c4.metric("投信積極買超", kpis["trust_active"])
+st.markdown(components.render_kpi_cards(kpis), unsafe_allow_html=True)
 
 st.markdown("<hr style='border-color:rgba(255,255,255,0.08);margin:16px 0 20px 0;'>", unsafe_allow_html=True)
 

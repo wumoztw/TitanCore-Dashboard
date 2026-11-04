@@ -111,6 +111,12 @@ class ChipDashboardTests(unittest.TestCase):
         _, meta = data_loader.load_chip_data(as_of=dates[0])
         self.assertEqual(meta["as_of"], data_loader.latest_csv_date())
 
+    def test_render_kpi_cards(self):
+        html_out = components.render_kpi_cards({"scanned": 111, "bull": 22, "bear": 33, "trust_active": 44})
+        self.assertIn("tc-kpi-grid", html_out)
+        for v in ("111", "22", "33", "44"):
+            self.assertIn(f">{v}<", html_out)
+
 
 if __name__ == "__main__":
     unittest.main()
