@@ -98,6 +98,19 @@ class ChipDashboardTests(unittest.TestCase):
         self.assertEqual(components.apply_palette("tw"), components.DASHBOARD_CSS)
         self.assertIn("--tc-bull: #10b981;", components.apply_palette("intl"))
 
+    def test_resolve_latest_label(self):
+        latest = data_loader.DATA_DIR / "latest.csv"
+        self.assertEqual(data_loader.resolve_csv_path(as_of="最新 (Latest)"), latest)
+        self.assertEqual(data_loader.resolve_csv_path(as_of="latest"), latest)
+        self.assertEqual(data_loader.resolve_csv_path(), latest)
+
+    def test_available_dates_latest_first(self):
+        dates = data_loader.get_available_dates()
+        self.assertEqual(dates[0], "最新 (Latest)")
+        self.assertIn("2026-10-22", dates)
+        _, meta = data_loader.load_chip_data(as_of=dates[0])
+        self.assertEqual(meta["as_of"], data_loader.latest_csv_date())
+
 
 if __name__ == "__main__":
     unittest.main()

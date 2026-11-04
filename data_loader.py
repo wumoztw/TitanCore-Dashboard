@@ -49,9 +49,27 @@ def _dated_csvs(directories: Iterable[Path] | None = None) -> list[tuple[str, Pa
     return found
 
 
+LATEST_LABEL = "最新 (Latest)"
+_LATEST_ALIASES = {LATEST_LABEL, "latest"}
+
+
+def latest_csv_date(path: Path | None = None) -> str | None:
+    """Return the newest ``date`` value inside latest.csv (None if unavailable)."""
+    path = path or DATA_DIR / "latest.csv"
+    if not path.is_file():
+        return None
+    try:
+        dates = pd.to_datetime(pd.read_csv(path, encoding="utf-8-sig", usecols=["date"])["date"], errors="coerce")
+    except Exception:
+        return None
+    return dates.max().strftime("%Y-%m-%d") if dates.notna().any() else None
+
+
 def get_available_dates() -> list[str]:
-    """Return report dates newest first."""
+    """Return ``"最新 (Latest)"`` (if latest.csv exists) then report dates newest first."""
     dates = sorted({day for day, _ in _dated_csvs()}, reverse=True)
+    if (DATA_DIR / "latest.csv").is_file():
+        dates.insert(0, LATEST_LABEL)
     return dates
 
 
@@ -59,7 +77,7 @@ def resolve_csv_path(csv_path: str | Path | None = None, as_of: str | None = Non
     if csv_path:
         path = Path(csv_path)
         return path if path.is_file() else None
-    if as_of:
+    if as_of and as_of not in _LATEST_ALIASES:
         for day, path in _dated_csvs():
             if day == as_of:
                 return path
