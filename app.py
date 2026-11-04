@@ -2,12 +2,17 @@
 
 from __future__ import annotations
 
+import importlib
 from pathlib import Path
 
 import streamlit as st
 
 import components
 import data_loader
+
+# Streamlit may re-run app.py without reloading submodules; force fresh versions.
+importlib.reload(components)
+importlib.reload(data_loader)
 
 st.set_page_config(page_title="台股籌碼雷達盤後報告", page_icon="💎", layout="wide")
 
@@ -24,7 +29,10 @@ st.markdown(
 dates = data_loader.get_available_dates()
 with st.sidebar:
     st.header("設定")
-    selected_date = st.selectbox("報告日期", dates or ["（無歷史 CSV）"], disabled=not dates)
+    if st.session_state.get("report_date") not in dates:
+        st.session_state.pop("report_date", None)
+    selected_date = st.selectbox(
+        "報告日期", dates or ["（無歷史 CSV）"], key="report_date", disabled=not dates)
     palette = st.toggle("國際配色（綠漲紅跌）", value=False)
     st.caption("資料來自 titan_core_chip 盤後雷達，快取 5 分鐘。")
 
@@ -37,7 +45,14 @@ if meta.get("as_of"):
     st.caption(f"資料日：{meta['as_of']}（{tag}）")
 
 kpis = components.render_kpi_metrics(df)
-st.markdown(components.render_kpi_cards(kpis), unsafe_allow_html=True)
+if hasattr(components, "render_kpi_cards"):
+    st.markdown(components.render_kpi_cards(kpis), unsafe_allow_html=True)
+else:
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("今日掃描", kpis["scanned"])
+    c2.metric("💎 多頭雙共振", kpis["bull"])
+    c3.metric("💀 空頭雙共振", kpis["bear"])
+    c4.metric("投信積極買超", kpis["trust_active"])
 
 st.markdown("<hr style='border-color:rgba(255,255,255,0.08);margin:16px 0 20px 0;'>", unsafe_allow_html=True)
 

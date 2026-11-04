@@ -5,6 +5,15 @@ from __future__ import annotations
 import html
 from urllib.parse import quote
 
+__all__ = [
+    "apply_palette",
+    "render_chip_card",
+    "render_kpi_metrics",
+    "render_kpi_cards",
+    "render_cards_container",
+    "render_report_table_as_cards",
+]
+
 DASHBOARD_CSS = """
 <style>
 :root {
@@ -252,6 +261,7 @@ def render_kpi_metrics(df) -> dict:
 
 
 def render_kpi_cards(kpis: dict) -> str:
+    kpis = kpis or {}
     items = [("今日掃描", "scanned"), ("💎 多頭雙共振", "bull"),
              ("💀 空頭雙共振", "bear"), ("投信積極買超", "trust_active")]
     cards = "".join(
