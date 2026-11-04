@@ -1,10 +1,13 @@
 import sys
+import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+import archive_old_reports
 import components
 import data_loader
 
@@ -116,6 +119,29 @@ class ChipDashboardTests(unittest.TestCase):
         self.assertIn("tc-kpi-grid", html_out)
         for v in ("111", "22", "33", "44"):
             self.assertIn(f">{v}<", html_out)
+
+
+class ArchiveOldReportsTests(unittest.TestCase):
+    def _make(self, tmp, n):
+        for i in range(n):
+            (Path(tmp) / f"2026-01-{i + 1:02d}.csv").write_text("a\n")
+        (Path(tmp) / "latest.csv").write_text("a\n")
+
+    def test_skips_when_under_limit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self._make(tmp, 5)
+            self.assertEqual(archive_old_reports.archive_old_reports(Path(tmp), keep=10), [])
+            self.assertFalse((Path(tmp) / "archive").exists())
+
+    def test_archives_oldest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self._make(tmp, 5)
+            moved = archive_old_reports.archive_old_reports(Path(tmp), keep=3)
+            self.assertEqual([p.name for p in moved], ["2026-01-01.csv", "2026-01-02.csv"])
+            remaining = sorted(p.name for p in Path(tmp).glob("*.csv"))
+            self.assertEqual(remaining, ["2026-01-03.csv", "2026-01-04.csv", "2026-01-05.csv", "latest.csv"])
+            with zipfile.ZipFile(Path(tmp) / "archive" / archive_old_reports.ARCHIVE_NAME) as zf:
+                self.assertEqual(sorted(zf.namelist()), ["2026-01-01.csv", "2026-01-02.csv"])
 
 
 if __name__ == "__main__":
